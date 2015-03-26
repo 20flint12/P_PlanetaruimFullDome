@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\TextureOnWall.v4p" systemname="ModelingProjectionModes" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_1_0_MeshEditor\ModelingProjectionModes.v4p" locked="0" scrollx="555" scrolly="0">
-   <BOUNDS type="Window" left="1005" top="0" width="17415" height="15915">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\TextureOnWall.v4p" systemname="ModelingProjectionModes" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_1_0_MeshEditor\ModelingProjectionModes.v4p" locked="0" scrollx="555" scrolly="0">
+   <BOUNDS type="Window" left="720" top="0" width="17835" height="15900">
    </BOUNDS>
    <PACK Name="addonpack" Version="31.9.0">
    </PACK>
@@ -1193,7 +1193,7 @@
    </BOUNDS>
    <PIN pinname="Rotate Panorama" slicecount="1" values="0.35">
    </PIN>
-   <BOUNDS type="Window" left="1005" top="0" width="17415" height="15915">
+   <BOUNDS type="Window" left="720" top="0" width="17835" height="15900">
    </BOUNDS>
    <PIN pinname="Filename" visible="1">
    </PIN>

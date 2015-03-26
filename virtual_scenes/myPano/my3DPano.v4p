@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\virtual_scenes\myPano\my3DPano.v4p" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\virtual_scenes\3DPanorama\subpatches\my3DPano.v4p" systemname="my3DPano">
-   <BOUNDS height="15915" left="1005" top="0" type="Window" width="17415">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\virtual_scenes\myPano\my3DPano.v4p" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\virtual_scenes\3DPanorama\subpatches\my3DPano.v4p" systemname="my3DPano">
+   <BOUNDS height="15900" left="720" top="0" type="Window" width="17835">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" id="14" managers="" nodename="Camera (Transform Softimage)" systemname="Camera (Transform Softimage)">
    <BOUNDS height="100" left="3930" top="10695" type="Node" width="100">
@@ -459,7 +459,7 @@
    <NODE systemname="JoinTexturesLin" filename="..\..\modules_my\JoinTexturesLin.v4p" nodename="..\..\modules_my\JoinTexturesLin.v4p" componentmode="InAWindow" id="100043">
    <BOUNDS type="Node" left="6285" top="1140" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="1005" top="0" width="17415" height="15915">
+   <BOUNDS type="Window" left="720" top="0" width="17835" height="15900">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0">
-   <BOUNDS type="Window" left="1005" top="0" width="17415" height="15915">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0">
+   <BOUNDS type="Window" left="720" top="0" width="17835" height="15900">
    </BOUNDS>
    <PACK Name="addonpack" Version="31.9.0">
    </PACK>
@@ -1541,7 +1541,7 @@
    <NODE systemname="namesOfFiles" filename="namesOfFiles.v4p" nodename="namesOfFiles.v4p" componentmode="InAWindow" id="106" stayontop="0">
    <BOUNDS type="Node" left="1830" top="6090" width="13725" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1005" top="0" width="17415" height="15915">
+   <BOUNDS type="Window" left="720" top="0" width="17835" height="15900">
    </BOUNDS>
    <PIN pinname="Output Name1" visible="1">
    </PIN>

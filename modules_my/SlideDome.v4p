@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\SlideDome.v4p" systemname="SlideDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\SlideDome.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\SlideDome.v4p" systemname="SlideDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\SlideDome.v4p">
    <BOUNDS type="Window" left="11460" top="3105" width="7665" height="6105">
    </BOUNDS>
    <PACK Name="addonpack" Version="31.9.0">
@@ -134,7 +134,7 @@
    <PIN pinname="Height" slicecount="1" values="1024">
    </PIN>
    </NODE>
-   <NODE systemname="ReprojectionSLIDE1" filename="ReprojectionSLIDE1.v4p" nodename="ReprojectionSLIDE1.v4p" componentmode="InAWindow" id="41">
+   <NODE systemname="ReprojectionSLIDE1" filename="ReprojectionSLIDE1.v4p" nodename="ReprojectionSLIDE1.v4p" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="2475" top="4380" width="2115" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="6465" top="300" width="10365" height="13260">
