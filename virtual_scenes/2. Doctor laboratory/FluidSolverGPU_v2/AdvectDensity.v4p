@@ -1,0 +1,329 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+   <PATCH nodename="C:\Users\Stefan\Desktop\data\FluidSolverGPU_NEW\FluidSolverGPU\AdvectDensity.v4p" systemname="AdvectDensity5" filename="C:\Users\Stefan\Documents\WORK\HDM2\VVVV\VVVV_new9\FX_testing\FLUID_RENDERMONKEY_05\AdvectDensity5.v4p">
+   <BOUNDS type="Window" left="2265" top="3150" width="13260" height="7950">
+   </BOUNDS>
+   <NODE systemname="AdvectDensity (EX9.Effect)" filename="effects\AdvectDensity.fx" nodename="AdvectDensity (EX9.Effect)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="795" top="4215" width="4455" height="270">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Target" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Velocity" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="vFlowDims" visible="1">
+   </PIN>
+   <PIN pinname="dissipation" visible="1">
+   </PIN>
+   <PIN pinname="timestep" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="vFlowDims XY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="810" top="5775" width="9405" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="Grid (EX9.Geometry)" nodename="Grid (EX9.Geometry)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="480" top="2055" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Resolution X" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Resolution Y" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Mesh" dstnodeid="2" dstpinname="Mesh">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="6">
+   <BOUNDS type="Node" left="1020" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1020" top="705" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="VelocityTexture">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="2" dstpinname="Velocity">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="7">
+   <BOUNDS type="Node" left="810" top="6540" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="810" top="6540" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="layer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="7" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
+   <BOUNDS type="Node" left="2910" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2910" top="705" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="dissipation">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
+   <BOUNDS type="Node" left="11280" top="690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11280" top="690" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="enable">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Node" left="8205" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8205" top="705" width="735" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="mouseXY">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="7260" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7260" top="705" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.0008">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="fRadius">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
+   <BOUNDS type="Node" left="9060" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9060" top="705" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="init">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="9">
+   <BOUNDS type="Node" left="3825" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3825" top="705" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="TimeStep">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="2" dstpinname="timestep">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="6750" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6750" top="705" width="345" height="360">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="color">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="4755" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4755" top="705" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="FlowDims">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="17">
+   <BOUNDS type="Node" left="1920" top="705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1920" top="705" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Target">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="2" dstpinname="Target">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="10815" top="1335" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="2" dstpinname="vFlowDims">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="8115" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Source Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Blend (EX9.RenderState)" nodename="Blend (EX9.RenderState)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="5460" top="3420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   <PIN pinname="Draw Mode" slicecount="1" values="Blend">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Texture Out" dstnodeid="0" dstpinname="Density">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="24" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
+   <BOUNDS type="Node" left="9165" top="4725" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9165" top="4725" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="10230" top="690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10230" top="690" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="SetBoundaries">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="BoundaryConditions (EX9.Effect)" filename="effects\BoundaryConditions.fx" nodename="BoundaryConditions (EX9.Effect)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="7035" top="5160" width="3255" height="270">
+   </BOUNDS>
+   <PIN pinname="vFlowDims" visible="1">
+   </PIN>
+   <PIN pinname="vFlowDims XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Mesh" dstnodeid="30" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="30" dstpinname="scale">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="30" dstpinname="FlowTexture">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="30" dstpinname="vFlowDims">
+   </LINK>
+   <NODE systemname="AddDensity (EX9.Effect)" filename="effects\AddDensity.fx" nodename="AddDensity (EX9.Effect)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="5460" top="4200" width="5415" height="270">
+   </BOUNDS>
+   <PIN pinname="InkTexture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="vFlowDims XY" visible="1">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Mesh" dstnodeid="31" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="31" dstpinname="init">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="31" dstpinname="fRadius">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Color Output" dstnodeid="31" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="31" dstpinname="vFlowDims">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="31" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="31" dstpinname="mouse XY">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Render State Out" dstnodeid="31" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Layer" dstnodeid="1" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="32">
+   <BOUNDS type="Node" left="5760" top="720" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5760" top="720" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="InkTexture">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Output Node" dstnodeid="31" dstpinname="InkTexture">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="2" dstpinname="dissipation">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="34">
+   <BOUNDS type="Node" left="6345" top="3405" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6345" top="3405" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="scale">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="2" dstpinname="vFlowDims XY">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="31" dstpinname="vFlowDims XY">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="30" dstpinname="vFlowDims XY">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output Node" dstnodeid="31" dstpinname="Texture Transform" linkstyle="VHV">
+   <LINKPOINT x="6405" y="3880">
+   </LINKPOINT>
+   <LINKPOINT x="7695" y="3935">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>

@@ -1,0 +1,301 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta24.1.dtd" >
+   <PATCH nodename="D:\Apu files\Vvvv\CIANT_Humanoid\SwapA.v4p">
+   <BOUNDS height="7425" left="7290" top="3345" type="Window" width="9000">
+   </BOUNDS>
+   <NODE componentmode="Hidden" id="2" nodename="Stallone (Spreads)">
+   <BOUNDS height="100" left="4560" top="2190" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="4560" top="2190" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="7890" top="8610" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output Count" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Input Sort" slicecount="1" values="Pin">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
+   </PIN>
+   <PIN pinname="Output Sort" slicecount="1" values="Slice">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 6" visible="1">
+   </PIN>
+   <PIN pinname="Output 7" visible="1">
+   </PIN>
+   <PIN pinname="Output 8" visible="1">
+   </PIN>
+   <PIN pinname="Output 9" visible="1">
+   </PIN>
+   <PIN pinname="Output 10" visible="1">
+   </PIN>
+   <PIN pinname="Output 11" visible="1">
+   </PIN>
+   <PIN pinname="Output 12" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="3" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1665" top="150" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1695" left="1665" top="150" type="Box" width="2940">
+   </BOUNDS>
+   <BOUNDS height="160" left="7650" top="5895" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="120" values="0.08,0.04,0.01,0.06,0.02,0,0,0.07,0,0.19,0.03,0.02,0.05,0.07,0,0,0,0,0,0,0.02,0.05,0.06,0,0,0,0,0,0,0,0.01,0.02,0.03,0.04,0.05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.14">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="120" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Digits" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="unsortedInput">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="2" dstpinname="Input 2" srcnodeid="3" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="2" dstpinname="Input 1" srcnodeid="3" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1680" top="4545" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1695" left="1680" top="4545" type="Box" width="2940">
+   </BOUNDS>
+   <BOUNDS height="160" left="7650" top="5895" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="120" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Digits" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="sortedOutput">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="9" nodename="Stallone (Spreads)">
+   <BOUNDS height="100" left="4560" top="3915" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="4560" top="3915" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="7860" top="7995" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="120">
+   </PIN>
+   <PIN pinname="Input Sort" slicecount="1" values="Pin">
+   </PIN>
+   <PIN pinname="Output Sort" slicecount="1" values="Pin">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" visible="1">
+   </PIN>
+   <PIN pinname="Input 5" visible="1">
+   </PIN>
+   <PIN pinname="Input 6" visible="1">
+   </PIN>
+   <PIN pinname="Input 7" visible="1">
+   </PIN>
+   <PIN pinname="Input 8" visible="1">
+   </PIN>
+   <PIN pinname="Input 9" visible="1">
+   </PIN>
+   <PIN pinname="Input 10" visible="1">
+   </PIN>
+   <PIN pinname="Input 11" visible="1">
+   </PIN>
+   <PIN pinname="Input 12" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="9" dstpinname="Input 1" srcnodeid="2" srcpinname="Output 1">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 3" srcnodeid="2" srcpinname="Output 3">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 4" srcnodeid="2" srcpinname="Output 4">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 9" srcnodeid="2" srcpinname="Output 9">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 10" srcnodeid="2" srcpinname="Output 10">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 5" srcnodeid="2" srcpinname="Output 5">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 6" srcnodeid="2" srcpinname="Output 6">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 12" srcnodeid="2" srcpinname="Output 12">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 11" srcnodeid="2" srcpinname="Output 11">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 2" srcnodeid="2" srcpinname="Output 2">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 7" srcnodeid="2" srcpinname="Output 7">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input 8" srcnodeid="2" srcpinname="Output 8">
+   </LINK>
+   <NODE componentmode="Hidden" id="15" nodename="Stallone (Spreads)">
+   <BOUNDS height="100" left="1485" top="2490" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="1485" top="2490" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="7890" top="8610" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Input Sort" slicecount="1" values="Pin">
+   </PIN>
+   <PIN pinname="Output 5" visible="1">
+   </PIN>
+   <PIN pinname="Output Sort" slicecount="1" values="Slice">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   <PIN pinname="Output 4" visible="1">
+   </PIN>
+   <PIN pinname="Output 6" visible="1">
+   </PIN>
+   <PIN pinname="Output 7" visible="1">
+   </PIN>
+   <PIN pinname="Output 8" visible="1">
+   </PIN>
+   <PIN pinname="Output 9" visible="1">
+   </PIN>
+   <PIN pinname="Output 10" visible="1">
+   </PIN>
+   <PIN pinname="Output 11" visible="1">
+   </PIN>
+   <PIN pinname="Output 12" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="14" nodename="Stallone (Spreads)">
+   <BOUNDS height="100" left="1500" top="3435" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="1500" top="3435" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="7860" top="7995" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="120">
+   </PIN>
+   <PIN pinname="Input Sort" slicecount="1" values="Pin">
+   </PIN>
+   <PIN pinname="Output Sort" slicecount="1" values="Pin">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" visible="1">
+   </PIN>
+   <PIN pinname="Input 5" visible="1">
+   </PIN>
+   <PIN pinname="Input 6" visible="1">
+   </PIN>
+   <PIN pinname="Input 7" visible="1">
+   </PIN>
+   <PIN pinname="Input 8" visible="1">
+   </PIN>
+   <PIN pinname="Input 9" visible="1">
+   </PIN>
+   <PIN pinname="Input 10" visible="1">
+   </PIN>
+   <PIN pinname="Input 11" visible="1">
+   </PIN>
+   <PIN pinname="Input 12" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="Input 4" srcnodeid="15" srcpinname="Output 4">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 9" srcnodeid="15" srcpinname="Output 9">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 10" srcnodeid="15" srcpinname="Output 10">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 5" srcnodeid="15" srcpinname="Output 5">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 6" srcnodeid="15" srcpinname="Output 6">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 12" srcnodeid="15" srcpinname="Output 12">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 11" srcnodeid="15" srcpinname="Output 11">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 7" srcnodeid="15" srcpinname="Output 7">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Input 8" srcnodeid="15" srcpinname="Output 8">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output 1" dstnodeid="14" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="315" top="2715" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="315" top="2715" width="675" height="2550">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7815" top="6315" width="215" height="160">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output 3" dstnodeid="14" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output 1" dstnodeid="8" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output 2" dstnodeid="14" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output 1" dstnodeid="16" dstpinname="Y Input Value">
+   <LINKPOINT x="967" y="2715">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>

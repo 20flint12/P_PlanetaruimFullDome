@@ -1,0 +1,107 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta24.1.dtd" >
+   <PATCH nodename="D:\Apu files\Vvvv\CIANT_Humanoid_novy\InvertZPosition.v4p">
+   <BOUNDS height="6000" left="990" top="2505" type="Window" width="4815">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1380" top="630" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="960" left="1380" top="630" type="Box" width="795">
+   </BOUNDS>
+   <BOUNDS height="160" left="13695" top="8310" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="positionInput">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="2" nodename="Multiply (Value)">
+   <BOUNDS height="100" left="2775" top="2385" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="2775" top="2385" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="13500" top="9930" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1380" top="3270" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="960" left="1380" top="3270" type="Box" width="795">
+   </BOUNDS>
+   <BOUNDS height="160" left="13005" top="10890" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="positionOutput">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="6" nodename="Vector (3d Split)">
+   <BOUNDS height="100" left="2115" top="2040" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="2115" top="2040" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="15645" top="10680" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="6" dstpinname="XYZ" srcnodeid="0" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="7" nodename="Vector (3d Join)">
+   <BOUNDS height="100" left="2115" top="2715" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="2115" top="2715" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="15075" top="11535" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="7" dstpinname="Y" srcnodeid="6" srcpinname="Y">
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Y Input Value" srcnodeid="7" srcpinname="XYZ">
+   </LINK>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (String)">
+   <BOUNDS height="270" left="90" top="45" type="Node" width="1965">
+   </BOUNDS>
+   <BOUNDS height="270" left="90" top="45" type="Box" width="1965">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|only negates z coordinate|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="7" dstpinname="X" srcnodeid="6" srcpinname="X">
+   </LINK>
+   <LINK dstnodeid="2" dstpinname="Input 1" srcnodeid="6" srcpinname="Z">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="7" dstpinname="Z">
+   </LINK>
+   </PATCH>

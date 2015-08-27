@@ -1,0 +1,93 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.1.dtd" >
+   <PATCH nodename="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles help.v4p" filename="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\CiantParticles help.v4p" systemname="CiantParticles help">
+   <BOUNDS height="5235" left="9195" top="2265" type="Window" width="9270">
+   </BOUNDS>
+   <NODE componentmode="Hidden" filename="CiantParticles help01.v4p" id="0" nodename="CiantParticles help01.v4p" systemname="CiantParticles help01" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\">
+   <BOUNDS height="100" left="285" top="1995" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="285" top="1995" type="Box">
+   </BOUNDS>
+   <PIN pinname="change: Input Mesh ID" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS height="11565" left="11085" top="780" type="Window" width="7755">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles help02.v4p" id="1" nodename="CiantParticles help02.v4p" systemname="CiantParticles help02" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\">
+   <BOUNDS height="100" left="285" top="2400" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="285" top="2400" type="Box">
+   </BOUNDS>
+   <BOUNDS height="11565" left="9135" top="855" type="Window" width="12000">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles help03.v4p" id="2" nodename="CiantParticles help03.v4p" systemname="CiantParticles help03" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\">
+   <BOUNDS height="100" left="285" top="2805" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS left="285" top="2805" type="Box">
+   </BOUNDS>
+   <BOUNDS height="12240" left="8775" top="255" type="Window" width="11790">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="210" top="165" type="Node" width="840">
+   </BOUNDS>
+   <BOUNDS height="360" left="210" top="165" type="Box" width="2355">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|CIANT Particles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="4" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="210" top="495" type="Node" width="1845">
+   </BOUNDS>
+   <BOUNDS height="480" left="210" top="495" type="Box" width="3315">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Martin Zrcek, Michal Máša, Andrej Boleslavsky &cr;&lf;CIANT Prague|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="255" top="3225" type="Node" width="1830">
+   </BOUNDS>
+   <BOUNDS height="270" left="255" top="3225" type="Box" width="1935">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|see: CiantParticles help04|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="7" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="2235" top="1965" type="Node" width="2055">
+   </BOUNDS>
+   <BOUNDS height="2235" left="2235" top="1965" type="Box" width="3330">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Color, texture, mesh input&cr;&lf;&cr;&lf;Mixing layers, animated texture&cr;&lf;&cr;&lf;Parameters field&cr;&lf;&cr;&lf;Composition, cull hidden particles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="270" top="1620" type="Node" width="5820">
+   </BOUNDS>
+   <BOUNDS height="270" left="270" top="1620" type="Box" width="5820">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|These stand-alone patches help you understand basic functions of CiantParticles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   </PATCH>

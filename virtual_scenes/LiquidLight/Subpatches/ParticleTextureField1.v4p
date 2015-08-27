@@ -1,0 +1,395 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.2.dtd" >
+   <PATCH nodename="C:\Users\clone\Documents\CLONEPRODUCTION\PROJECT\_CLONEPRODUCTION-CLN\13-LIQUIDLIGHT\LiquidLight\Subpatches\ParticleTextureField1.v4p" filename="C:\Users\clone\Documents\CLONEPRODUCTION\PRODUCTION\_UBERACT\UP0012-Absolut\Subpatches\ParticleTextureField1.v4p" systemname="ParticleTextureField1">
+   <BOUNDS height="10890" left="3720" top="1200" type="Window" width="11760">
+   </BOUNDS>
+   <NODE id="28" nodename="Quad (DX9)" systemname="Quad (DX9)">
+   <BOUNDS height="0" left="6585" top="6600" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="27" nodename="UniformScale (Transform)" systemname="UniformScale (Transform)">
+   <BOUNDS height="0" left="7530" top="7140" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="35" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="6405" top="7680" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="6405" top="7680" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="6855" left="16320" top="735" type="Window" width="9120">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="35" dstpinname="View" srcnodeid="27" srcpinname="Transform Out">
+   </LINK>
+   <NODE componentmode="Hidden" id="51" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="100" left="6405" top="7140" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="35" dstpinname="Layers" srcnodeid="51" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\SplitJoin\SetAlpha\SetAlpha (EX9.Texture Join).v4p" id="52" nodename="SetAlpha (EX9.Texture Join)" systemname="SetAlpha (EX9.Texture Join)">
+   <BOUNDS height="100" left="6900" top="6120" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Alpha" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Invert" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS left="6900" top="6120" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="Hidden" id="54" nodename="Quad (DX9)" systemname="Quad (DX9)">
+   <BOUNDS height="100" left="4620" top="6840" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="56" nodename="RGB (Color Join)" systemname="RGB (Color Join)">
+   <BOUNDS height="270" left="5430" top="3210" type="Node" width="600">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Blue" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Green" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="57" nodename="RGB (Color Join)" systemname="RGB (Color Join)">
+   <BOUNDS height="270" left="4725" top="3210" type="Node" width="600">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Blue" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Red" slicecount="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Green" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="58" nodename="IOBox (Color)" systemname="IOBox (Color)">
+   <BOUNDS height="0" left="5430" top="3630" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="420" left="5430" top="3630" type="Box" width="345">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="58" dstpinname="Color Input" srcnodeid="56" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="59" nodename="IOBox (Color)" systemname="IOBox (Color)">
+   <BOUNDS height="0" left="4725" top="3630" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="435" left="4725" top="3630" type="Box" width="345">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="59" dstpinname="Color Input" srcnodeid="57" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="Hidden" hiddenwhenlocked="0" id="61" managers="" nodename="DynamicTexture (EX9.Texture Value)" systemname="DynamicTexture (EX9.Texture Value)">
+   <PIN pinname="Texture Out" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Red" pintype="Input" slicecount="1" visible="1" values="0.5">
+   </PIN>
+   <BOUNDS height="270" left="3480" top="6300" type="Node" width="1215">
+   </BOUNDS>
+   <BOUNDS height="0" left="3480" top="6300" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="9630" top="5565" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Width" pintype="Input" slicecount="1" visible="1" values="256">
+   </PIN>
+   <PIN pinname="Height" pintype="Input" slicecount="1" visible="1" values="256">
+   </PIN>
+   <PIN pinname="Green" pintype="Input" slicecount="1" visible="1" values="0.5">
+   </PIN>
+   <PIN pinname="Blue" pintype="Input" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Format" pintype="Input" slicecount="1" visible="-1" values="G32R32F">
+   </PIN>
+   <PIN pinname="Alpha" pintype="Input" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Type" pintype="Input" slicecount="1" visible="-1" values="Texture">
+   </PIN>
+   <PIN pinname="Mip Map Count" pintype="Input" slicecount="1" visible="-1" values="|1 mm|">
+   </PIN>
+   <PIN pinname="Depth" pintype="Input" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Apply" pintype="Input" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Repair" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="InputSliceOffset" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="62" nodename="DX9Texture (EX9.Texture)" systemname="DX9Texture (EX9.Texture)">
+   <BOUNDS height="100" left="6405" top="8265" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Format" slicecount="1" values="A8R8G8B8">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="62" dstpinname="Source" srcnodeid="35" srcpinname="EX9 Out">
+   </LINK>
+   <LINK dstnodeid="54" dstpinname="Texture" srcnodeid="61" srcpinname="Texture Out">
+   </LINK>
+   <NODE componentmode="Hidden" id="65" nodename="Blend (EX9.RenderState)" systemname="Blend (EX9.RenderState)">
+   <BOUNDS height="100" left="6090" top="6105" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="28" dstpinname="Render State" srcnodeid="65" srcpinname="Render State Out">
+   </LINK>
+   <LINK dstnodeid="54" dstpinname="Render State" srcnodeid="65" srcpinname="Render State Out">
+   </LINK>
+   <LINK dstnodeid="51" dstpinname="Layer 2" srcnodeid="28" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="51" dstpinname="Layer 1" srcnodeid="54" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Invert\Invert (EX9.Texture Filter).v4p" id="73" nodename="Invert (EX9.Texture Filter)" systemname="Invert (EX9.Texture Filter)">
+   <BOUNDS height="100" left="7080" top="3750" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Invert" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="52" dstpinname="Alpha" srcnodeid="73" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="28" dstpinname="Texture" srcnodeid="52" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Metallica\Metallica (EX9.Texture Filter).v4p" id="79" nodename="Metallica (EX9.Texture Filter)" systemname="Metallica (EX9.Texture Filter)">
+   <BOUNDS height="100" left="4575" top="4800" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Bump Amount" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Bump Gamma" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Angle" slicecount="2" values="0.11,0.11">
+   </PIN>
+   <PIN pinname="Brightness" slicecount="2" values="1.5,1.5">
+   </PIN>
+   <PIN pinname="Color A" visible="1">
+   </PIN>
+   <PIN pinname="Color B" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="52" dstpinname="Input" srcnodeid="79" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="79" dstpinname="Color A" srcnodeid="59" srcpinname="Color Output">
+   </LINK>
+   <LINK dstnodeid="79" dstpinname="Color B" srcnodeid="58" srcpinname="Color Output">
+   </LINK>
+   <NODE componentmode="InABox" id="84" nodename="IOBox (Node)" systemname="IOBox (Node)">
+   <BOUNDS height="0" left="7095" top="585" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="7095" top="585" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Texture In|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="85" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="6405" top="9405" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6405" top="9405" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Texture Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter).v4p" id="86" nodename="Blur (EX9.Texture Filter)" systemname="Blur (EX9.Texture Filter)">
+   <BOUNDS height="100" left="6405" top="8805" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.4">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <BOUNDS type="Box" left="6405" top="8805">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Texture Out" dstnodeid="86" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="85" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="87" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="885" top="585" width="3885" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="885" top="585" width="3270" height="1725">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|This patch is used to transform a black and white image into a texture field that will react with the particle.&cr;&lf;Texture field works with Red and Green color as the X and Y value for the particle movement. Here is how to convert (almost) any black and white texture to a texture field.|" encoded="0">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="88" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="7965" top="585" width="3885" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7965" top="585" width="3030" height="765">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|Basically, you have a white object onto a black background (the source can be anything) inputed here.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\ChangeFormat (EX9.Texture).v4p" id="91" nodename="ChangeFormat (EX9.Texture)" systemname="ChangeFormat (EX9.Texture)">
+   <BOUNDS height="100" left="7095" top="2265" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Format">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Output Node" dstnodeid="91" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Output" dstnodeid="73" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="79" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="92" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8505" top="2145" width="3885" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8505" top="2145" width="2625" height="705">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|If the source texture does not contain an alpha channel, here you change its format to A8R8G8B8|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="93" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="7725" top="1845" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7725" top="1845" width="1005" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="A8R8G8B8">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Output Enum" dstnodeid="91" dstpinname="Format">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="885" top="3060" width="3885" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="885" top="3060" width="3645" height="2205">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|The texture field use color information to make the particle react. The metallica shader works quite well to do so, red is to move the particle in the x direction, green is for the y.&cr;&lf;The result of the metallica shader is the texture field we need. But all the texture is covered the effect, I used the setalpha to &quot;cut&quot; it back to the previous shape, removing everything apart the blob. Just compare the output of the metallica shader and the setAlpha you will understand.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="95" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="7305" top="8670" width="3885" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7305" top="8670" width="2640" height="1350">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|Here I blur the final texture just to have a smooth transition between the reacting part (red/green) and the neutral field. It&apos;s not needed in all case, depends on what kind of effect you want.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="96" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="885" top="5970" width="3885" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="885" top="5970" width="2700" height="1800">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|This dynamic texture is a neutral field, the information provided by the color make the particle not moving at all. As a background for the effect you will have the blob in Red/Green (it moves the particle) on top of the neutral field (particle not moving).|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="97" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8040" top="3600" width="3885" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8040" top="3600" width="2625" height="705">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|Here, invert to make it work correctly with the metallica and setalpha.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>

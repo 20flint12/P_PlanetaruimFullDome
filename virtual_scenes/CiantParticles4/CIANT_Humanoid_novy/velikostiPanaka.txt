@@ -1,0 +1,15 @@
+celkem 0-10, vsechny z jsou presunuty na 0 (za zachovani x,y =>scale)
+pelvis stred .. 5,38
+hlava ..	8,84 -> .37
+pater 1 ..	5,95 -> .57
+pater 2 ..	6,79 -> .84+.57= 1.41
+pater 3 ..	7,63 -> .84
+krk (a ruce) ..	8,47 -> .84
+stehno y co pelvis, x 0.48
+lytko ..	2,97 -> 2.41
+chodidlo ..	0,56 -> 2.41
+lopatka x ..	0,17
+paže x ..	0,80 -> .63
+loket x ..	2,25 -> 1.45
+ruka x ..	3,70 -> 1.45
+

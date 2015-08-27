@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\ReprojectionSLIDE1.v4p" systemname="ReprojectionSLIDE" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\ReprojectionSLIDE.v4p">
-   <BOUNDS type="Window" left="6465" top="300" width="10365" height="13260">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\ReprojectionSLIDE1.v4p" systemname="ReprojectionSLIDE" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\ReprojectionSLIDE.v4p">
+   <BOUNDS type="Window" left="2220" top="2025" width="10365" height="13260">
    </BOUNDS>
    <NODE componentmode="Hidden" id="43" nodename="ProjectedTexture.fx" systemname="ProjectedTexture (EX9.Effect)" filename="ProjectedTexture.fx">
    <BOUNDS height="270" left="2340" top="11235" type="Node" width="1695">
@@ -167,7 +167,7 @@
    </PIN>
    <PIN pinname="Draw Mode" slicecount="1" values="ColorAsAlphaBlend">
    </PIN>
-   <PIN pinname="Render State In" visible="1">
+   <PIN pinname="Render State In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="21">
@@ -573,23 +573,13 @@
    <LINK srcnodeid="65" srcpinname="Output Node" dstnodeid="43" dstpinname="Mesh">
    </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="66" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="855" top="9180" width="1590" height="270">
+   <BOUNDS type="Box" left="1185" top="8955" width="1755" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="855" top="9180" width="0" height="0">
+   <BOUNDS type="Node" left="1185" top="8955" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="Add">
+   <PIN pinname="Input Enum" slicecount="1" values="ColorAsAlphaBlend">
    </PIN>
    </NODE>
    <LINK srcnodeid="66" srcpinname="Output Enum" dstnodeid="28" dstpinname="Draw Mode">
-   </LINK>
-   <NODE systemname="Cull (EX9.RenderState)" nodename="Cull (EX9.RenderState)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="720" top="8745" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Render State Out" visible="1">
-   </PIN>
-   <PIN pinname="Culling" slicecount="1" values="None">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="67" srcpinname="Render State Out" dstnodeid="28" dstpinname="Render State In">
    </LINK>
    </PATCH>

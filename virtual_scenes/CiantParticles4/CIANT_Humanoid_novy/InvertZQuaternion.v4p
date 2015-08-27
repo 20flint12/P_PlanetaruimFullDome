@@ -1,0 +1,167 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta24.1.dtd" >
+   <PATCH nodename="D:\Apu files\Vvvv\CIANT_Humanoid_novy\InvertZQuaternion.v4p">
+   <BOUNDS height="6000" left="10320" top="1350" type="Window" width="5670">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="930" top="720" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="960" left="930" top="720" type="Box" width="795">
+   </BOUNDS>
+   <BOUNDS height="160" left="13695" top="8310" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="quaternionInput">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0.147306814789772,0.117845438420773,0,0.982045352458954">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1080" top="4125" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="960" left="1080" top="4125" type="Box" width="795">
+   </BOUNDS>
+   <BOUNDS height="160" left="13005" top="10890" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="quaternionOutput">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="6" nodename="convertQuaternionToEuler (Value)">
+   <BOUNDS height="100" left="990" top="2220" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="990" top="2220" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="4440" top="4740" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="OutputHeading" visible="1">
+   </PIN>
+   <PIN pinname="OutputAttitude" visible="1">
+   </PIN>
+   <PIN pinname="OutputBank" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="6" dstpinname="Input" srcnodeid="0" srcpinname="Y Output Value">
+   </LINK>
+   <NODE id="8" nodename="convertEulerToQuaternion (Value)">
+   <BOUNDS height="100" left="990" top="3000" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="-1125" top="180" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="0" top="0" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="InputHeading" visible="1">
+   </PIN>
+   <PIN pinname="InputAltitude" visible="1">
+   </PIN>
+   <PIN pinname="InputBank" visible="1">
+   </PIN>
+   <PIN pinname="OutputQuaternions" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="13" nodename="Multiply (Value)">
+   <BOUNDS height="100" left="1095" top="2640" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="1095" top="2640" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="2130" top="4920" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="13" dstpinname="Input 1" srcnodeid="6" srcpinname="OutputHeading">
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Y Input Value" srcnodeid="8" srcpinname="OutputQuaternions">
+   </LINK>
+   <NODE componentmode="Hidden" id="14" nodename="Multiply (Value)">
+   <BOUNDS height="100" left="2145" top="2640" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="2145" top="2640" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="2130" top="4920" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="15" nodename="Multiply (Value)">
+   <BOUNDS height="100" left="3150" top="2625" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="3150" top="2625" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="2130" top="4920" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="Input 1" srcnodeid="6" srcpinname="OutputAttitude">
+   </LINK>
+   <LINK dstnodeid="15" dstpinname="Input 1" srcnodeid="6" srcpinname="OutputBank">
+   </LINK>
+   <NODE componentmode="InABox" id="17" nodename="IOBox (String)">
+   <BOUNDS height="270" left="600" top="2625" type="Node" width="510">
+   </BOUNDS>
+   <BOUNDS height="240" left="600" top="2625" type="Box" width="345">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="Y:">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="18" nodename="IOBox (String)">
+   <BOUNDS height="270" left="1665" top="2625" type="Node" width="510">
+   </BOUNDS>
+   <BOUNDS height="255" left="1665" top="2625" type="Box" width="345">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="Z:">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="19" nodename="IOBox (String)">
+   <BOUNDS height="270" left="2685" top="2610" type="Node" width="510">
+   </BOUNDS>
+   <BOUNDS height="255" left="2685" top="2610" type="Box" width="345">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="X:">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="InputHeading" srcnodeid="6" srcpinname="OutputHeading">
+   </LINK>
+   <LINK dstnodeid="8" dstpinname="InputBank" srcnodeid="6" srcpinname="OutputBank">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="8" dstpinname="InputAltitude">
+   </LINK>
+   </PATCH>

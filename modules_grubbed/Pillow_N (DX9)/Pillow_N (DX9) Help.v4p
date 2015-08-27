@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_usefull\_for_fulldome\Pillow_N (DX9)\Pillow_N (DX9) Help.v4p">
-   <BOUNDS height="5190" left="300" top="555" type="Window" width="8190">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_grubbed\Pillow_N (DX9)\Pillow_N (DX9) Help.v4p">
+   <BOUNDS height="6540" left="300" top="555" type="Window" width="8190">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="16" nodename="RENDERER (EX9)">
    <BOUNDS height="0" left="2790" top="4065" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="14670" left="8490" top="510" type="Window" width="18855">
+   <BOUNDS height="8355" left="8535" top="525" type="Window" width="8055">
    </BOUNDS>
    <BOUNDS height="1800" left="2790" top="4065" type="Box" width="2400">
    </BOUNDS>
@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS height="285" left="3690" top="765" type="Box" width="450">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="110">
+   <PIN pinname="Y Input Value" slicecount="1" values="518">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -53,7 +53,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.9">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.78">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
@@ -67,7 +67,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.26">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>

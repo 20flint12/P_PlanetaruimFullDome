@@ -1,0 +1,247 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_modified\PerspectiveLookAtRect_mod_s(Transform).v4p" componentmode="InAWindow" systemname="PerspectiveLookAtRect_mod (Transform)" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_test_proj_cam\modules_modified\PerspectiveLookAtRect_mod (Transform).v4p" locked="1">
+   <BOUNDS height="6270" left="0" top="3120" type="Window" width="6450">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="38" nodename="IOBox (Node)" systemname="IOBox (Node)">
+   <BOUNDS height="0" left="1680" top="5295" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="16410" top="14145" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="255" left="1680" top="5295" type="Box" width="300">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Tranform Out|">
+   </PIN>
+   <PIN pinname="Input Node" slicecount="2" visible="1" values=",">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="37" nodename="Perspective (Transform OffCenter)" systemname="Perspective (Transform OffCenter)">
+   <BOUNDS height="0" left="1695" top="3600" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Relative To Distance" slicecount="1" visible="1" values="2.68000">
+   </PIN>
+   <PIN pinname="Left" visible="1">
+   </PIN>
+   <PIN pinname="Right" visible="1">
+   </PIN>
+   <PIN pinname="Top" visible="1">
+   </PIN>
+   <PIN pinname="Bottom" visible="1">
+   </PIN>
+   <PIN pinname="Near Plane" slicecount="1" visible="1" values="0.20001">
+   </PIN>
+   <PIN pinname="Far Plane" slicecount="1" visible="1" values="5.00000">
+   </PIN>
+   </NODE>
+   <NODE id="29" nodename="Vector (3d Split)" systemname="Vector (3d Split)">
+   <BOUNDS height="0" left="1950" top="2160" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="-2.61111116409302,1.08786618709564,-4.58999967575073">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="28" nodename="Subtract (Value)" systemname="Subtract (Value)">
+   <BOUNDS height="0" left="585" top="2805" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="1.00000">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="27" nodename="Subtract (Value)" systemname="Subtract (Value)">
+   <BOUNDS height="0" left="1845" top="2760" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="1.00000">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="26" nodename="Inverse (Transform)" systemname="Inverse (Transform)">
+   <BOUNDS height="0" left="1710" top="4125" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="23" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="2715" top="495" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="9210" top="10095" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="2715" top="495" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Far Plane|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="8.87">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="22" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="1680" top="495" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="9510" top="10395" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="240" left="1680" top="495" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Near Plane|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="21" nodename="Subtract (Value)" systemname="Subtract (Value)">
+   <BOUNDS height="0" left="2910" top="2805" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="21" dstpinname="Input 1" linkstyle="Bezier" srcnodeid="22" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="21" dstpinname="Input 2" srcnodeid="29" srcpinname="Z">
+   </LINK>
+   <NODE id="20" nodename="Subtract (Value)" systemname="Subtract (Value)">
+   <BOUNDS height="0" left="3315" top="2805" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="37" dstpinname="Far Plane" srcnodeid="20" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="20" dstpinname="Input 2" srcnodeid="29" srcpinname="Z">
+   </LINK>
+   <LINK dstnodeid="20" dstpinname="Input 1" linkstyle="Bezier" srcnodeid="23" srcpinname="Y Output Value">
+   </LINK>
+   <NODE id="19" nodename="Subtract (Value)" systemname="Subtract (Value)">
+   <BOUNDS height="0" left="2400" top="2805" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="19" dstpinname="Input 2" srcnodeid="29" srcpinname="Z">
+   </LINK>
+   <LINK dstnodeid="37" dstpinname="Bottom" srcnodeid="27" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="37" dstpinname="Left" srcnodeid="28" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="26" dstpinname="Transform In" srcnodeid="37" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="28" dstpinname="Input 2" srcnodeid="29" srcpinname="X">
+   </LINK>
+   <NODE id="17" nodename="Subtract (Value)" systemname="Subtract (Value)">
+   <BOUNDS height="0" left="945" top="2805" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="0.5">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="37" dstpinname="Right" srcnodeid="17" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="17" dstpinname="Input 2" srcnodeid="29" srcpinname="X">
+   </LINK>
+   <NODE hiddenwhenlocked="0" id="16" managers="" nodename="Subtract (Value)" systemname="Subtract (Value)">
+   <PIN pinname="Input 1" pintype="Input" slicecount="1" visible="1" values="0.5">
+   </PIN>
+   <BOUNDS height="0" left="1500" top="2760" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="37" dstpinname="Top" srcnodeid="16" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="16" dstpinname="Input 2" srcnodeid="29" srcpinname="Y">
+   </LINK>
+   <LINK dstnodeid="27" dstpinname="Input 2" srcnodeid="29" srcpinname="Y">
+   </LINK>
+   <NODE id="13" nodename="Multiply (Transform)" systemname="Multiply (Transform)">
+   <BOUNDS height="0" left="1695" top="4725" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Transform In 1" visible="1">
+   </PIN>
+   <PIN pinname="Transform In 2" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="13" dstpinname="Transform In 1" srcnodeid="26" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="38" dstpinname="Input Node" srcnodeid="13" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="37" dstpinname="Relative To Distance" srcnodeid="19" srcpinname="Output">
+   </LINK>
+   <LINK dstnodeid="37" dstpinname="Near Plane" srcnodeid="21" srcpinname="Output">
+   </LINK>
+   <INFO author="vvvv group" description="Constructs a camera, that sees exactly the rect from a given position. The camera cone might be distorted heavily, however it is guaranteed that you will look at the specified rect which can placed arbitrarily in the room." tags="helper, camera, shadow, cone, projection, 3d">
+   </INFO>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3750" top="435" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3750" top="435" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="-2.61111116409302,1.08786618709564,-4.58999967575073">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XYZ">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="29" dstpinname="XYZ">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="45" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="4950" top="480" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4950" top="480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Source">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output Node" dstnodeid="26" dstpinname="Source">
+   </LINK>
+   </PATCH>

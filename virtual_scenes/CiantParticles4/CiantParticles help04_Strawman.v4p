@@ -1,0 +1,1215 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.1.dtd" >
+   <PATCH nodename="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles help04_Strawman.v4p" filename="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\CiantParticlesExample2.v4p" systemname="CiantParticlesExample2">
+   <BOUNDS height="12615" left="9945" top="0" type="Window" width="15195">
+   </BOUNDS>
+   <NODE componentmode="Hidden" filename="%VVVV%\modules\vvvv group\Transform\Camera (Transform Softimage).v4p" id="9" nodename="Camera (Transform Softimage)" systemname="Camera (Transform Softimage)">
+   <BOUNDS height="270" left="11400" top="1755" type="Node" width="1635">
+   </BOUNDS>
+   <BOUNDS height="3600" left="11400" top="1755" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="6000" left="8115" top="10500" type="Window" width="9000">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Inital Distance" slicecount="1" values="15">
+   </PIN>
+   <PIN pinname="Initial Interest" slicecount="3" values="0,5,0">
+   </PIN>
+   <PIN pinname="Initial FOV" slicecount="1" values="0.14">
+   </PIN>
+   <PIN pinname="Initial Pitch" slicecount="1" values="0.0399999999999998">
+   </PIN>
+   <PIN pinname="Initial Yaw" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" hiddenwhenlocked="0" id="8" managers="" nodename="LFO (Animation)" systemname="LFO (Animation)">
+   <BOUNDS height="100" left="11625" top="1470" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="11625" top="1470" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="19260" top="9525" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Period" pintype="Input" slicecount="1" visible="1" values="20">
+   </PIN>
+   <PIN pinname="Pause" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Reverse" pintype="Input" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Reset" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Phase" pintype="Input" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Output" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Cycles" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="9" dstpinname="Initial Yaw" srcnodeid="8" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" id="7" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="11400" top="975" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="11400" top="975" type="Box" width="480">
+   </BOUNDS>
+   <BOUNDS height="160" left="17580" top="8775" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Pause" srcnodeid="7" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="11895" top="960" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="11895" top="960" type="Box" width="480">
+   </BOUNDS>
+   <BOUNDS height="160" left="18150" top="8880" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Reset" srcnodeid="6" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="10" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="100" left="5040" top="5565" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="20" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="270" top="390" type="Node" width="840">
+   </BOUNDS>
+   <BOUNDS height="360" left="270" top="390" type="Box" width="2355">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|CIANT Particles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="19" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="270" top="720" type="Node" width="1845">
+   </BOUNDS>
+   <BOUNDS height="480" left="270" top="720" type="Box" width="3315">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Martin Zrcek, Michal Máša, Andrej Boleslavsky &cr;&lf;CIANT Prague|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="21" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5040" top="3885" type="Node" width="810">
+   </BOUNDS>
+   <BOUNDS height="240" left="5040" top="3885" type="Box" width="2955">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Get source mesh, draw particles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="34" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="12390" top="1230" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="510" left="12390" top="1230" type="Box" width="645">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" values="-10,10,0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Digits" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="67" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="100" left="5040" top="7125" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantSimpleBlur.v4p" id="74" nodename="CiantParticles\CiantSimpleBlur.v4p" systemname="CiantSimpleBlur" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles\">
+   <BOUNDS height="100" left="5040" top="6810" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="cullLayer" visible="1">
+   </PIN>
+   <PIN pinname="clear" visible="1">
+   </PIN>
+   <PIN pinname="on" slicecount="1" values="1">
+   </PIN>
+   <BOUNDS height="3600" left="3525" top="5265" type="Window" width="5730">
+   </BOUNDS>
+   <PIN pinname="strength" slicecount="1" values="0.2">
+   </PIN>
+   <BOUNDS left="5040" top="6810" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="InAWindow" id="79" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="1740" top="11325" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="1740" top="11325" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="7440" left="540" top="705" type="Window" width="9375">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="80" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="270" left="1755" top="10710" type="Node" width="11295">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="81" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5040" top="4605" type="Node" width="1230">
+   </BOUNDS>
+   <BOUNDS height="240" left="5040" top="4605" type="Box" width="2835">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|2. Cull particles (technique TCull)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="82" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="285" top="6720" type="Node" width="1500">
+   </BOUNDS>
+   <BOUNDS height="255" left="285" top="6720" type="Box" width="2130">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|3. Render geometry:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="83" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5040" top="6540" type="Node" width="1965">
+   </BOUNDS>
+   <BOUNDS height="270" left="5040" top="6540" type="Box" width="1965">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|5. Use motion blur|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantParticlesLayerToLayer.v4p" id="84" nodename="CiantParticles\CiantParticlesLayerToLayer.v4p" systemname="CiantParticlesLayerToLayer" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles\">
+   <BOUNDS height="100" left="5040" top="6180" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="7125" left="8355" top="4530" type="Window" width="6570">
+   </BOUNDS>
+   <PIN pinname="particleStateLayer" visible="1">
+   </PIN>
+   <PIN pinname="renderedLayerOut" visible="1">
+   </PIN>
+   <PIN pinname="viewMatrix" visible="1">
+   </PIN>
+   <PIN pinname="projectionMatrix" visible="1">
+   </PIN>
+   <PIN pinname="clear" visible="1">
+   </PIN>
+   <PIN pinname="textureFormat" slicecount="1" values="A16B16G16R16F">
+   </PIN>
+   <PIN pinname="renderWidth" visible="1">
+   </PIN>
+   <PIN pinname="renderHeight" visible="1">
+   </PIN>
+   <BOUNDS left="5040" top="6180" type="Box">
+   </BOUNDS>
+   </NODE>
+   <LINK dstnodeid="84" dstpinname="particleStateLayer" srcnodeid="10" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="84" dstpinname="viewMatrix" hiddenwhenlocked="1" srcnodeid="9" srcpinname="View">
+   </LINK>
+   <LINK dstnodeid="84" dstpinname="projectionMatrix" hiddenwhenlocked="1" srcnodeid="9" srcpinname="Projection">
+   </LINK>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantParticlesLayerToLayer.v4p" id="85" nodename="CiantParticles\CiantParticlesLayerToLayer.v4p" systemname="CiantParticlesLayerToLayer" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles\">
+   <BOUNDS height="100" left="5040" top="7755" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="7125" left="7260" top="3840" type="Window" width="6570">
+   </BOUNDS>
+   <PIN pinname="particleStateLayer" visible="1">
+   </PIN>
+   <PIN pinname="renderedLayerOut" visible="1">
+   </PIN>
+   <PIN pinname="viewMatrix" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="projectionMatrix" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="clear" visible="1">
+   </PIN>
+   <PIN pinname="textureFormat" slicecount="1" values="A16B16G16R16F">
+   </PIN>
+   <PIN pinname="renderWidth" visible="1">
+   </PIN>
+   <PIN pinname="renderHeight" visible="1">
+   </PIN>
+   <PIN pinname="blendMode" slicecount="1" values="Add">
+   </PIN>
+   <BOUNDS left="5040" top="7755" type="Box">
+   </BOUNDS>
+   </NODE>
+   <LINK dstnodeid="85" dstpinname="particleStateLayer" srcnodeid="67" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="85" dstpinname="clear" srcnodeid="74" srcpinname="clear">
+   </LINK>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantParticlesLayerToLayer.v4p" id="86" nodename="CiantParticles\CiantParticlesLayerToLayer.v4p" systemname="CiantParticlesLayerToLayer" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles\">
+   <BOUNDS height="100" left="285" top="6990" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="5640" left="7530" top="6570" type="Window" width="8850">
+   </BOUNDS>
+   <PIN pinname="particleStateLayer" visible="1">
+   </PIN>
+   <PIN pinname="renderedLayerOut" visible="1">
+   </PIN>
+   <PIN pinname="viewMatrix" visible="1">
+   </PIN>
+   <PIN pinname="projectionMatrix" visible="1">
+   </PIN>
+   <PIN pinname="clear" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="textureFormat" slicecount="1" values="A16B16G16R16F">
+   </PIN>
+   <PIN pinname="renderWidth" visible="1">
+   </PIN>
+   <PIN pinname="renderHeight" visible="1">
+   </PIN>
+   <PIN pinname="blendMode" slicecount="1" values="Add">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="86" dstpinname="projectionMatrix" hiddenwhenlocked="1" srcnodeid="9" srcpinname="Projection">
+   </LINK>
+   <LINK dstnodeid="86" dstpinname="viewMatrix" hiddenwhenlocked="1" srcnodeid="9" srcpinname="View">
+   </LINK>
+   <LINK dstnodeid="67" dstpinname="Layer 1" srcnodeid="74" srcpinname="cullLayer">
+   </LINK>
+   <LINK dstnodeid="67" dstpinname="Layer 2" srcnodeid="84" srcpinname="renderedLayerOut">
+   </LINK>
+   <NODE componentmode="InABox" id="87" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5040" top="7500" type="Node" width="2565">
+   </BOUNDS>
+   <BOUNDS height="270" left="5040" top="7500" type="Box" width="2565">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|6. Render blurred picture|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="88" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="10545" top="11370" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="10545" top="11370" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="88" dstpinname="Y Input Value" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="79" srcpinname="Actual Backbuffer Height">
+   <LINKPOINT x="3045" y="12225">
+   </LINKPOINT>
+   <LINKPOINT x="10350" y="12015">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="89" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="10020" top="11370" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="10020" top="11370" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="89" dstpinname="Y Input Value" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="79" srcpinname="Actual Backbuffer Width">
+   <LINKPOINT x="2835" y="12135">
+   </LINKPOINT>
+   <LINKPOINT x="9660" y="12120">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="86" dstpinname="renderWidth" hiddenwhenlocked="1" srcnodeid="89" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="86" dstpinname="renderHeight" hiddenwhenlocked="1" srcnodeid="88" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="84" dstpinname="renderWidth" hiddenwhenlocked="1" srcnodeid="89" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="84" dstpinname="renderHeight" hiddenwhenlocked="1" srcnodeid="88" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="85" dstpinname="renderWidth" hiddenwhenlocked="1" srcnodeid="89" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="85" dstpinname="renderHeight" hiddenwhenlocked="1" srcnodeid="88" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="90" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9240" top="11085" type="Node" width="2265">
+   </BOUNDS>
+   <BOUNDS height="270" left="9240" top="11085" type="Box" width="2265">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|distribute screen dimensions:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="91" nodename="IOBox (Color)" systemname="IOBox (Color)">
+   <BOUNDS height="100" left="975" top="3825" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="975" top="3825" type="Box" width="1230">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Chooser Style" slicecount="1" values="HSVAField">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="92" nodename="IOBox (Color)" systemname="IOBox (Color)">
+   <BOUNDS height="100" left="1140" top="4080" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="1140" top="4080" type="Box" width="1230">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|1.00000,0.79528,0.56842,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Chooser Style" slicecount="1" values="HSVAField">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="93" nodename="IOBox (Color)" systemname="IOBox (Color)">
+   <BOUNDS height="100" left="1275" top="4335" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="1275" top="4335" type="Box" width="1230">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.11120,0.38424,0.38599,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="105" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="12015" top="7740" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="12015" top="7785" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="8235" top="8700" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="104" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="10710" top="4425" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3600" left="10710" top="4425" type="Box" width="735">
+   </BOUNDS>
+   <BOUNDS height="160" left="6270" top="6165" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="21">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="21" visible="1" values="8,10,1,0.2,0.5,0.8,100,10,1,200,1,0,0,100,0,0,0,0,0,0,-20">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Digits" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="21" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="103" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="100" left="12000" top="7395" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="270" left="12000" top="7395" type="Box" width="1500">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="Data\Flame_FlipCard01.png">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="105" dstpinname="Filename" srcnodeid="103" srcpinname="Output String">
+   </LINK>
+   <NODE componentmode="InABox" id="102" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9615" top="4440" type="Node" width="1110">
+   </BOUNDS>
+   <BOUNDS height="3615" left="9615" top="4440" type="Box" width="1080">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1) Particles Count&cr;&lf;2) Particle Size&cr;&lf;3) particle reTime&cr;&lf;4) alfa multiple&cr;&lf;5) create stripes&cr;&lf;6) air continuity&cr;&lf;7) gravity&cr;&lf;8) fuzzy amount&cr;&lf;9) fuzzy range -1&cr;&lf;10) attract amount&cr;&lf;11) attract range&cr;&lf;12) torque amont&cr;&lf;13) torque2 amount&cr;&lf;14) random spread&cr;&lf;15) gravity X&cr;&lf;16) gravity Y&cr;&lf;17) gravity Z&cr;&lf;18) add X velocity&cr;&lf;19) add Y velocity&cr;&lf;20) add Z velocity&cr;&lf;21) ground|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantCreatePositionsTexture.v4p" id="100" nodename="CiantParticles\CiantCreatePositionsTexture.v4p" systemname="CiantCreatePositionsTexture" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles\">
+   <BOUNDS height="100" left="11595" top="4155" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="9390" left="10500" top="1185" type="Window" width="10920">
+   </BOUNDS>
+   <PIN pinname="textureOut" visible="1">
+   </PIN>
+   <PIN pinname="MeshID" visible="1">
+   </PIN>
+   <PIN pinname="addY" slicecount="1" values="0.6">
+   </PIN>
+   <PIN pinname="meshOut" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="99" nodename="IOBox (Color)" systemname="IOBox (Color)">
+   <BOUNDS height="100" left="11790" top="7110" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="11790" top="7110" type="Box" width="1290">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Chooser Style" slicecount="1" values="HSVAField">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="98" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="12075" top="8265" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="12075" top="8265" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="256">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Digits" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="renderBufferHeight">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="97" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
+   <BOUNDS height="100" left="10575" top="8130" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="10575" top="8130" type="Box" width="780">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="Add">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles\reseter.v4p" id="96" nodename="CiantParticles\reseter.v4p" systemname="reseter" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles\">
+   <BOUNDS height="100" left="12435" top="5535" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="resetOUT" visible="1">
+   </PIN>
+   <BOUNDS left="12435" top="5535" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="InABox" id="95" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="11535" top="5205" type="Node" width="2310">
+   </BOUNDS>
+   <BOUNDS height="270" left="11535" top="5205" type="Box" width="2310">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|press R to reset to initial state|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="94" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9645" top="3150" type="Node" width="435">
+   </BOUNDS>
+   <BOUNDS height="735" left="9645" top="3150" type="Box" width="4200">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Standalone, Flames animation. With disabled zBuffer and no blur added. Sprites are moved upwards with addY, that&apos;s why CreatePositionsTexture is here once more.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="108" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="11400" top="690" type="Node" width="705">
+   </BOUNDS>
+   <BOUNDS height="270" left="11400" top="690" type="Box" width="705">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="camera">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="109" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="300" top="4590" type="Node" width="1035">
+   </BOUNDS>
+   <BOUNDS height="255" left="300" top="4590" type="Box" width="2220">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|1. Draw model with lightning|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="111" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="100" left="10875" top="9585" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantParticlesLayerToLayer.v4p" id="114" nodename="CiantParticles\CiantParticlesLayerToLayer.v4p" systemname="CiantParticlesLayerToLayer" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles\">
+   <BOUNDS height="100" left="10305" top="9915" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="7125" left="8355" top="4530" type="Window" width="6570">
+   </BOUNDS>
+   <PIN pinname="particleStateLayer" visible="1">
+   </PIN>
+   <PIN pinname="renderedLayerOut" visible="1">
+   </PIN>
+   <PIN pinname="viewMatrix" visible="1">
+   </PIN>
+   <PIN pinname="projectionMatrix" visible="1">
+   </PIN>
+   <PIN pinname="clear" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="textureFormat" slicecount="1" values="A16B16G16R16F">
+   </PIN>
+   <PIN pinname="renderWidth" visible="1">
+   </PIN>
+   <PIN pinname="renderHeight" visible="1">
+   </PIN>
+   <PIN pinname="blendMode" slicecount="1" values="Add">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="114" dstpinname="particleStateLayer" srcnodeid="111" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="114" dstpinname="projectionMatrix" hiddenwhenlocked="1" srcnodeid="9" srcpinname="Projection">
+   </LINK>
+   <LINK dstnodeid="114" dstpinname="viewMatrix" hiddenwhenlocked="1" srcnodeid="9" srcpinname="View">
+   </LINK>
+   <LINK dstnodeid="114" dstpinname="renderWidth" hiddenwhenlocked="1" srcnodeid="89" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="114" dstpinname="renderHeight" hiddenwhenlocked="1" srcnodeid="88" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="117" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9795" top="9300" type="Node" width="3015">
+   </BOUNDS>
+   <BOUNDS height="270" left="9795" top="9300" type="Box" width="3015">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|cull behind geometry, if z-Buffer enabled|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantDrawGeometry.fx" id="66" nodename="CiantDrawGeometry (EX9.Effect)" systemname="CiantDrawGeometry (EX9.Effect)">
+   <BOUNDS height="100" left="5040" top="4860" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Light Position XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Ambient Color" slicecount="1" values="|0.15000,0.15000,0.15000,1.00000|">
+   </PIN>
+   <PIN pinname="Diffuse Color" slicecount="1" values="|0.85000,0.85000,0.85000,1.00000|">
+   </PIN>
+   <PIN pinname="Specular Color" slicecount="1" values="|0.35000,0.35000,0.35000,1.00000|">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="| TGouraudPointFF|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="66" dstpinname="Light Position XYZ" hiddenwhenlocked="1" srcnodeid="34" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="10" dstpinname="Layer 1" srcnodeid="66" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="111" dstpinname="Layer 1" hiddenwhenlocked="1" srcnodeid="66" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="119" nodename="IOBox (Node)" systemname="IOBox (Node)">
+   <BOUNDS height="100" left="480" top="1725" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="480" top="1725" type="Box" width="345">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="119" dstpinname="Input Node" hiddenwhenlocked="1" srcnodeid="100" srcpinname="meshOut">
+   </LINK>
+   <LINK dstnodeid="66" dstpinname="Mesh" hiddenwhenlocked="1" srcnodeid="119" srcpinname="Output Node">
+   </LINK>
+   <NODE componentmode="InABox" id="120" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="7785" top="300" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="615" left="7785" top="300" type="Box" width="555">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Digits" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="21">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="100" dstpinname="MeshID" srcnodeid="120" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="121" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="13725" top="7530" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="13725" top="7530" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" values="4,4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="122" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
+   <BOUNDS height="100" left="13470" top="8160" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="13470" top="8160" type="Box" width="1245">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="| ZBufferEnable|">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="123" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5040" top="5295" type="Node" width="3435">
+   </BOUNDS>
+   <BOUNDS height="255" left="5040" top="5295" type="Box" width="2865">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|3. Blend particles behind cull geometry|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="124" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5040" top="5925" type="Node" width="1215">
+   </BOUNDS>
+   <BOUNDS height="270" left="5040" top="5925" type="Box" width="1215">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|4. Render layer|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="125" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="12360" top="945" type="Node" width="1110">
+   </BOUNDS>
+   <BOUNDS height="270" left="12360" top="945" type="Box" width="1110">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|light position|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="126" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="210" top="2730" type="Node" width="1305">
+   </BOUNDS>
+   <BOUNDS height="465" left="210" top="2730" type="Box" width="2820">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Layer: Geometry|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="127" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5115" top="2730" type="Node" width="1305">
+   </BOUNDS>
+   <BOUNDS height="465" left="5115" top="2730" type="Box" width="2820">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Layer: Particles|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="128" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="9975" top="2730" type="Node" width="1305">
+   </BOUNDS>
+   <BOUNDS height="465" left="9975" top="2730" type="Box" width="2820">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Layer: Animation|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="129" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="150" top="3150" type="Node" width="6525">
+   </BOUNDS>
+   <BOUNDS height="540" left="150" top="3150" type="Box" width="4140">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Draw geometry itself, mind that it can be different mesh than the source for particles.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="130" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="4905" top="3150" type="Node" width="6930">
+   </BOUNDS>
+   <BOUNDS height="510" left="4905" top="3150" type="Box" width="4050">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Draw fire made of many particles. It is splitted from animated particles, because of motion blur.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="131" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="3135" top="3660" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3720" left="3135" top="3660" type="Box" width="720">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="132" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="8145" top="3660" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3720" left="8145" top="3660" type="Box" width="720">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="133" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="13905" top="3660" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3720" left="13905" top="3660" type="Box" width="720">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="Enabled" hiddenwhenlocked="1" srcnodeid="132" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="111" dstpinname="Enabled" hiddenwhenlocked="1" srcnodeid="133" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="79" dstpinname="Layers" srcnodeid="80" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" id="141" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
+   <BOUNDS height="100" left="2010" top="5550" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="Data\mraky.jpg">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="142" nodename="Sphere (EX9.Geometry)" systemname="Sphere (EX9.Geometry)">
+   <BOUNDS height="100" left="465" top="5550" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Radius" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Resolution X" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Resolution Y" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="147" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="100" left="300" top="6255" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="86" dstpinname="particleStateLayer" srcnodeid="147" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantDrawGeometryAdvanced.fx" id="143" nodename="CiantDrawGeometryAdvanced (EX9.Effect)" systemname="CiantDrawGeometryAdvanced (EX9.Effect)">
+   <BOUNDS height="100" left="315" top="5880" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture Diffuse" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Light Position XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="| TSkyDome|">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="SkyDome Phase" visible="1">
+   </PIN>
+   <PIN pinname="Diffuse Color" slicecount="1" values="|0.08478,0.07729,0.10233,0.86875|">
+   </PIN>
+   <PIN pinname="Ambient Color" slicecount="1" values="|0.00019,0.00000,0.01780,1.00000|">
+   </PIN>
+   <PIN pinname="Specular Color" slicecount="1" values="|0.68409,0.41045,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Shiness" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="143" dstpinname="Texture Diffuse" srcnodeid="141" srcpinname="Texture Out">
+   </LINK>
+   <LINK dstnodeid="143" dstpinname="Light Position XYZ" hiddenwhenlocked="1" srcnodeid="34" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="143" dstpinname="Mesh" srcnodeid="142" srcpinname="Mesh">
+   </LINK>
+   <LINK dstnodeid="147" dstpinname="Layer 1" srcnodeid="143" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="143" dstpinname="Enabled" srcnodeid="131" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="154" nodename="Integrate (Differential)" systemname="Integrate (Differential)">
+   <BOUNDS height="100" left="1185" top="5550" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="Position In" slicecount="1" values="0.03">
+   </PIN>
+   <PIN pinname="Velocity Out" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="143" dstpinname="SkyDome Phase" srcnodeid="154" srcpinname="Position Out">
+   </LINK>
+   <NODE componentmode="InABox" id="155" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="345" top="5265" type="Node" width="1095">
+   </BOUNDS>
+   <BOUNDS height="270" left="345" top="5265" type="Box" width="1095">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|2. add clouds|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantDrawGeometry.fx" id="31" nodename="CiantDrawGeometry (EX9.Effect)" systemname="CiantDrawGeometry (EX9.Effect)">
+   <BOUNDS height="270" left="300" top="4845" type="Node" width="2205">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Ambient Color" visible="1">
+   </PIN>
+   <PIN pinname="Transform" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Technique" slicecount="1" values="| TFire|">
+   </PIN>
+   <PIN pinname="Light Position XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Specular Color" visible="1">
+   </PIN>
+   <PIN pinname="Diffuse Color" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Shiness" slicecount="1" values="25">
+   </PIN>
+   <PIN pinname="Specular Multiple">
+   </PIN>
+   <PIN pinname="Texture Transform" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Effect Multiple" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Texture Diffuse" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Bump" visible="1">
+   </PIN>
+   <PIN pinname="Bump Multiple">
+   </PIN>
+   <PIN pinname="Bump Texture Size XY">
+   </PIN>
+   <PIN pinname="SkyDome Phase">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="31" dstpinname="Light Position XYZ" hiddenwhenlocked="1" srcnodeid="34" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="31" dstpinname="Ambient Color" srcnodeid="91" srcpinname="Color Output">
+   </LINK>
+   <LINK dstnodeid="31" dstpinname="Diffuse Color" srcnodeid="92" srcpinname="Color Output">
+   </LINK>
+   <LINK dstnodeid="31" dstpinname="Specular Color" srcnodeid="93" srcpinname="Color Output">
+   </LINK>
+   <LINK dstnodeid="31" dstpinname="Enabled" srcnodeid="131" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="147" dstpinname="Layer 2" srcnodeid="31" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="31" dstpinname="Mesh" srcnodeid="119" srcpinname="Output Node">
+   </LINK>
+   <LINK dstnodeid="80" dstpinname="Layer 1" srcnodeid="86" srcpinname="renderedLayerOut">
+   </LINK>
+   <LINK dstnodeid="80" dstpinname="Layer 2" srcnodeid="85" srcpinname="renderedLayerOut">
+   </LINK>
+   <LINK dstnodeid="80" dstpinname="Layer 3" srcnodeid="114" srcpinname="renderedLayerOut">
+   </LINK>
+   <NODE componentmode="Hidden" filename="CiantParticles\CiantParticles.v4p" id="101" nodename="CiantParticles\CiantParticles.v4p" systemname="CiantParticles" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\CiantParticles\">
+   <PIN pinname="InitialPositionTexture" visible="1">
+   </PIN>
+   <PIN pinname="colorMultiple" visible="1">
+   </PIN>
+   <PIN pinname="viewportHeight" visible="1">
+   </PIN>
+   <PIN pinname="DrawMode" visible="1">
+   </PIN>
+   <PIN pinname="reset to initial  state">
+   </PIN>
+   <PIN pinname="behaviourParameters" visible="1">
+   </PIN>
+   <PIN pinname="particleTexture" visible="1">
+   </PIN>
+   <PIN pinname="textureSubdivision" visible="1">
+   </PIN>
+   <PIN pinname="zBuffer" visible="1">
+   </PIN>
+   <BOUNDS height="270" left="11160" top="8940" type="Node" width="2370">
+   </BOUNDS>
+   <BOUNDS height="12705" left="4485" top="195" type="Window" width="16935">
+   </BOUNDS>
+   <PIN pinname="OutputRender" visible="1">
+   </PIN>
+   <BOUNDS left="11160" top="8940" type="Box">
+   </BOUNDS>
+   <PIN pinname="TextureSubdivision">
+   </PIN>
+   <PIN pinname="TTLTEX" visible="1">
+   </PIN>
+   <PIN pinname="zBufferEnable">
+   </PIN>
+   <PIN pinname="SpreadStyle">
+   </PIN>
+   <PIN pinname="SpreadStyle(leave 1)" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="RandomizeVerticesSource" slicecount="1" values="1.1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="101" dstpinname="zBuffer" srcnodeid="122" srcpinname="Output Enum">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="textureSubdivision" srcnodeid="121" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="particleTexture" srcnodeid="105" srcpinname="Texture Out">
+   </LINK>
+   <LINK dstnodeid="111" dstpinname="Layer 2" srcnodeid="101" srcpinname="OutputRender">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="behaviourParameters" srcnodeid="104" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="reset to initial  state" hiddenwhenlocked="1" srcnodeid="96" srcpinname="resetOUT">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="DrawMode" srcnodeid="97" srcpinname="Output Enum">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="viewportHeight" hiddenwhenlocked="1" srcnodeid="98" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="colorMultiple" srcnodeid="99" srcpinname="Color Output">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="InitialPositionTexture" hiddenwhenlocked="1" srcnodeid="100" srcpinname="positionsTexture">
+   </LINK>
+   <NODE componentmode="Hidden" filename="CiantParticlesFire.v4p" id="1" nodename="CiantParticlesFire.v4p" stayontop="0" systemname="CiantParticlesFire" path="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\Upload\">
+   <PIN pinname="meshID" visible="1">
+   </PIN>
+   <BOUNDS height="100" left="5040" top="4125" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="renderedLayer" visible="1">
+   </PIN>
+   <PIN pinname="renderBufferHeight" slicecount="1" visible="1" values="256">
+   </PIN>
+   <PIN pinname="clearRenderer" visible="1">
+   </PIN>
+   <BOUNDS height="11280" left="2415" top="585" type="Window" width="18555">
+   </BOUNDS>
+   <BOUNDS left="5040" top="4125" type="Box">
+   </BOUNDS>
+   <PIN pinname="simpleBlur" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="1" dstpinname="meshID" srcnodeid="120" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="10" dstpinname="Layer 2" srcnodeid="1" srcpinname="renderedLayer">
+   </LINK>
+   <LINK dstnodeid="84" dstpinname="clear" hiddenwhenlocked="1" srcnodeid="1" srcpinname="clearRenderer">
+   </LINK>
+   </PATCH>

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\small setup_360_my\camera.v4p">
-   <BOUNDS height="13365" left="0" top="2835" type="Window" width="12480">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\small setup_360_my\camera.v4p" scrollx="3000" scrolly="0">
+   <BOUNDS height="13365" left="0" top="2835" type="Window" width="17295">
    </BOUNDS>
    <NODE componentmode="InABox" id="54" nodename="IOBox (Node)">
    <BOUNDS height="0" left="465" top="2955" type="Node" width="0">
@@ -67,38 +67,24 @@
    </PIN>
    <PIN pinname="Width" pintype="Input" visible="1">
    </PIN>
-   <PIN pinname="Height" pintype="Input" visible="1">
+   <PIN pinname="Height" pintype="Input" visible="1" slicecount="1" values="2000">
    </PIN>
    </NODE>
    <LINK dstnodeid="51" dstpinname="Source" srcnodeid="52" srcpinname="EX9 Out">
    </LINK>
    <NODE componentmode="InABox" id="50" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="3255" top="7290" type="Node" width="0">
+   <BOUNDS height="0" left="3495" top="7305" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="160" left="12540" top="6015" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="240" left="3255" top="7290" type="Box" width="510">
+   <BOUNDS height="240" left="3495" top="7305" type="Box" width="510">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="2000">
+   <PIN pinname="Y Input Value" slicecount="1" values="2048">
    </PIN>
    </NODE>
    <LINK dstnodeid="51" dstpinname="Width" srcnodeid="50" srcpinname="Y Output Value">
-   </LINK>
-   <NODE componentmode="InABox" id="49" nodename="IOBOX (VALUE ADVANCED)">
-   <BOUNDS height="0" left="3870" top="7275" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="160" left="12840" top="6315" type="Window" width="215">
-   </BOUNDS>
-   <BOUNDS height="255" left="3870" top="7275" type="Box" width="480">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="2000">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="51" dstpinname="Height" srcnodeid="49" srcpinname="Y Output Value">
    </LINK>
    <NODE hiddenwhenlocked="1" id="48" nodename="INFO (EX9.TEXTURE)">
    <BOUNDS height="0" left="2355" top="8190" type="Node" width="0">
@@ -374,7 +360,7 @@
    <PIN pinname="Size" slicecount="1" values="8">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Perspective (Transform)" nodename="Perspective (Transform)" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="8055" top="1365" width="100" height="100">
@@ -999,5 +985,59 @@
    <LINK srcnodeid="84" srcpinname="Output" dstnodeid="85" dstpinname="XYZ">
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output" dstnodeid="70" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Height">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="106" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14490" top="525" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14490" top="525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14475" y="4643">
+   </LINKPOINT>
+   <LINKPOINT x="7605" y="4643">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14490" y="3833">
+   </LINKPOINT>
+   <LINKPOINT x="4155" y="3833">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="80" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14490" y="4710">
+   </LINKPOINT>
+   <LINKPOINT x="11250" y="4710">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="89" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14505" y="4680">
+   </LINKPOINT>
+   <LINKPOINT x="14040" y="4680">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="106" srcpinname="Y Output Value" dstnodeid="98" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="14535" y="4733">
+   </LINKPOINT>
+   <LINKPOINT x="17175" y="4733">
+   </LINKPOINT>
    </LINK>
    </PATCH>

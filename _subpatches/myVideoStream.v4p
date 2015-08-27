@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\myVideoStream.v4p" systemname="myVideoStream" filename="D:\PROJECTS\VVVV_PROJECTS\Patches_flint1\_subpatches\myVideoStream.v4p" locked="0">
-   <BOUNDS type="Window" left="2190" top="1365" width="10380" height="10320">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_subpatches\myVideoStream.v4p" systemname="myVideoStream" filename="D:\PROJECTS\VVVV_PROJECTS\Patches_flint1\_subpatches\myVideoStream.v4p" locked="0">
+   <BOUNDS type="Window" left="7650" top="4575" width="10380" height="10320">
    </BOUNDS>
    <INFO author="" description="" tags="">
    </INFO>
@@ -345,7 +345,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Transform" visible="1">
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="100040" srcpinname="Layer" dstnodeid="100039" dstpinname="Layers">
@@ -377,7 +377,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Loop">
    </PIN>
@@ -427,7 +427,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Seek Time|">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -473,9 +473,9 @@
    <LINK srcnodeid="23" srcpinname="Seeking Capabilities" dstnodeid="100049" dstpinname="Input String">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="100050">
-   <BOUNDS type="Node" left="5625" top="3540" width="100" height="100">
+   <BOUNDS type="Node" left="5895" top="3555" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5625" top="3540" width="855" height="240">
+   <BOUNDS type="Box" left="5895" top="3555" width="1395" height="900">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -538,22 +538,8 @@
    </LINK>
    <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="100040" dstpinname="Texture">
    </LINK>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="100057">
-   <BOUNDS type="Node" left="4080" top="4380" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Z" slicecount="1" values="0.17">
-   </PIN>
-   <PIN pinname="X" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="100057" srcpinname="Transform Out" dstnodeid="100040" dstpinname="Transform">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100058" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4170" top="4935" width="795" height="240">
    </BOUNDS>
@@ -584,6 +570,8 @@
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Speed">
    </PIN>
    </NODE>
    <LINK srcnodeid="100059" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Speed">

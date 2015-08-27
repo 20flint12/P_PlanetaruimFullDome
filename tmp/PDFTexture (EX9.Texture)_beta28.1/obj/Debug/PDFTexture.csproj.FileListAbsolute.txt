@@ -1,0 +1,13 @@
+F:\myDevs\PDFTexture (EX9.Texture)\obj\Debug\PDFTexture.csprojResolveAssemblyReference.cache
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\PDFTexture.dll
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\PDFTexture.pdb
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\PdfSharp.dll
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\SlimDX.dll
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\System.ComponentModel.Composition.Codeplex.dll
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\VVVV.Core.dll
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\VVVV.Hosting.dll
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\VVVV.PluginInterfaces.dll
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\VVVV.Utils.dll
+F:\myDevs\PDFTexture (EX9.Texture)\bin\Debug\VVVV.Utils3rdParty.dll
+F:\myDevs\PDFTexture (EX9.Texture)\obj\Debug\PDFTexture.dll
+F:\myDevs\PDFTexture (EX9.Texture)\obj\Debug\PDFTexture.pdb

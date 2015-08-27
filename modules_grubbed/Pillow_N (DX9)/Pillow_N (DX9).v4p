@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_grubbed\Pillow_N (DX9)\Pillow_N (DX9).v4p">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_grubbed\Pillow_N (DX9)\Pillow_N (DX9).v4p">
    <BOUNDS height="15240" left="1815" top="465" type="Window" width="15990">
    </BOUNDS>
    <NODE id="101" nodename="Rotate (Quaternion Point Vector)">

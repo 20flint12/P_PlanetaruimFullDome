@@ -1,25 +1,7 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\virtual_scenes\6_1_Multiscreen_latest\subpatches\3DPanorama.v4p" filename="C:\Users\roman_g\Desktop\PI_Hauptkapitel_rg\3_3_Anzeigen\3_3_01_Multiscreen\Subpatches\3DPanorama.v4p" systemname="3DPanorama">
-   <BOUNDS height="14265" left="9270" top="1680" type="Window" width="10950">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\virtual_scenes\3DPanorama\Subpatches\3DPanorama.v4p" filename="C:\Users\roman_g\Desktop\PI_Hauptkapitel_rg\3_3_Anzeigen\3_3_01_Multiscreen\Subpatches\3DPanorama.v4p" systemname="3DPanorama" scrollx="0" scrolly="3525">
+   <BOUNDS height="14265" left="8910" top="720" type="Window" width="10950">
    </BOUNDS>
-   <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" id="14" managers="" nodename="Camera (Transform Softimage)" systemname="Camera (Transform Softimage)">
-   <BOUNDS height="100" left="3225" top="14235" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   <PIN pinname="Initial Pitch">
-   </PIN>
-   <PIN pinname="Inital Distance">
-   </PIN>
-   <PIN pinname="Initial FOV" slicecount="1" values="0.29">
-   </PIN>
-   <PIN pinname="Initial Yaw" visible="1">
-   </PIN>
-   <BOUNDS height="11700" left="4845" top="1260" type="Window" width="17160">
-   </BOUNDS>
-   </NODE>
    <NODE componentmode="Hidden" id="32" managers="" nodename="Sphere (EX9.Geometry)" systemname="Sphere (EX9.Geometry)">
    <BOUNDS height="100" left="2430" top="11580" type="Node" width="100">
    </BOUNDS>
@@ -175,9 +157,9 @@
    <NODE componentmode="InABox" id="129" managers="" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="2865" top="6045" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="240" left="2865" top="6045" type="Box" width="345">
+   <BOUNDS height="240" left="2865" top="6045" type="Box" width="465">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="40">
+   <PIN pinname="Y Input Value" slicecount="1" values="1000">
    </PIN>
    <PIN encoded="0" pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -207,7 +189,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="5">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Pictures">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Output String - Filename - Filename|">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -217,56 +199,6 @@
    </LINKPOINT>
    <LINKPOINT x="4080" y="7575">
    </LINKPOINT>
-   </LINK>
-   <NODE componentmode="InABox" id="151" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="4125" top="13575" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="255" left="4125" top="13575" type="Box" width="345">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="14" dstpinname="Inital Distance" srcnodeid="151" srcpinname="Y Output Value">
-   </LINK>
-   <NODE componentmode="InABox" id="153" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="3645" top="13575" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="255" left="3645" top="13575" type="Box" width="345">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="14" dstpinname="Initial Pitch" srcnodeid="153" srcpinname="Y Output Value">
-   </LINK>
-   <NODE componentmode="InABox" id="154" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="3135" top="13575" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="255" left="3135" top="13575" type="Box" width="345">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="14" dstpinname="Initial Yaw" srcnodeid="154" srcpinname="Y Output Value">
    </LINK>
    <NODE componentmode="Hidden" filename="PictureSelector.v4p" id="121" managers="" nodename="PictureSelector.v4p" systemname="PictureSelector">
    <BOUNDS height="105" left="4740" top="8100" type="Node" width="105">
@@ -288,8 +220,6 @@
    <PIN pinname="PictureSelectorGUI" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="70" dstpinname="Layer 2" hiddenwhenlocked="1" linkstyle="PolyLine" srcnodeid="121" srcpinname="PictureSelectorGUI">
-   </LINK>
    <LINK dstnodeid="121" dstpinname="MousePressed" srcnodeid="87" srcpinname="Output">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="163">
@@ -421,17 +351,17 @@
    </BOUNDS>
    <BOUNDS height="3015" left="2265" top="16110" type="Box" width="13710">
    </BOUNDS>
-   <BOUNDS height="5010" left="11850" top="8550" type="Window" width="9825">
+   <BOUNDS height="5010" left="16395" top="7440" type="Window" width="9825">
    </BOUNDS>
    <PIN pinname="Backbuffer Width" visible="1">
    </PIN>
    <PIN pinname="Backbuffer Height" visible="1">
    </PIN>
+   <PIN pinname="View" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK dstnodeid="169" dstpinname="View" srcnodeid="14" srcpinname="View">
-   </LINK>
-   <LINK dstnodeid="169" dstpinname="Projection" srcnodeid="14" srcpinname="Projection">
-   </LINK>
    <LINK dstnodeid="169" dstpinname="Layers" srcnodeid="70" srcpinname="Layer">
    </LINK>
    <LINK dstnodeid="115" dstpinname="Aspect Width" srcnodeid="169" srcpinname="Actual Backbuffer Width">
@@ -1358,7 +1288,7 @@
    </LINK>
    <LINK srcnodeid="100039" srcpinname="Layer" dstnodeid="70" dstpinname="Layer 1">
    </LINK>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="100040" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="1380" top="17235" width="795" height="240">
@@ -1369,5 +1299,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="70" srcpinname="Layer" dstnodeid="100040" dstpinname="Input Node">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" id="100041" managers="" nodename="Camera (Transform Softimage)" systemname="Camera (Transform Softimage)">
+   <BOUNDS height="100" left="3225" top="14235" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="11700" left="4845" top="1260" type="Window" width="17160">
+   </BOUNDS>
+   </NODE>
+   <LINK dstnodeid="169" dstpinname="View" srcnodeid="100041" srcpinname="View">
+   </LINK>
+   <LINK dstnodeid="169" dstpinname="Projection" srcnodeid="100041" srcpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="121" srcpinname="PictureSelectorGUI" dstnodeid="70" dstpinname="Layer 2">
    </LINK>
    </PATCH>

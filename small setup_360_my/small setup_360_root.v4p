@@ -1,13 +1,13 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\small setup_360_my\small setup_360_root.v4p" componentmode="InAWindow">
-   <BOUNDS height="13290" left="15255" top="2550" type="Window" width="12480">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\small setup_360_my\small setup_360_root.v4p" componentmode="InAWindow">
+   <BOUNDS height="13290" left="3330" top="3810" type="Window" width="12480">
    </BOUNDS>
-   <NODE componentmode="Hidden" id="20" managers="boygroup" nodename="camera.v4p">
+   <NODE componentmode="Hidden" id="20" managers="" nodename="camera.v4p">
    <BOUNDS height="270" left="3705" top="3330" type="Node" width="5160">
    </BOUNDS>
    <BOUNDS height="3600" left="3705" top="3330" type="Box" width="4800">
    </BOUNDS>
-   <BOUNDS height="13365" left="0" top="2835" type="Window" width="12480">
+   <BOUNDS height="13365" left="0" top="2835" type="Window" width="17295">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -44,6 +44,8 @@
    <PIN pinname="Cone Content4" visible="1">
    </PIN>
    <PIN pinname="view4" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="3" managers="" nodename="overview.v4p" stayontop="1">
@@ -136,18 +138,18 @@
    </NODE>
    <LINK dstnodeid="3" dstpinname="show projectors" srcnodeid="0" srcpinname="Y Output Value">
    </LINK>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <LINK srcnodeid="20" srcpinname="debug layers" dstnodeid="3" dstpinname="projectors">
    </LINK>
-   <NODE id="23" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <NODE id="23" componentmode="Hidden" managers="" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
    <PIN pinname="viewport" visible="1">
    </PIN>
    <BOUNDS type="Node" height="270" left="4050" top="4455" width="1935">
    </BOUNDS>
    <BOUNDS type="Box" left="4050" top="4455">
    </BOUNDS>
-   <BOUNDS type="Window" height="13365" left="0" top="2835" width="12480">
+   <BOUNDS type="Window" height="7275" left="240" top="4650" width="8745">
    </BOUNDS>
    <PIN pinname="Slitscan Content" visible="1">
    </PIN>
@@ -162,6 +164,8 @@
    <PIN pinname="Slitscan" visible="1">
    </PIN>
    <PIN pinname="Texture ViewPort Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="projection" dstnodeid="23" dstpinname="projection">
@@ -210,7 +214,7 @@
    </NODE>
    <LINK srcnodeid="26" srcpinname="Output Node" dstnodeid="23" dstpinname="Transform">
    </LINK>
-   <NODE id="27" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <NODE id="27" componentmode="Hidden" managers="" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
    <PIN pinname="viewport" visible="1">
    </PIN>
    <BOUNDS type="Node" height="270" left="4215" top="5310" width="1920">
@@ -236,6 +240,8 @@
    <PIN pinname="Transform" visible="1">
    </PIN>
    <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="projection" dstnodeid="27" dstpinname="projection">
@@ -285,6 +291,8 @@
    </PIN>
    <PIN pinname="Layer 5" visible="1">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="29" srcpinname="Layer" dstnodeid="24" dstpinname="Input Node">
    </LINK>
@@ -296,7 +304,7 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Cone Content1" dstnodeid="27" dstpinname="Cone Content">
    </LINK>
-   <NODE id="30" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <NODE id="30" componentmode="Hidden" managers="" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
    <PIN pinname="viewport" visible="1">
    </PIN>
    <BOUNDS type="Node" height="270" left="4710" top="6240" width="1920">
@@ -322,6 +330,8 @@
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Mesh" visible="1" slicecount="4" values=",,,">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="projection" dstnodeid="30" dstpinname="projection">
@@ -353,6 +363,8 @@
    </PIN>
    <PIN pinname="Layer 5" visible="1">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="Layers" dstnodeid="31" dstpinname="Layer 3">
    </LINK>
@@ -362,7 +374,7 @@
    </LINK>
    <LINK srcnodeid="31" srcpinname="Layer" dstnodeid="3" dstpinname="cams">
    </LINK>
-   <NODE id="32" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <NODE id="32" componentmode="Hidden" managers="" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
    <PIN pinname="viewport" visible="1">
    </PIN>
    <BOUNDS type="Node" height="270" left="5070" top="7080" width="1920">
@@ -389,6 +401,8 @@
    </PIN>
    <PIN pinname="Mesh" visible="1" slicecount="4" values=",,,">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="projection" dstnodeid="32" dstpinname="projection">
    </LINK>
@@ -404,7 +418,7 @@
    </LINK>
    <LINK srcnodeid="32" srcpinname="Layers" dstnodeid="29" dstpinname="Layer 4">
    </LINK>
-   <NODE id="33" componentmode="Hidden" managers="boygroup" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
+   <NODE id="33" componentmode="Hidden" managers="" nodename="screen.v4p" systemname="screen" filename="screen.v4p">
    <PIN pinname="viewport" visible="1">
    </PIN>
    <BOUNDS type="Node" height="270" left="5595" top="7740" width="1920">
@@ -430,6 +444,8 @@
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Mesh" visible="1" slicecount="4" values=",,,">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="projection" dstnodeid="33" dstpinname="projection">
@@ -461,5 +477,73 @@
    <LINK srcnodeid="34" srcpinname="Output Node" dstnodeid="20" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output Node" dstnodeid="3" dstpinname="Virtual Scene">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8130" top="2055" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8130" top="2055" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8115" y="2925">
+   </LINKPOINT>
+   <LINKPOINT x="7590" y="2925">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8130" y="3480">
+   </LINKPOINT>
+   <LINKPOINT x="5985" y="3480">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8115" y="3915">
+   </LINKPOINT>
+   <LINKPOINT x="6135" y="3915">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8130" y="4388">
+   </LINKPOINT>
+   <LINKPOINT x="6600" y="4388">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8145" y="4808">
+   </LINKPOINT>
+   <LINKPOINT x="6960" y="4808">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8145" y="5138">
+   </LINKPOINT>
+   <LINKPOINT x="7485" y="5138">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8145" y="5738">
+   </LINKPOINT>
+   <LINKPOINT x="7170" y="5738">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Enabled" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="8115" y="6068">
+   </LINKPOINT>
+   <LINKPOINT x="2400" y="6068">
+   </LINKPOINT>
    </LINK>
    </PATCH>

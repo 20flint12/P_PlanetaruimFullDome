@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\textureGrid_mask\P_FulldomeGrid_mask.v4p" systemname="P_FulldomeGrid_mask" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_mesh_Hat\P_FulldomeGrid_mask.v4p">
-   <BOUNDS type="Window" left="1590" top="2220" width="17745" height="13515">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\textureGrid_mask\P_FulldomeGrid_mask.v4p" systemname="P_FulldomeGrid_mask" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_mesh_Hat\P_FulldomeGrid_mask.v4p">
+   <BOUNDS type="Window" left="0" top="780" width="17745" height="13515">
    </BOUNDS>
    <NODE id="70" nodename="LinearSpread (Spreads)" systemname="LinearSpread (Spreads)">
    <PIN pinname="Width" visible="1" slicecount="1" values="1">
@@ -2087,6 +2087,8 @@
    </PIN>
    <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="330" srcpinname="Layer" dstnodeid="329" dstpinname="Layer 3">
    </LINK>
@@ -3438,7 +3440,7 @@
    </LINK>
    <LINK srcnodeid="407" srcpinname="Y Output Value" dstnodeid="408" dstpinname="Input 2">
    </LINK>
-   <NODE id="294" componentmode="Hidden" nodename="Pillow_N (DX9)" systemname="Pillow_N (DX9)" filename="..\P_PlanetariumFullDome\modules_grubbed\Pillow_N (DX9)\Pillow_N (DX9).v4p" hiddenwhenlocked="0" managers="">
+   <NODE id="294" componentmode="Hidden" nodename="Pillow_N (DX9)" systemname="Pillow_N (DX9)" filename="..\..\modules_grubbed\Pillow_N (DX9)\Pillow_N (DX9).v4p" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" height="100" left="10335" top="17670" width="100">
    </BOUNDS>
    <BOUNDS type="Box" left="10335" top="17670" width="4800" height="3600">

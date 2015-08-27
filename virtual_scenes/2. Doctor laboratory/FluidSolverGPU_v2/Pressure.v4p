@@ -1,0 +1,187 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+   <PATCH nodename="C:\Users\Stefan\Desktop\data\FluidSolverGPU_0\FluidSolverGPU\Pressure.v4p" systemname="pressure05" filename="C:\Users\Stefan\Documents\WORK\HDM2\VVVV\VVVV_new9\FX_testing\FLUID_RENDERMONKEY_05\pressure05.v4p">
+   <BOUNDS type="Window" left="4365" top="6075" width="9405" height="6375">
+   </BOUNDS>
+   <NODE systemname="Grid (EX9.Geometry)" nodename="Grid (EX9.Geometry)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="1785" top="1485" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Resolution X" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Resolution Y" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1245" top="3210" width="4275" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1245" top="3210" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16395" top="6285" width="10305" height="8400">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="4350" top="4260" width="1170" height="270">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Width" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Format" slicecount="1" values="R32F">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="EX9 Out" dstnodeid="9" dstpinname="Source">
+   </LINK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="7">
+   <BOUNDS type="Node" left="2460" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2460" top="435" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="divergence">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="6">
+   <BOUNDS type="Node" left="3390" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3390" top="435" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="pressure">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="5">
+   <BOUNDS type="Node" left="4335" top="4755" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4335" top="4755" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="tex">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
+   <BOUNDS type="Node" left="4320" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4320" top="435" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="vFlowDims">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="4530" top="2805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="10" dstpinname="View">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="7320" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7320" top="435" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="enable">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="4350" top="3795" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="X" dstnodeid="9" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y" dstnodeid="9" dstpinname="Height">
+   </LINK>
+   <NODE systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="5595" top="1515" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="35">
+   <BOUNDS type="Node" left="6120" top="435" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6120" top="435" width="960" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="800">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="iterations">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Pressure (EX9.Effect)" filename="effects\Pressure.fx" nodename="Pressure (EX9.Effect)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="1230" top="2055" width="4965" height="270">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Divergence" visible="1">
+   </PIN>
+   <PIN pinname="Pressure" visible="1">
+   </PIN>
+   <PIN pinname="vFlowDims" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Technique Pass" visible="1">
+   </PIN>
+   <PIN pinname="scale">
+   </PIN>
+   <PIN pinname="vFlowDims XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Mesh" dstnodeid="12" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="12" dstpinname="Divergence">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="12" dstpinname="Pressure">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="12" dstpinname="vFlowDims">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="12" dstpinname="Technique Pass">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="10" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="12" dstpinname="vFlowDims XY">
+   </LINK>
+   </PATCH>

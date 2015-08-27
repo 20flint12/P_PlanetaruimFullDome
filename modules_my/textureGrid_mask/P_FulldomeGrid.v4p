@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\textureGrid_mask\P_FulldomeGrid.v4p" systemname="P_FulldomeGrid" filename="D:\PROJECTS\VVVV_PROJECTS\Patches_flint1\_working_patches\P_FulldomeGrid.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\textureGrid_mask\P_FulldomeGrid.v4p" systemname="P_FulldomeGrid" filename="D:\PROJECTS\VVVV_PROJECTS\Patches_flint1\_working_patches\P_FulldomeGrid.v4p">
    <BOUNDS type="Window" left="3840" top="1110" width="15915" height="15780">
    </BOUNDS>
    <NODE componentmode="InABox" id="71" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -623,7 +623,7 @@
    </PIN>
    <PIN pinname="Resolution">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.02410,0.02410,0.02410,1.00000|" visible="1">
+   <PIN pinname="Color" slicecount="1" visible="1" values="|0.02410,0.02410,0.02410,1.00000|">
    </PIN>
    <PIN pinname="Inner Radius" slicecount="1" values="0.99">
    </PIN>
@@ -1211,11 +1211,11 @@
    <LINK srcnodeid="209" srcpinname="Output" dstnodeid="210" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="211" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9855" top="5280" width="795" height="240">
+   <BOUNDS type="Box" left="10185" top="5865" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9855" top="5280" width="0" height="0">
+   <BOUNDS type="Node" left="10185" top="5865" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="2500">
+   <PIN pinname="Y Input Value" slicecount="1" values="2048">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="px">
    </PIN>

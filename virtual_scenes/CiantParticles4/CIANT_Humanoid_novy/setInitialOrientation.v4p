@@ -1,0 +1,157 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta24.1.dtd" >
+   <PATCH nodename="D:\Apu files\Vvvv\CIANT_Humanoid_novy\setInitialOrientation.v4p">
+   <BOUNDS height="6510" left="1950" top="4095" type="Window" width="6150">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1215" top="630" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="960" left="1215" top="630" type="Box" width="795">
+   </BOUNDS>
+   <BOUNDS height="160" left="13695" top="8310" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="quaternionInput">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1185" top="4110" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="960" left="1185" top="4110" type="Box" width="795">
+   </BOUNDS>
+   <BOUNDS height="160" left="13005" top="10890" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="quaternionOutput">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="9" nodename="S+H (Animation)">
+   <BOUNDS height="100" left="2175" top="3195" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="2175" top="3195" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="15510" top="5010" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="2295" top="2295" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="600" left="2295" top="2295" type="Box" width="2550">
+   </BOUNDS>
+   <BOUNDS height="160" left="16185" top="4020" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="input_bang">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="7" nodename="Multiply (Quaternion)">
+   <BOUNDS height="100" left="1935" top="3630" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="1935" top="3630" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="16155" top="11970" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Quaternion 1 XYZW" visible="1">
+   </PIN>
+   <PIN pinname="Quaternion 2 XYZW" visible="1">
+   </PIN>
+   <PIN pinname="Quaternion XYZW" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="9" dstpinname="Set" srcnodeid="8" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" id="6" nodename="inverseQuaternion.v4p" path="D:\Apu files\Vvvv\CIANT_Humanoid_novy\">
+   <BOUNDS height="100" left="2190" top="1950" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="QuatIn" visible="1">
+   </PIN>
+   <PIN pinname="quatOut" visible="1">
+   </PIN>
+   <BOUNDS height="4470" left="5070" top="1770" type="Window" width="5325">
+   </BOUNDS>
+   </NODE>
+   <LINK dstnodeid="6" dstpinname="QuatIn" srcnodeid="0" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="5" dstpinname="Y Input Value" srcnodeid="7" srcpinname="Quaternion XYZW">
+   </LINK>
+   <NODE componentmode="Hidden" id="15" nodename="Multiply (Quaternion)">
+   <BOUNDS height="100" left="3480" top="4215" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="3480" top="4215" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="16605" top="6750" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Quaternion 2 XYZW" visible="1">
+   </PIN>
+   <PIN pinname="Quaternion 1 XYZW" visible="1" slicecount="4" values="0,0,0,1">
+   </PIN>
+   <PIN pinname="Quaternion XYZW" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="14" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="4035" top="3630" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="960" left="4035" top="3630" type="Box" width="795">
+   </BOUNDS>
+   <BOUNDS height="160" left="15435" top="6390" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,0,-1,1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="13" nodename="Normalize (Quaternion Vector)">
+   <BOUNDS height="100" left="4440" top="4695" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="0" left="4440" top="4695" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="19440" top="6735" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="XYZW" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="13" dstpinname="XYZW" srcnodeid="14" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="15" dstpinname="Quaternion 2 XYZW" srcnodeid="13" srcpinname="XYZW">
+   </LINK>
+   <LINK dstnodeid="9" dstpinname="Input" srcnodeid="6" srcpinname="quatOut">
+   </LINK>
+   <LINK dstnodeid="7" dstpinname="Quaternion 1 XYZW" srcnodeid="0" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="7" dstpinname="Quaternion 2 XYZW" srcnodeid="9" srcpinname="Output">
+   </LINK>
+   </PATCH>

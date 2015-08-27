@@ -1,0 +1,421 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.1.dtd" >
+   <PATCH nodename="C:\Users\clone\Documents\CLONEPRODUCTION\PRODUCTION\_UBERACT\UP0012-Absolut\_ROOT_ParticlesFieldTexture.v4p" filename="C:\Users\Will\Desktop\particles hand interaction\particles hand interaction.v4p" systemname="particles hand interaction">
+   <BOUNDS height="13920" left="1710" top="1680" type="Window" width="16065">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="60" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="3180" top="1905" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="510" left="3180" top="1905" type="Box" width="495">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Reset All|">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="38" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="6435" top="2505" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="6435" top="2505" type="Box" width="630">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Velocity Mult|">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.76">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="37" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="9435" top="2505" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="945" left="9435" top="2505" type="Box" width="1035">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="emit">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="24" nodename="Scale (Transform)" systemname="Scale (Transform)">
+   <BOUNDS height="100" left="7215" top="2505" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="-2">
+   </PIN>
+   <PIN pinname="Transform In" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="23" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="2325" top="1905" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="2325" top="1905" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Update">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="ParticlesGPU_2d_Dynamic_FieldTexture edit01.v4p" id="62" nodename="ParticlesGPU_2d_Dynamic_FieldTexture edit01.v4p" systemname="ParticlesGPU_2d_Dynamic_FieldTexture edit01">
+   <BOUNDS height="270" left="1890" top="5655" type="Node" width="5295">
+   </BOUNDS>
+   <PIN pinname="Fields Texture" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Reset All" visible="1">
+   </PIN>
+   <BOUNDS height="13140" left="300" top="2940" type="Window" width="20235">
+   </BOUNDS>
+   <PIN pinname="Velocity Mult" visible="1">
+   </PIN>
+   <PIN pinname="emit" visible="1">
+   </PIN>
+   <PIN pinname="FieldsValue" visible="1">
+   </PIN>
+   <PIN pinname="x velocity init" visible="1">
+   </PIN>
+   <PIN pinname="y velocity init" visible="1">
+   </PIN>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="Fields Texture 2" visible="1">
+   </PIN>
+   <PIN pinname="FieldForce to Position/Velocity" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Emitter ?">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|0.14779,0.20809,0.45602,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="62" dstpinname="Reset All" srcnodeid="60" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="62" dstpinname="Velocity Mult" srcnodeid="38" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="62" dstpinname="emit" srcnodeid="37" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="62" dstpinname="Update" srcnodeid="23" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="75" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="11025" top="3165" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="615" left="11025" top="3165" type="Box" width="615">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|FieldForce to Position/Velocity|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="62" dstpinname="FieldForce to Position/Velocity" srcnodeid="75" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="110" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1485" top="1620" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="1485" top="1620" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|x velocity init - y velocity init|">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="62" dstpinname="x velocity init" srcnodeid="110" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="62" dstpinname="y velocity init" srcnodeid="110" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="239" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="8355" top="1140" type="Node" width="3585">
+   </BOUNDS>
+   <BOUNDS height="270" left="8355" top="1140" type="Box" width="3585">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|this dynamic texture will generate a neutral field|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="62" dstpinname="Transform In" srcnodeid="24" srcpinname="Transform Out">
+   </LINK>
+   <NODE componentmode="InABox" id="245" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="8130" top="2505" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="240" left="8130" top="2505" type="Box" width="795">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="FieldsValue">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.03">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="62" dstpinname="FieldsValue" srcnodeid="245" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" id="246" nodename="FullscreenQuad (DX9)" systemname="FullscreenQuad (DX9)">
+   <BOUNDS height="100" left="4545" top="6885" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <BOUNDS left="4545" top="6885" type="Box">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="InAWindow" id="247" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="4545" top="8100" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="4545" top="8100" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="7425" left="15825" top="495" type="Window" width="9765">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="62" dstpinname="Emitter ?" srcnodeid="256" srcpinname="Output Node">
+   </LINK>
+   <NODE componentmode="Hidden" hiddenwhenlocked="0" id="257" managers="" nodename="DynamicTexture (EX9.Texture Value)" systemname="DynamicTexture (EX9.Texture Value)">
+   <PIN pinname="Texture Out" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Red" pintype="Input" visible="1">
+   </PIN>
+   <BOUNDS height="270" left="7035" top="1140" type="Node" width="1215">
+   </BOUNDS>
+   <BOUNDS height="0" left="7035" top="1140" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="9630" top="5565" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Width" pintype="Input" slicecount="1" visible="1" values="256">
+   </PIN>
+   <PIN pinname="Height" pintype="Input" slicecount="1" visible="1" values="256">
+   </PIN>
+   <PIN pinname="Green" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Blue" pintype="Input" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Format" pintype="Input" slicecount="1" visible="-1" values="G32R32F">
+   </PIN>
+   <PIN pinname="Alpha" pintype="Input" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Type" pintype="Input" slicecount="1" visible="-1" values="Texture">
+   </PIN>
+   <PIN pinname="Mip Map Count" pintype="Input" slicecount="1" visible="-1" values="|1 mm|">
+   </PIN>
+   <PIN pinname="Depth" pintype="Input" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Apply" pintype="Input" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Repair" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="InputSliceOffset" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="259" nodename="Vector (2d Join)" systemname="Vector (2d Join)">
+   <BOUNDS height="100" left="5550" top="8595" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="259" dstpinname="X" srcnodeid="247" srcpinname="Actual Backbuffer Width">
+   </LINK>
+   <LINK dstnodeid="259" dstpinname="Y" srcnodeid="247" srcpinname="Actual Backbuffer Height">
+   </LINK>
+   <NODE componentmode="Hidden" id="260" nodename="S (Value)" systemname="S (Value)">
+   <BOUNDS height="100" left="5550" top="9075" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Send String" slicecount="1" values="FinalResolution">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="260" dstpinname="Input Value" srcnodeid="259" srcpinname="XY">
+   </LINK>
+   <NODE componentmode="InABox" id="307" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="6405" top="8625" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="6405" top="8625" type="Box" width="795">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="307" dstpinname="Y Input Value" srcnodeid="247" srcpinname="Actual Backbuffer Width">
+   </LINK>
+   <NODE componentmode="InABox" id="308" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="7350" top="8625" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="7350" top="8625" type="Box" width="795">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="308" dstpinname="Y Input Value" srcnodeid="247" srcpinname="Actual Backbuffer Height">
+   </LINK>
+   <NODE componentmode="Hidden" id="309" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="100" left="4545" top="7560" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" id="310" nodename="PerfMeter (Debug)" systemname="PerfMeter (Debug)">
+   <BOUNDS height="100" left="6060" top="6885" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="309" dstpinname="Layer 2" srcnodeid="310" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="309" dstpinname="Layer 1" srcnodeid="246" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="247" dstpinname="Layers" srcnodeid="309" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="InABox" id="330" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="7545" top="570" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="7545" top="570" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.5">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="257" dstpinname="Red" srcnodeid="330" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="331" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="8475" top="570" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="8475" top="570" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.5">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="257" dstpinname="Green" srcnodeid="331" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="Hidden" filename="..\..\..\Documents\CLONEPRODUCTION\PRODUCTION\_UBERACT\UP0012-Absolut\Subpatches\ParticleTextureField2.v4p" id="332" nodename="..\..\..\Documents\CLONEPRODUCTION\PRODUCTION\_UBERACT\UP0012-Absolut\Subpatches\ParticleTextureField2.v4p" systemname="ParticleTextureField2">
+   <BOUNDS height="100" left="5130" top="1155" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="..\..\..\Documents\CLONEPRODUCTION\PRODUCTION\_UBERACT\UP0012-Absolut\Subpatches\PostFX.v4p" id="333" nodename="..\..\..\Documents\CLONEPRODUCTION\PRODUCTION\_UBERACT\UP0012-Absolut\Subpatches\PostFX.v4p" systemname="PostFX">
+   <BOUNDS height="100" left="4545" top="6270" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="9210" left="14505" top="4635" type="Window" width="11625">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="333" dstpinname="Input" srcnodeid="62" srcpinname="Texture Out">
+   </LINK>
+   <NODE componentmode="InABox" id="335" nodename="IOBox (Node)" systemname="IOBox (Node)">
+   <BOUNDS height="100" left="210" top="1260" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="270" left="210" top="1260" type="Box" width="825">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Fields Texture|">
+   </PIN>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="62" dstpinname="Fields Texture" srcnodeid="335" srcpinname="Output Node">
+   </LINK>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" id="336" nodename="FullscreenQuad (DX9)" systemname="FullscreenQuad (DX9)">
+   <BOUNDS height="100" left="9480" top="7035" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" id="337" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="9405" top="7935" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1800" left="9405" top="7935" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="5010" left="18375" top="9135" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="336" dstpinname="Texture" srcnodeid="62" srcpinname="Texture Out">
+   </LINK>
+   <LINK dstnodeid="337" dstpinname="Layers" srcnodeid="336" srcpinname="Layer">
+   <LINKPOINT x="10643" y="8340">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="62" dstpinname="Fields Texture 2" srcnodeid="332" srcpinname="Texture Out">
+   </LINK>
+   <LINK dstnodeid="246" dstpinname="Texture" srcnodeid="333" srcpinname="Output">
+   </LINK>
+   </PATCH>
