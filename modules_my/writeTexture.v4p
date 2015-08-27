@@ -606,7 +606,7 @@
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output Node" dstnodeid="81" dstpinname="Texture">
    </LINK>
-   <NODE systemname="Writer (EX9.Texture NRT)_mod" filename="..\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" nodename="..\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" componentmode="InAWindow" id="110" stayontop="1">
+   <NODE systemname="Writer (EX9.Texture NRT)_mod" filename="..\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" nodename="..\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" componentmode="Hidden" id="110" stayontop="1">
    <BOUNDS type="Node" left="1680" top="11730" width="5970" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="18510" top="4320" width="17715" height="10665">
