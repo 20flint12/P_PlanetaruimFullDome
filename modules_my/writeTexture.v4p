@@ -169,9 +169,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3570" top="7950" width="5760" height="1965">
+   <BOUNDS type="Box" left="3630" top="7950" width="5760" height="1965">
    </BOUNDS>
-   <BOUNDS type="Node" left="3570" top="7950" width="0" height="0">
+   <BOUNDS type="Node" left="3630" top="7950" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\resources\_PHOTO_DOME\17\parts\slide1\">
    </PIN>
