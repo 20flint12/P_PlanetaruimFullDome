@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="645" top="0" width="17775" height="15870">
+   <BOUNDS type="Window" left="585" top="0" width="17775" height="15915">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -169,9 +169,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3630" top="7950" width="5760" height="1965">
+   <BOUNDS type="Box" left="3630" top="8115" width="5760" height="1965">
    </BOUNDS>
-   <BOUNDS type="Node" left="3630" top="7950" width="0" height="0">
+   <BOUNDS type="Node" left="3630" top="8115" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\resources\_PHOTO_DOME\17\parts\slide1\">
    </PIN>
@@ -186,6 +186,8 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Path to directory|">
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="61">
@@ -496,10 +498,10 @@
    </NODE>
    <LINK srcnodeid="98" srcpinname="Output" dstnodeid="85" dstpinname="Save">
    </LINK>
-   <NODE systemname="namesOfFiles" filename="namesOfFiles.v4p" nodename="namesOfFiles.v4p" componentmode="InAWindow" id="106" stayontop="0">
+   <NODE systemname="namesOfFiles" filename="namesOfFiles.v4p" nodename="namesOfFiles.v4p" componentmode="Hidden" id="106" stayontop="0">
    <BOUNDS type="Node" left="2160" top="3825" width="13725" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="645" top="0" width="17775" height="15870">
+   <BOUNDS type="Window" left="12525" top="2895" width="17775" height="15870">
    </BOUNDS>
    <PIN pinname="Output Name1" visible="1">
    </PIN>
@@ -520,6 +522,8 @@
    <PIN pinname="Update PHP" visible="1">
    </PIN>
    <PIN pinname="Output Directory" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="106" srcpinname="Output Name8" dstnodeid="85" dstpinname="FileName">
@@ -714,8 +718,6 @@
    <LINKPOINT x="7650" y="6503">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="106" srcpinname="Output Directory" dstnodeid="60" dstpinname="Input String">
-   </LINK>
    <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="110" dstpinname="Path to directory">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="112" systemname="IOBox (Value Advanced)">
@@ -799,5 +801,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="110" srcpinname="Up Edge" dstnodeid="117" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="106" srcpinname="Output String" dstnodeid="60" dstpinname="Input String">
    </LINK>
    </PATCH>
