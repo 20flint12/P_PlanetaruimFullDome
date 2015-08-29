@@ -1,10 +1,10 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\getConeContent.v4p" systemname="getConeContent" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\getConeContent.v4p" scrollx="7485" scrolly="15">
-   <BOUNDS type="Window" left="2625" top="2100" width="17595" height="13740">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\getConeContent.v4p" systemname="getConeContent" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\getConeContent.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="5145" top="1845" width="17595" height="13740">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE componentmode="Hidden" id="31" nodename="Renderer (EX9)" stayontop="1" systemname="Renderer (EX9)">
+   <NODE componentmode="InAWindow" id="31" nodename="Renderer (EX9)" stayontop="1" systemname="Renderer (EX9)">
    <BOUNDS height="270" left="465" top="3915" type="Node" width="2010">
    </BOUNDS>
    <BOUNDS height="6330" left="315" top="11415" type="Window" width="12480">

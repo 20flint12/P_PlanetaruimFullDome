@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" systemname="Writer (EX9.Texture NRT)" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" scrollx="0" scrolly="0" locked="0">
-   <BOUNDS height="10665" left="18510" top="4320" type="Window" width="17715">
+   <BOUNDS height="10665" left="11085" top="3075" type="Window" width="17715">
    </BOUNDS>
    <INFO author="vvvv group" description="Render to disk. This module allows to save your animation to disk frame by frame. Not Realtime though..." tags="render, output">
    </INFO>
    <NODE id="17" nodename="Writer (EX9.Texture)" systemname="Writer (EX9.Texture)">
    <BOUNDS height="0" left="1710" top="7395" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="FileName" visible="1">
+   <PIN pinname="FileName" visible="1" slicecount="8" values="..\..\..\..\resources\_PHOTO_DOME\17\parts\slide1\slide_000012,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide2\slide_000012,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide3\slide_000012,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide4\slide_000012,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide5\slide_000012,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide6\slide_000012,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide7\slide_000012,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide8\slide_000012">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
@@ -64,8 +64,6 @@
    <PIN pinname="Input 4" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK dstnodeid="17" dstpinname="FileName" srcnodeid="10" srcpinname="Output">
-   </LINK>
    <NODE hiddenwhenlocked="0" id="9" managers="" nodename="AsString (Value)" systemname="AsString (Value)">
    <PIN pinname="Input" pintype="Input" visible="1">
    </PIN>
@@ -1189,5 +1187,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="78" srcpinname="Inverse Output" dstnodeid="81" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="17" dstpinname="FileName">
    </LINK>
    </PATCH>
