@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="1800">
-   <BOUNDS type="Window" left="585" top="0" width="17775" height="15915">
+   <BOUNDS type="Window" left="555" top="0" width="17775" height="15870">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -597,7 +597,7 @@
    <NODE systemname="Writer (EX9.Texture NRT)_mod" filename="..\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" nodename="..\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" componentmode="Hidden" id="110" stayontop="1">
    <BOUNDS type="Node" left="1680" top="11730" width="5970" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="11085" top="3075" width="17715" height="10665">
+   <BOUNDS type="Window" left="9360" top="3105" width="17715" height="10665">
    </BOUNDS>
    <PIN pinname="DoSave" visible="1">
    </PIN>
@@ -644,6 +644,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="110" dstpinname="DoSave">
@@ -767,9 +771,9 @@
    <LINK srcnodeid="116" srcpinname="Output Enum" dstnodeid="110" dstpinname="extension">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8820" top="12375" width="480" height="480">
+   <BOUNDS type="Box" left="9405" top="12420" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8820" top="12375" width="0" height="0">
+   <BOUNDS type="Node" left="9405" top="12420" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -787,5 +791,41 @@
    <LINK srcnodeid="110" srcpinname="Up Edge" dstnodeid="117" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="106" srcpinname="Output String" dstnodeid="60" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="118" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8385" top="12360" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8385" top="12360" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Output" dstnodeid="118" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="119" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2130" top="9105" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2130" top="9105" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="000072">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input String|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="119" srcpinname="Output String" dstnodeid="110" dstpinname="Input String">
    </LINK>
    </PATCH>

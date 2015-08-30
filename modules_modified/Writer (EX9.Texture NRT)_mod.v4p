@@ -57,7 +57,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="000072">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -65,7 +65,7 @@
    </PIN>
    </NODE>
    <NODE hiddenwhenlocked="0" id="9" managers="" nodename="AsString (Value)" systemname="AsString (Value)">
-   <PIN pinname="Input" pintype="Input" visible="1">
+   <PIN pinname="Input" pintype="Input" visible="1" slicecount="1" values="72">
    </PIN>
    <PIN pinname="Output" pintype="Output" visible="1">
    </PIN>
@@ -76,8 +76,6 @@
    <PIN encoded="0" pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK dstnodeid="9" dstpinname="Input" srcnodeid="15" srcpinname="Frame Count">
-   </LINK>
    <NODE id="8" nodename="CHANGE (ANIMATION)" systemname="Change (Animation)">
    <BOUNDS height="0" left="3345" top="3120" type="Node" width="0">
    </BOUNDS>
@@ -311,8 +309,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output Node" dstnodeid="17" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="10" dstpinname="Input 3">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1365" top="2880" width="795" height="240">
@@ -1189,5 +1185,43 @@
    <LINK srcnodeid="78" srcpinname="Inverse Output" dstnodeid="81" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="17" dstpinname="FileName">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="82" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8625" top="10215" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8625" top="10215" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="82" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Frame Count" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="84" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5250" top="540" width="1005" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5250" top="540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="000072">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input String|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Output String" dstnodeid="10" dstpinname="Input 3">
    </LINK>
    </PATCH>

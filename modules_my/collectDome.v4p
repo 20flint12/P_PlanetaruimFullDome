@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="3960" locked="0">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="0" locked="0">
    <BOUNDS type="Window" left="555" top="0" width="17775" height="15870">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -66,7 +66,7 @@
    </NODE>
    <LINK srcnodeid="68" srcpinname="Layer" dstnodeid="72" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="getConeContent" filename="getConeContent.v4p" nodename="getConeContent.v4p" componentmode="InAWindow" id="86" stayontop="0" debug="0">
+   <NODE systemname="getConeContent" filename="getConeContent.v4p" nodename="getConeContent.v4p" componentmode="Hidden" id="86" stayontop="0" debug="0">
    <BOUNDS type="Node" left="390" top="8220" width="3615" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="12555" top="1245" width="17595" height="13740">
