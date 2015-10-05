@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\namesOfFiles.v4p" systemname="namesOfFiles" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\namesOfFiles.v4p" locked="0" scrollx="0" scrolly="2520">
-   <BOUNDS type="Window" left="3030" top="3480" width="17775" height="15870">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\namesOfFiles.v4p" systemname="namesOfFiles" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\namesOfFiles.v4p" locked="0" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="555" top="0" width="17775" height="15765">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -347,7 +347,7 @@
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="115">
    <BOUNDS type="Node" left="6915" top="6840" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\6\parts\slide1\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\6\parts\slide2\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\6\parts\slide3\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\6\parts\slide4\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\6\parts\slide5\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\6\parts\slide6\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\6\parts\slide7\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\6\parts\slide8\">
+   <PIN pinname="Input 1" visible="1" slicecount="8" values="D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide1\,D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide2\,D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide3\,D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide4\,D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide5\,D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide6\,D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide7\,D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide8\">
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -357,9 +357,9 @@
    <LINK srcnodeid="115" srcpinname="Output" dstnodeid="5" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="117" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="705" top="5880" width="2715" height="270">
+   <BOUNDS type="Node" left="720" top="5565" width="2715" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="705" top="5880" width="6120" height="510">
+   <BOUNDS type="Box" left="720" top="5565" width="6120" height="510">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Директория для сохранения файлов|">
    </PIN>
@@ -395,7 +395,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Argument 1|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Slide_tag">
    </PIN>
    </NODE>
    <LINK srcnodeid="144" srcpinname="Output String" dstnodeid="8" dstpinname="Argument 1">
@@ -540,12 +540,10 @@
    </LINK>
    <LINK srcnodeid="163" srcpinname="Output" dstnodeid="156" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="157" srcpinname="Output String" dstnodeid="115" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="165" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="750" top="12105" width="4395" height="465">
+   <BOUNDS type="Box" left="675" top="12105" width="6585" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="750" top="12105" width="0" height="0">
+   <BOUNDS type="Node" left="675" top="12105" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -557,5 +555,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="157" srcpinname="Output String" dstnodeid="165" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Output String" dstnodeid="115" dstpinname="Input 1">
    </LINK>
    </PATCH>

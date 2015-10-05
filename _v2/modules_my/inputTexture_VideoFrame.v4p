@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\inputTexture_VideoFrame.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="1" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="555" top="0" width="17775" height="15870">
+   <BOUNDS type="Window" left="300" top="2985" width="17775" height="15855">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -55,7 +55,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6165" top="795" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\..\resources\Moon-to-Sun-Kha-20.avi">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\..\resources\Yaga_Kha_20_3000.avi">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.avi">
    </PIN>
@@ -227,7 +227,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4230" top="1425" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="200">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -300,7 +300,7 @@
    </NODE>
    <LINK srcnodeid="138" srcpinname="Y Output Value" dstnodeid="137" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="CaptureFrame_VideoStream" filename="CaptureFrame_VideoStream.v4p" nodename="CaptureFrame_VideoStream.v4p" componentmode="InAWindow" id="141">
+   <NODE systemname="CaptureFrame_VideoStream" filename="CaptureFrame_VideoStream.v4p" nodename="CaptureFrame_VideoStream.v4p" componentmode="Hidden" id="141">
    <BOUNDS type="Node" left="690" top="2850" width="4800" height="270">
    </BOUNDS>
    <PIN pinname="StartCapture" visible="1">

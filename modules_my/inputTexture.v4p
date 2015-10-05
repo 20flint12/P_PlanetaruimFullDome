@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\inputTexture.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="645" top="0" width="17775" height="15870">
-=======
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0">
-   <BOUNDS type="Window" left="720" top="0" width="17835" height="15900">
->>>>>>> f23bd5626d1851cb40db5d65f9aa4bcc12cc932d
+   <BOUNDS type="Window" left="7350" top="600" width="17775" height="15810">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -186,10 +180,10 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="61" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="getTextureFromDir" filename="getTextureFromDir.v4p" nodename="getTextureFromDir.v4p" componentmode="InAWindow" id="102" stayontop="1">
+   <NODE systemname="getTextureFromDir" filename="getTextureFromDir.v4p" nodename="getTextureFromDir.v4p" componentmode="InAWindow" id="102" stayontop="0">
    <BOUNDS type="Node" left="14205" top="5385" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="645" top="0" width="17775" height="15870">
+   <BOUNDS type="Window" left="690" top="0" width="17775" height="15960">
    </BOUNDS>
    <PIN pinname="Get File and render" visible="1" slicecount="1" values="0">
    </PIN>
@@ -203,7 +197,7 @@
    <NODE systemname="keyboardControl" filename="keyboardControl.v4p" nodename="keyboardControl.v4p" componentmode="Hidden" id="104">
    <BOUNDS type="Node" left="14190" top="4110" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="3165" top="6675" width="9000" height="6000">
+   <BOUNDS type="Window" left="870" top="9630" width="9510" height="6570">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -469,10 +463,7 @@
    <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="4" dstpinname="Filename">
    </LINK>
    <LINK srcnodeid="119" srcpinname="Texture Out" dstnodeid="36" dstpinname="Input 1">
-<<<<<<< HEAD
    </LINK>
    <LINK srcnodeid="36" srcpinname="Output" dstnodeid="12" dstpinname="Input Node">
-=======
->>>>>>> f23bd5626d1851cb40db5d65f9aa4bcc12cc932d
    </LINK>
    </PATCH>

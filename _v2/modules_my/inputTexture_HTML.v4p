@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\inputTexture_HTML.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="705" top="0" width="17775" height="15855">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\inputTexture_HTML.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="555" top="0" width="17775" height="15765">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -30,22 +30,6 @@
    <PIN pinname="String Type" slicecount="1" values="URL">
    </PIN>
    <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Renderer (HTML URL)" nodename="Renderer (HTML URL)" componentmode="InABox" id="20" stayontop="1">
-   <BOUNDS type="Node" left="14325" top="3075" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="14325" top="3075" width="7440" height="5565">
-   </BOUNDS>
-   <BOUNDS type="Window" left="4185" top="2445" width="13860" height="7740">
-   </BOUNDS>
-   <PIN pinname="Input URL" visible="1" slicecount="1" values="http://www.sky-map.org/?ra=0.7123055555333327&amp;de=41.26944444399993&amp;zoom=4&amp;show_grid=1&amp;show_constellation_lines=1&amp;show_constellation_boundaries=1&amp;show_const_names=0&amp;show_galaxies=1&amp;img_source=DSS2">
-   </PIN>
-   <PIN pinname="GDI Out" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Submit Form" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
@@ -233,13 +217,11 @@
    <NODE systemname="GDITexture (EX9.Texture)" nodename="GDITexture (EX9.Texture)" componentmode="Hidden" id="31">
    <BOUNDS type="Node" left="21705" top="8970" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Source" visible="1">
+   <PIN pinname="Source" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="20" srcpinname="GDI Out" dstnodeid="31" dstpinname="Source">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="32" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="21705" top="9360" width="795" height="240">
    </BOUNDS>
@@ -287,7 +269,5 @@
    </LINKPOINT>
    <LINKPOINT x="9525" y="2858">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="Output String" dstnodeid="20" dstpinname="Input URL">
    </LINK>
    </PATCH>

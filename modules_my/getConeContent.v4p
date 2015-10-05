@@ -549,7 +549,7 @@
    </PIN>
    <PIN pinname="Width">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Control" visible="1" slicecount="1" values="||">
    </PIN>
@@ -956,16 +956,6 @@
    </LINK>
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Radius">
    </LINK>
-   <LINK srcnodeid="87" srcpinname="Texture Out" dstnodeid="61" dstpinname="Input">
-   <LINKPOINT x="18684" y="7515">
-   </LINKPOINT>
-   <LINKPOINT x="18003" y="3510">
-   </LINKPOINT>
-   <LINKPOINT x="16827" y="2460">
-   </LINKPOINT>
-   <LINKPOINT x="14256" y="2355">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="92" systemname="IOBox (Enumerations)">
    <BOUNDS type="Box" left="20685" top="3645" width="1590" height="270">
    </BOUNDS>
@@ -1015,7 +1005,7 @@
    <LINK srcnodeid="94" srcpinname="Transform Out" dstnodeid="62" dstpinname="Transform">
    </LINK>
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="97">
-   <BOUNDS type="Node" left="13530" top="12330" width="100" height="100">
+   <BOUNDS type="Node" left="11130" top="12945" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Source" visible="1">
    </PIN>
@@ -1025,13 +1015,15 @@
    <LINK srcnodeid="63" srcpinname="EX9 Out" dstnodeid="97" dstpinname="Source">
    </LINK>
    <LINK srcnodeid="97" srcpinname="Texture Out" dstnodeid="33" dstpinname="Control">
-   <LINKPOINT x="14421" y="13188">
+   <LINKPOINT x="12375" y="13365">
    </LINKPOINT>
-   <LINKPOINT x="14172" y="9651">
+   <LINKPOINT x="12735" y="10020">
    </LINKPOINT>
-   <LINKPOINT x="13638" y="3594">
+   <LINKPOINT x="12525" y="3690">
    </LINKPOINT>
-   <LINKPOINT x="10749" y="2967">
+   <LINKPOINT x="11385" y="2880">
+   </LINKPOINT>
+   <LINKPOINT x="10275" y="3090">
    </LINKPOINT>
    </LINK>
    <NODE systemname="LE (Value)" nodename="LE (Value)" componentmode="Hidden" id="98">

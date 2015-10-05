@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="0" locked="0">
-   <BOUNDS type="Window" left="555" top="0" width="17775" height="15870">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="-360" locked="0">
+   <BOUNDS type="Window" left="690" top="0" width="17775" height="15765">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -66,7 +66,7 @@
    </NODE>
    <LINK srcnodeid="68" srcpinname="Layer" dstnodeid="72" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="getConeContent" filename="getConeContent.v4p" nodename="getConeContent.v4p" componentmode="Hidden" id="86" stayontop="0" debug="0">
+   <NODE systemname="getConeContent" filename="getConeContent.v4p" nodename="getConeContent.v4p" componentmode="Hidden" id="86" stayontop="1" debug="0">
    <BOUNDS type="Node" left="390" top="8220" width="3615" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="12555" top="1245" width="17595" height="13740">
@@ -141,6 +141,8 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
+   <PIN pinname="Draw Mode" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="88" srcpinname="Layer" dstnodeid="68" dstpinname="Layer 1">
    </LINK>
@@ -196,10 +198,10 @@
    </NODE>
    <LINK srcnodeid="91" srcpinname="Layer" dstnodeid="90" dstpinname="Layers">
    </LINK>
-   <NODE systemname="SlideDome" filename="SlideDome.v4p" nodename="SlideDome.v4p" componentmode="Hidden" id="89">
+   <NODE systemname="SlideDome" filename="SlideDome.v4p" nodename="SlideDome.v4p" componentmode="Hidden" id="89" stayontop="1">
    <BOUNDS type="Node" left="6780" top="10950" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="11460" top="3105" width="7665" height="9330">
+   <BOUNDS type="Window" left="14085" top="1635" width="7665" height="9330">
    </BOUNDS>
    <PIN pinname="Source" visible="1">
    </PIN>
@@ -211,6 +213,8 @@
    </PIN>
    <BOUNDS type="Box" left="6780" top="10950">
    </BOUNDS>
+   <PIN pinname="Draw Mode" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="90" srcpinname="EX9 Out" dstnodeid="89" dstpinname="Source">
    </LINK>
@@ -317,6 +321,8 @@
    </PIN>
    <BOUNDS type="Box" left="10920" top="10980">
    </BOUNDS>
+   <PIN pinname="Draw Mode" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="99" srcpinname="EX9 Out" dstnodeid="98" dstpinname="Source">
    </LINK>
@@ -403,6 +409,8 @@
    </PIN>
    <BOUNDS type="Box" left="15090" top="11010">
    </BOUNDS>
+   <PIN pinname="Draw Mode" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="104" srcpinname="EX9 Out" dstnodeid="103" dstpinname="Source">
    </LINK>
@@ -502,6 +510,8 @@
    <PIN pinname="Index" visible="1" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Draw Mode" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="120" srcpinname="EX9 Out" dstnodeid="119" dstpinname="Source">
@@ -603,6 +613,8 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
+   <PIN pinname="Draw Mode" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="114" srcpinname="EX9 Out" dstnodeid="113" dstpinname="Source">
    </LINK>
@@ -682,6 +694,8 @@
    <PIN pinname="Index" visible="1" slicecount="1" values="7">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Draw Mode" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="109" srcpinname="EX9 Out" dstnodeid="108" dstpinname="Source">
@@ -1919,6 +1933,8 @@
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
+   <PIN pinname="Draw Mode" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="243" dstpinname="Index">
    </LINK>
@@ -2531,11 +2547,11 @@
    </BOUNDS>
    <BOUNDS type="Window" left="3045" top="4935" width="6150" height="4920">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="View" visible="1">
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Projection" visible="1">
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="EX9 Out" visible="1">
    </PIN>
@@ -3581,5 +3597,71 @@
    <LINK srcnodeid="149" srcpinname="Y Output Value" dstnodeid="303" dstpinname="Transformations Index">
    </LINK>
    <LINK srcnodeid="150" srcpinname="Y Output Value" dstnodeid="299" dstpinname="Transformations Index">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="312" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="300" top="405" width="1380" height="1245">
+   </BOUNDS>
+   <BOUNDS type="Node" left="300" top="405" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Blend">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Draw Mode|">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Style" slicecount="1" values="List">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="312" srcpinname="Output Enum" dstnodeid="88" dstpinname="Draw Mode" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="330" y="6308">
+   </LINKPOINT>
+   <LINKPOINT x="2715" y="6308">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output Enum" dstnodeid="89" dstpinname="Draw Mode" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="360" y="6293">
+   </LINKPOINT>
+   <LINKPOINT x="6780" y="6293">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output Enum" dstnodeid="98" dstpinname="Draw Mode" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="360" y="6300">
+   </LINKPOINT>
+   <LINKPOINT x="10905" y="6300">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output Enum" dstnodeid="103" dstpinname="Draw Mode" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="360" y="6315">
+   </LINKPOINT>
+   <LINKPOINT x="15090" y="6315">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output Enum" dstnodeid="243" dstpinname="Draw Mode" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="330" y="9810">
+   </LINKPOINT>
+   <LINKPOINT x="2970" y="9810">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output Enum" dstnodeid="119" dstpinname="Draw Mode" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="345" y="9810">
+   </LINKPOINT>
+   <LINKPOINT x="7080" y="9810">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output Enum" dstnodeid="113" dstpinname="Draw Mode" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="360" y="9795">
+   </LINKPOINT>
+   <LINKPOINT x="11100" y="9795">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="312" srcpinname="Output Enum" dstnodeid="108" dstpinname="Draw Mode" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="360" y="9818">
+   </LINKPOINT>
+   <LINKPOINT x="15165" y="9818">
+   </LINKPOINT>
    </LINK>
    </PATCH>

@@ -259,13 +259,15 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1680" top="735" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" values="24.97,24.97,24.97">
+   <PIN pinname="Y Input Value" slicecount="1" values="24.97">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Far Plane|">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">

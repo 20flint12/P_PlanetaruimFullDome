@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_root_SingleFrame.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="9450" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_root_SingleFrame.v4p" componentmode="InAWindow" locked="0" scrollx="345" scrolly="7695" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
    <BOUNDS height="15870" left="555" top="0" type="Window" width="17775">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -1415,7 +1415,7 @@
    </BOUNDS>
    <BOUNDS height="720" left="9525" top="1380" type="Box" width="945">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="Filtered">
+   <PIN pinname="Input Enum" slicecount="1" values="Raw">
    </PIN>
    <PIN pinname="Style" slicecount="1" values="List">
    </PIN>
@@ -2137,7 +2137,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="824">
-   <BOUNDS type="Node" left="6720" top="16725" width="1050" height="270">
+   <BOUNDS type="Node" left="6885" top="16725" width="1050" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="8" values="1,1,1,1,1,1,1,1">
    </PIN>
@@ -2333,7 +2333,7 @@
    </PIN>
    <PIN pinname="Set" visible="1">
    </PIN>
-   <PIN pinname="Time" slicecount="1" values="11.57">
+   <PIN pinname="Time" slicecount="1" values="5">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="848" systemname="IOBox (Value Advanced)">
@@ -2642,8 +2642,6 @@
    </NODE>
    <LINK srcnodeid="869" srcpinname="Y Output Value" dstnodeid="725" dstpinname="Far Plane">
    </LINK>
-   <LINK srcnodeid="810" srcpinname="Texture Out" dstnodeid="206" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="707" srcpinname="Output" dstnodeid="821" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="871" systemname="IOBox (String)">
@@ -2809,5 +2807,45 @@
    <LINK srcnodeid="881" srcpinname="Output String" dstnodeid="707" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="876" srcpinname="Output String" dstnodeid="881" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="882">
+   <BOUNDS type="Node" left="11025" top="15795" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="883">
+   <BOUNDS type="Node" left="11040" top="16110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="100">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="884" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="11055" top="16620" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11055" top="16620" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="883" srcpinname="Output" dstnodeid="884" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="836" srcpinname="Y Output Value" dstnodeid="882" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="810" srcpinname="Duration" dstnodeid="882" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="882" srcpinname="Output" dstnodeid="883" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="810" srcpinname="Texture Out" dstnodeid="206" dstpinname="Input Node">
    </LINK>
    </PATCH>

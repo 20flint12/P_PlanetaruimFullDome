@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="1800">
-   <BOUNDS type="Window" left="555" top="0" width="17775" height="15870">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="690" top="0" width="17775" height="15930">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -73,9 +73,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="44" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="2085" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="2010" top="1050" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2085" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="2010" top="1050" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -85,9 +85,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="45" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="4005" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="3930" top="1050" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4005" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="3930" top="1050" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -97,9 +97,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="46" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="5940" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="5865" top="1050" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5940" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="5865" top="1050" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -109,9 +109,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="47" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="7830" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="7845" top="1050" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7830" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="7845" top="1050" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -121,9 +121,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="48" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="9735" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="9810" top="1050" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9735" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="9810" top="1050" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -133,9 +133,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="49" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="11640" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="11760" top="1050" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11640" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="11760" top="1050" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -145,9 +145,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="50" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="13515" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="13710" top="1050" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="13515" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="13710" top="1050" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -157,9 +157,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="51" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="15420" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="15645" top="1050" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="15420" top="1050" width="0" height="0">
+   <BOUNDS type="Node" left="15645" top="1050" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -359,9 +359,9 @@
    <LINK srcnodeid="51" srcpinname="Output Node" dstnodeid="85" dstpinname="Texture">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="89" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="690" top="2595" width="480" height="480">
+   <BOUNDS type="Box" left="525" top="2625" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="690" top="2595" width="0" height="0">
+   <BOUNDS type="Node" left="525" top="2625" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.958820755781062">
    </PIN>
@@ -394,114 +394,10 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="S (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="90">
-   <BOUNDS type="Node" left="675" top="3135" width="100" height="100">
+   <NODE systemname="namesOfFiles" filename="namesOfFiles.v4p" nodename="namesOfFiles.v4p" componentmode="InAWindow" id="106" stayontop="0">
+   <BOUNDS type="Node" left="2160" top="3030" width="13725" height="270">
    </BOUNDS>
-   <PIN pinname="Send String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Input">
-   </LINK>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="91">
-   <BOUNDS type="Node" left="4305" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="4305" top="4410">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="91" srcpinname="Output" dstnodeid="82" dstpinname="Save">
-   </LINK>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="92">
-   <BOUNDS type="Node" left="2340" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="2340" top="4410">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="93">
-   <BOUNDS type="Node" left="6225" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="6225" top="4410">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="83" dstpinname="Save">
-   </LINK>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="94">
-   <BOUNDS type="Node" left="8175" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="8175" top="4410">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="84" dstpinname="Save">
-   </LINK>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="95">
-   <BOUNDS type="Node" left="10170" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="10170" top="4410">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="95" srcpinname="Output" dstnodeid="88" dstpinname="Save">
-   </LINK>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="96">
-   <BOUNDS type="Node" left="12105" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="12105" top="4410">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="96" srcpinname="Output" dstnodeid="87" dstpinname="Save">
-   </LINK>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="97">
-   <BOUNDS type="Node" left="14070" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="14070" top="4410">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="86" dstpinname="Save">
-   </LINK>
-   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="98">
-   <BOUNDS type="Node" left="15990" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|save texture|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="15990" top="4410">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="98" srcpinname="Output" dstnodeid="85" dstpinname="Save">
-   </LINK>
-   <NODE systemname="namesOfFiles" filename="namesOfFiles.v4p" nodename="namesOfFiles.v4p" componentmode="Hidden" id="106" stayontop="0">
-   <BOUNDS type="Node" left="2160" top="3825" width="13725" height="270">
-   </BOUNDS>
-   <BOUNDS type="Window" left="12525" top="2895" width="17775" height="15870">
+   <BOUNDS type="Window" left="690" top="0" width="17775" height="15930">
    </BOUNDS>
    <PIN pinname="Output Name1" visible="1">
    </PIN>
@@ -524,6 +420,8 @@
    <PIN pinname="Output Directory" visible="1">
    </PIN>
    <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Slide_tag" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="106" srcpinname="Output Name8" dstnodeid="85" dstpinname="FileName">
@@ -589,8 +487,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="106" srcpinname="Output Name1" dstnodeid="81" dstpinname="FileName">
-   </LINK>
-   <LINK srcnodeid="92" srcpinname="Output" dstnodeid="81" dstpinname="Save">
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output Node" dstnodeid="81" dstpinname="Texture">
    </LINK>
@@ -659,51 +555,51 @@
    <LINK srcnodeid="110" srcpinname="saved frames" dstnodeid="21" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output Node" dstnodeid="110" dstpinname="Texture1" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="2100" y="6510">
+   <LINKPOINT x="2050" y="6510">
    </LINKPOINT>
-   <LINKPOINT x="1710" y="6510">
+   <LINKPOINT x="1685" y="6510">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="45" srcpinname="Output Node" dstnodeid="110" dstpinname="Texture2" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="4035" y="6510">
+   <LINKPOINT x="3985" y="6510">
    </LINKPOINT>
-   <LINKPOINT x="4650" y="6510">
+   <LINKPOINT x="4625" y="6510">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="47" srcpinname="Output Node" dstnodeid="110" dstpinname="Texture4" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="7845" y="6510">
+   <LINKPOINT x="7855" y="6510">
    </LINKPOINT>
-   <LINKPOINT x="5655" y="6510">
+   <LINKPOINT x="5660" y="6510">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="46" srcpinname="Output Node" dstnodeid="110" dstpinname="Texture3" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="5955" y="6510">
+   <LINKPOINT x="5905" y="6510">
    </LINKPOINT>
-   <LINKPOINT x="5160" y="6510">
+   <LINKPOINT x="5135" y="6510">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="48" srcpinname="Output Node" dstnodeid="110" dstpinname="Texture5" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="9735" y="6510">
+   <LINKPOINT x="9785" y="6510">
    </LINKPOINT>
-   <LINKPOINT x="6135" y="6510">
+   <LINKPOINT x="6160" y="6510">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="49" srcpinname="Output Node" dstnodeid="110" dstpinname="Texture6" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="11640" y="6510">
+   <LINKPOINT x="11720" y="6510">
    </LINKPOINT>
-   <LINKPOINT x="6630" y="6510">
+   <LINKPOINT x="6670" y="6510">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="50" srcpinname="Output Node" dstnodeid="110" dstpinname="Texture7" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="13515" y="6510">
+   <LINKPOINT x="13645" y="6510">
    </LINKPOINT>
-   <LINKPOINT x="7140" y="6510">
+   <LINKPOINT x="7205" y="6510">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="51" srcpinname="Output Node" dstnodeid="110" dstpinname="Texture8" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="15405" y="6503">
+   <LINKPOINT x="15555" y="6503">
    </LINKPOINT>
-   <LINKPOINT x="7650" y="6503">
+   <LINKPOINT x="7725" y="6503">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="110" dstpinname="Path to directory">
@@ -811,9 +707,9 @@
    <LINK srcnodeid="110" srcpinname="Output" dstnodeid="118" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="119" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2130" top="9105" width="795" height="240">
+   <BOUNDS type="Box" left="1800" top="9105" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2130" top="9105" width="0" height="0">
+   <BOUNDS type="Node" left="1800" top="9105" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="000072">
    </PIN>
@@ -827,5 +723,87 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="119" srcpinname="Output String" dstnodeid="110" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="81" dstpinname="Save" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="670" y="4003">
+   </LINKPOINT>
+   <LINKPOINT x="2255" y="3978">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Save" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="670" y="3995">
+   </LINKPOINT>
+   <LINKPOINT x="4220" y="3970">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="83" dstpinname="Save" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="670" y="3995">
+   </LINKPOINT>
+   <LINKPOINT x="6155" y="3970">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="84" dstpinname="Save" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="670" y="3995">
+   </LINKPOINT>
+   <LINKPOINT x="8090" y="3970">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="88" dstpinname="Save" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="670" y="3995">
+   </LINKPOINT>
+   <LINKPOINT x="10085" y="3970">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Save" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="670" y="3995">
+   </LINKPOINT>
+   <LINKPOINT x="12020" y="3970">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="86" dstpinname="Save" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="670" y="3995">
+   </LINKPOINT>
+   <LINKPOINT x="13985" y="3970">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="85" dstpinname="Save" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="670" y="3995">
+   </LINKPOINT>
+   <LINKPOINT x="15920" y="3970">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="121" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2340" top="3660" width="5040" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2340" top="3660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="file.foo">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="106" srcpinname="Output Name1" dstnodeid="121" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="122" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3480" top="405" width="1230" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3480" top="405" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="0000010165">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Slide_tag">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="122" srcpinname="Output String" dstnodeid="106" dstpinname="Slide_tag">
    </LINK>
    </PATCH>
