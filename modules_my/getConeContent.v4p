@@ -429,9 +429,9 @@
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="49" dstpinname="Text">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="50" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3990" top="780" width="795" height="240">
+   <BOUNDS type="Box" left="4020" top="780" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3990" top="780" width="0" height="0">
+   <BOUNDS type="Node" left="4020" top="780" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="164">
    </PIN>
@@ -461,7 +461,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4980" top="3615" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" values="|0.72013,0.58741,0.00000,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" values="|0.98145,0.96632,0.00000,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="52" srcpinname="Color Output" dstnodeid="49" dstpinname="Color">

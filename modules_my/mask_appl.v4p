@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\mask_appl.v4p" systemname="mask_appl" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\P_BorderFader\mask_appl.v4p">
-   <BOUNDS type="Window" left="0" top="180" width="18030" height="16020">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\mask_appl.v4p" systemname="mask_appl" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\P_BorderFader\mask_appl.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2520" top="2325" width="17595" height="16005">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="2">
    <BOUNDS type="Node" left="2040" top="6390" width="100" height="100">
@@ -222,7 +222,7 @@
    </NODE>
    <LINK srcnodeid="60" srcpinname="Layer" dstnodeid="39" dstpinname="Layers">
    </LINK>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="65" systemname="IOBox (String)">
    <BOUNDS type="Box" left="10800" top="630" width="7590" height="615">
@@ -669,7 +669,7 @@
    </BOUNDS>
    <PIN pinname="Control" visible="1" pintype="Input">
    </PIN>
-   <PIN pinname="Input 1" visible="1" pintype="Input">
+   <PIN pinname="Input 1" visible="1" pintype="Input" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -725,7 +725,7 @@
    <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="86">
    <BOUNDS type="Node" left="13215" top="4050" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Texture" visible="1">
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>

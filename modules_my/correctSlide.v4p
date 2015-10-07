@@ -1,15 +1,15 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.1.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\correctSlide.v4p" systemname="correctCam" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_iTable\correctCam.v4p">
-   <BOUNDS type="Window" left="375" top="45" width="17655" height="15885">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\correctSlide.v4p" systemname="correctCam" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_iTable\correctCam.v4p" scrollx="0" scrolly="-720">
+   <BOUNDS type="Window" left="5460" top="1950" width="17760" height="16050">
    </BOUNDS>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE componentmode="InABox" hiddenwhenlocked="0" id="58" nodename="Renderer (EX9)" systemname="Renderer (EX9)" stayontop="1">
    <BOUNDS height="0" left="2640" top="6705" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="7260" left="2745" top="765" type="Window" width="9240">
    </BOUNDS>
-   <BOUNDS height="10620" left="2640" top="6705" type="Box" width="26160">
+   <BOUNDS height="10605" left="2640" top="6705" type="Box" width="21195">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>

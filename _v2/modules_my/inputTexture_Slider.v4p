@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\inputTexture_Slider.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="705" top="0" width="17775" height="15855">
+   <BOUNDS type="Window" left="690" top="0" width="17775" height="15735">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
