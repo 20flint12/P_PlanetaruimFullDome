@@ -2500,4 +2500,20 @@
    </LINK>
    <LINK srcnodeid="811" srcpinname="Texture Out" dstnodeid="206" dstpinname="Input Node">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="818" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6240" top="13860" width="3705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6240" top="13860" width="2460" height="765">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|ctrl+Q - single shoot, ctrl+P - continues shooting|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
    </PATCH>
