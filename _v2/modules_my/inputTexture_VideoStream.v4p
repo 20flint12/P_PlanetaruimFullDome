@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\inputTexture_VideoStream.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_my\inputTexture_VideoStream.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2445" top="2505" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -21,7 +21,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Play">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -49,9 +49,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4245" top="1860" width="2340" height="525">
+   <BOUNDS type="Box" left="6060" top="1830" width="2340" height="525">
    </BOUNDS>
-   <BOUNDS type="Node" left="4245" top="1860" width="0" height="0">
+   <BOUNDS type="Node" left="6060" top="1830" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="..\..\..\..\..\..\MEDIA\Астронавт.avi">
    </PIN>
@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4275" top="2550" width="2340" height="525">
+   <BOUNDS type="Box" left="6090" top="2520" width="2340" height="525">
    </BOUNDS>
-   <BOUNDS type="Node" left="4275" top="2550" width="0" height="0">
+   <BOUNDS type="Node" left="6090" top="2520" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="|..\..\..\..\..\resources\1 сезон 5 серия (LIBERTY).avi|">
    </PIN>
@@ -155,7 +155,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="myVideoStream" filename="myVideoStream.v4p" nodename="myVideoStream" componentmode="Hidden" id="4" stayontop="0">
-   <BOUNDS type="Node" left="2430" top="3270" width="100" height="100">
+   <BOUNDS type="Node" left="2430" top="3270" width="3720" height="270">
    </BOUNDS>
    <PIN pinname="Play" visible="1">
    </PIN>
@@ -171,7 +171,7 @@
    </PIN>
    <PIN pinname="Loop" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Speed" visible="1">
+   <PIN pinname="Speed" visible="1" slicecount="1" values="0.1">
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Play">
@@ -179,11 +179,11 @@
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Do Seek">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3900" top="1080" width="795" height="240">
+   <BOUNDS type="Box" left="4605" top="1140" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3900" top="1080" width="0" height="0">
+   <BOUNDS type="Node" left="4605" top="1140" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.44">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.35">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
