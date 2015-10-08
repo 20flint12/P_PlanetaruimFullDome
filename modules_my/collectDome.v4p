@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="12240" locked="0">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="12240" locked="0">
    <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -126,7 +126,7 @@
    <PIN pinname="Backbuffer Height" slicecount="1" visible="1" values="1000">
    </PIN>
    </NODE>
-   <NODE systemname="SlideDome" filename="SlideDome.v4p" nodename="SlideDome.v4p" componentmode="InAWindow" id="88">
+   <NODE systemname="SlideDome" filename="SlideDome.v4p" nodename="SlideDome.v4p" componentmode="Hidden" id="88">
    <BOUNDS type="Node" left="1965" top="22770" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="17070" top="5145" width="10140" height="10215">
