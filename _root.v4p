@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="6165" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="11565" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
    <BOUNDS height="15690" left="690" top="0" type="Window" width="17775">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -1045,9 +1045,9 @@
    <LINK srcnodeid="708" srcpinname="Y Output Value" dstnodeid="173" dstpinname="Enabled">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="709" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11505" top="17445" width="795" height="240">
+   <BOUNDS type="Box" left="11970" top="17025" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11505" top="17445" width="0" height="0">
+   <BOUNDS type="Node" left="11970" top="17025" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1063,9 +1063,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="709" srcpinname="Y Output Value" dstnodeid="707" dstpinname="Input #slide" linkstyle="Bezier">
-   <LINKPOINT x="9480" y="21585">
+   <LINKPOINT x="9790" y="21305">
    </LINKPOINT>
-   <LINKPOINT x="17565" y="21075">
+   <LINKPOINT x="17720" y="20935">
    </LINKPOINT>
    </LINK>
    <NODE systemname="reprojectionSlide_mod" filename="_v2\modules_my\reprojectionSlide_mod.v4p" nodename="_v2\modules_my\reprojectionSlide_mod.v4p" componentmode="Hidden" id="711">
