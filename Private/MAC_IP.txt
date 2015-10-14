@@ -17,7 +17,7 @@ wifi planeta2014
 
 tplink
 admin d2o0m1e4
-wifi d2o0m1e4
+wifi dome2014
 
 fulldome2014@gmail.com
 dome2014

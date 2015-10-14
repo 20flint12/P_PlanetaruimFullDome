@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\TransformsProjectors.v4p" systemname="TransformsProjectors" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_Projection_HalfSphere\TransformsProjectors.v4p" locked="0" scrollx="5145" scrolly="0">
-   <BOUNDS type="Window" left="0" top="930" width="17760" height="13950">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\TransformsProjectors.v4p" systemname="TransformsProjectors" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_Projection_HalfSphere\TransformsProjectors.v4p" locked="0" scrollx="0" scrolly="-1440">
+   <BOUNDS type="Window" left="12705" top="810" width="17760" height="13950">
    </BOUNDS>
    <NODE componentmode="InABox" id="94" nodename="IOBOX (VALUE ADVANCED)" hiddenwhenlocked="1" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="435" top="8865" type="Node" width="0">
@@ -245,7 +245,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-1.045,0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-1.043,0">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -423,7 +423,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-0.0945,0.07">
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-0.0955,0.068">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -2105,7 +2105,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="17550" top="1020" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="47.5">
+   <PIN pinname="Y Input Value" slicecount="1" values="46.2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2119,7 +2119,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="16860" top="1020" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="74.5">
+   <PIN pinname="Y Input Value" slicecount="1" values="80">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2143,11 +2143,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="191" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3465" top="1005" width="645" height="240">
+   <BOUNDS type="Box" left="3555" top="945" width="645" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3465" top="1005" width="0" height="0">
+   <BOUNDS type="Node" left="3555" top="945" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="-0.2">
+   <PIN pinname="Y Input Value" slicecount="1" values="-0.65">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

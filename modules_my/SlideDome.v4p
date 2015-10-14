@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\SlideDome.v4p" systemname="SlideDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\SlideDome.v4p" scrollx="0" scrolly="360">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\SlideDome.v4p" systemname="SlideDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\SlideDome.v4p" scrollx="0" scrolly="360">
    <BOUNDS type="Window" left="11460" top="3105" width="7665" height="6105">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -171,7 +171,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5655" top="3120" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="4.5">
+   <PIN pinname="Y Input Value" slicecount="1" values="4.45">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

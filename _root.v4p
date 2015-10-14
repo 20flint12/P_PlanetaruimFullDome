@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="11565" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
-   <BOUNDS height="15690" left="690" top="0" type="Window" width="17775">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="3315" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
+   <BOUNDS height="15690" left="750" top="0" type="Window" width="17775">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -693,7 +693,7 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
    </BOUNDS>
    <PIN pinname="Texture Out Slide0" visible="1">
    </PIN>
@@ -931,7 +931,7 @@
    <NODE systemname="TransformsProjectors" filename="modules_my\TransformsProjectors.v4p" nodename="modules_my\TransformsProjectors.v4p" componentmode="Hidden" id="151" stayontop="1">
    <BOUNDS type="Node" left="2280" top="855" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="930" width="17760" height="13950">
+   <BOUNDS type="Window" left="12705" top="810" width="17760" height="13950">
    </BOUNDS>
    <PIN pinname="Output_translate" visible="1">
    </PIN>
@@ -969,7 +969,7 @@
    <NODE systemname="writeTexture" filename="modules_my\writeTexture.v4p" nodename="modules_my\writeTexture.v4p" componentmode="InAWindow" id="707" stayontop="0">
    <BOUNDS type="Node" left="4530" top="24000" width="9180" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
    </BOUNDS>
    <PIN pinname="Save Slides - Update PHP" visible="1">
    </PIN>
@@ -1405,7 +1405,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="18360" top="6015" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="4.5">
+   <PIN pinname="Y Input Value" slicecount="1" values="4.45">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1416,14 +1416,14 @@
    </NODE>
    <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="725" dstpinname="Z_distance">
    </LINK>
-   <NODE systemname="mash_(interactive)" filename="modules_my\mash_(interactive).v4p" nodename="modules_my\mash_(interactive).v4p" componentmode="InAWindow" id="582" managers="">
+   <NODE systemname="mash_(interactive)" filename="modules_my\mash_(interactive).v4p" nodename="modules_my\mash_(interactive).v4p" componentmode="Hidden" id="582" managers="">
    <BOUNDS type="Node" left="9360" top="8130" width="765" height="270">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Layers" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="7725" top="810" width="22740" height="13950">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.638">
    </PIN>
@@ -2375,7 +2375,7 @@
    <NODE systemname="inputTexture_Slider" filename="_v2\modules_my\inputTexture_Slider.v4p" nodename="_v2\modules_my\inputTexture_Slider.v4p" componentmode="InAWindow" id="808">
    <BOUNDS type="Node" left="4395" top="9360" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -2383,7 +2383,7 @@
    <NODE systemname="inputTexture_VideoStream" filename="_v2\modules_my\inputTexture_VideoStream.v4p" nodename="_v2\modules_my\inputTexture_VideoStream.v4p" componentmode="InAWindow" id="809" stayontop="0">
    <BOUNDS type="Node" left="4680" top="9885" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1" slicecount="1" values="||">
    </PIN>
@@ -2421,7 +2421,7 @@
    <NODE systemname="keyboardControl_counter" filename="_v2\modules_my\keyboardControl_counter.v4p" nodename="_v2\modules_my\keyboardControl_counter.v4p" componentmode="InAWindow" id="812">
    <BOUNDS type="Node" left="6525" top="14775" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -2447,7 +2447,7 @@
    <NODE systemname="php_modifier" filename="_v2\modules_my\php_modifier.v4p" nodename="_v2\modules_my\php_modifier.v4p" componentmode="InAWindow" id="814">
    <BOUNDS type="Node" left="7170" top="15630" width="1410" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
