@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="9855" locked="0">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="-720" locked="0">
    <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -150,7 +150,7 @@
    </LINK>
    <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="88" dstpinname="Index">
    </LINK>
-   <NODE systemname="getConeContent" filename="getConeContent.v4p" nodename="getConeContent.v4p" componentmode="InAWindow" id="91" stayontop="1">
+   <NODE systemname="getConeContent" filename="getConeContent.v4p" nodename="getConeContent.v4p" componentmode="Hidden" id="91" stayontop="1">
    <BOUNDS type="Node" left="4515" top="8220" width="3585" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="5625" top="2835" width="13245" height="11505">
@@ -594,7 +594,7 @@
    <PIN pinname="Input 1" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="114">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="114" stayontop="1">
    <BOUNDS type="Node" left="8790" top="15420" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="8790" top="15420" width="3660" height="2370">
@@ -1343,7 +1343,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13410" top="11265" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1353,7 +1353,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="192" srcpinname="Y Output Value" dstnodeid="187" dstpinname="Enabled">
@@ -1431,7 +1431,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9270" top="18600" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1441,7 +1441,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="197" dstpinname="Enabled">

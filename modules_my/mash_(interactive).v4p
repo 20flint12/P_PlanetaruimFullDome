@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\mash_(interactive).v4p" systemname="mash_ (interactive)" filename="D:\PROJECTS\VVVV_PROJECTS\Patches_flint1\P_interactive_mash\mash_(interactive).v4p" scrollx="6030" scrolly="570">
-   <BOUNDS height="13950" left="7725" top="810" type="Window" width="22740">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\mash_(interactive).v4p" systemname="mash_ (interactive)" filename="D:\PROJECTS\VVVV_PROJECTS\Patches_flint1\P_interactive_mash\mash_(interactive).v4p" scrollx="9720" scrolly="0">
+   <BOUNDS height="13950" left="9975" top="810" type="Window" width="20490">
    </BOUNDS>
    <NODE id="8" componentmode="InABox" managers="" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <PIN pinname="Y Output Value" visible="1">
@@ -1705,7 +1705,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="22455" top="3690" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" pintype="Input" visible="1" values="0.559">
+   <PIN pinname="Y Input Value" slicecount="1" pintype="Input" visible="1" values="0.54">
    </PIN>
    <PIN pinname="Y Output Value" visible="1" pintype="Output">
    </PIN>
@@ -2259,7 +2259,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8895" top="5055" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2269,7 +2269,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="243" srcpinname="Y Output Value" dstnodeid="211" dstpinname="Enabled">
@@ -2433,7 +2433,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13980" top="9810" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.015">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.01">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2581,7 +2581,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="16875" top="9810" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.643">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.652">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2761,7 +2761,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15360" top="10365" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.542">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.545">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2783,7 +2783,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15960" top="9420" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.76">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.756">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2975,7 +2975,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9690" top="5085" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2985,7 +2985,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>

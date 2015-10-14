@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_grubbed\overview.v4p" locked="0">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_grubbed\overview.v4p" locked="0">
    <BOUNDS height="8910" left="1020" top="1065" type="Window" width="15735">
    </BOUNDS>
    <NODE componentmode="InABox" id="11" managers="" nodename="IOBox (Node)">
@@ -212,7 +212,7 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="4" dstpinname="Layer 2">
    </LINK>
-   <NODE componentmode="InAWindow" id="19" nodename="RENDERER (EX9)" systemname="Renderer (EX9)" stayontop="0">
+   <NODE componentmode="InABox" id="19" nodename="RENDERER (EX9)" systemname="Renderer (EX9)" stayontop="0">
    <BOUNDS height="0" left="2040" top="7620" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="7605" left="18615" top="0" type="Window" width="9960">
