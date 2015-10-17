@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="555" top="0" width="17775" height="15960">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -16,6 +16,8 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Input String" visible="1" slicecount="1" values="D:\PROJECTS\VVVV_PROJECTS\resources\_PHOTO_DOME\17\parts\slide1\slide1_0000000000.jpg\render_000000">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Currently Saving|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
@@ -397,7 +399,7 @@
    <NODE systemname="namesOfFiles" filename="namesOfFiles.v4p" nodename="namesOfFiles.v4p" componentmode="InAWindow" id="106" stayontop="0">
    <BOUNDS type="Node" left="2160" top="3030" width="13725" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="555" top="0" width="17775" height="15960">
    </BOUNDS>
    <PIN pinname="Output Name1" visible="1">
    </PIN>
