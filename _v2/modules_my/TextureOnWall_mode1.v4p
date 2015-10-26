@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_my\TextureOnWall_mode1.v4p" systemname="TextureOnWall" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\TextureOnWall.v4p" locked="0" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\TextureOnWall_mode1.v4p" systemname="TextureOnWall" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\TextureOnWall.v4p" locked="0" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="345" top="4530" width="12780" height="11670">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -57,7 +57,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10650" top="1155" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="-0.284">
+   <PIN pinname="Y Input Value" slicecount="1" values="-0.608">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -97,7 +97,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,-4.34,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,-10,0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Translate_in">
    </PIN>

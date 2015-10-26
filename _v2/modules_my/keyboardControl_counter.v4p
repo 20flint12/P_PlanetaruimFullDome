@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_my\keyboardControl_counter.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\keyboardControl_counter.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15675">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -24,10 +24,10 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="getTextureFromDir" filename="getTextureFromDir.v4p" nodename="getTextureFromDir.v4p" componentmode="InAWindow" id="102" stayontop="0">
+   <NODE systemname="getTextureFromDir" filename="getTextureFromDir.v4p" nodename="getTextureFromDir.v4p" componentmode="InAWindow" id="102" stayontop="0" debug="0">
    <BOUNDS type="Node" left="2685" top="5085" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15690">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15675">
    </BOUNDS>
    <PIN pinname="Get File and render" visible="1" slicecount="1" values="0">
    </PIN>

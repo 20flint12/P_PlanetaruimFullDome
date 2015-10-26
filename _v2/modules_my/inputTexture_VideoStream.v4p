@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_my\inputTexture_VideoStream.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="690" top="0" width="17775" height="15690">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\inputTexture_VideoStream.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="750" top="0" width="17775" height="15675">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -49,11 +49,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="6060" top="1830" width="2340" height="525">
+   <BOUNDS type="Box" left="6060" top="1830" width="6870" height="360">
    </BOUNDS>
    <BOUNDS type="Node" left="6060" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="..\..\..\..\..\..\MEDIA\Астронавт.avi">
+   <PIN pinname="Input String" slicecount="1" values="C:\Users\Public\transfer\eso_all!!!!!_90000kbps.AVI">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.avi">
    </PIN>
@@ -67,7 +67,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="6090" top="2520" width="2340" height="525">
+   <BOUNDS type="Box" left="6090" top="2520" width="6720" height="315">
    </BOUNDS>
    <BOUNDS type="Node" left="6090" top="2520" width="0" height="0">
    </BOUNDS>
@@ -105,7 +105,7 @@
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="13">
    <BOUNDS type="Node" left="915" top="6405" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="915" top="6405" width="5340" height="5250">
+   <BOUNDS type="Box" left="915" top="6405" width="8775" height="7560">
    </BOUNDS>
    <BOUNDS type="Window" left="4215" top="10005" width="6150" height="4920">
    </BOUNDS>
@@ -161,7 +161,7 @@
    </PIN>
    <PIN pinname="Do Seek" visible="1">
    </PIN>
-   <PIN pinname="Filename" visible="1" slicecount="1" values="..\..\..\..\..\..\MEDIA\Астронавт.avi">
+   <PIN pinname="Filename" visible="1" slicecount="1" values="|..\..\..\..\..\resources\1 сезон 5 серия (LIBERTY).avi|">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -183,7 +183,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4605" top="1140" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.35">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -196,10 +196,12 @@
    </NODE>
    <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Speed">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="4" dstpinname="Filename">
-   </LINK>
    <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="12" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="14" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="4" dstpinname="Filename">
+   <LINKPOINT x="5670" y="2850">
+   </LINKPOINT>
    </LINK>
    </PATCH>
