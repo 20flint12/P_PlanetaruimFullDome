@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="0" scrolly="1080">
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15675">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="-720" scrolly="1440">
+   <BOUNDS type="Window" left="510" top="0" width="18015" height="15675">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -51,7 +51,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="Lichtmond_Vertriebstrailer_007_{0}.jpg">
+   <PIN pinname="Input" visible="1" slicecount="1" values="eso_all!!!!!_90000kbps_25f_{0}.jpg">
    </PIN>
    <PIN pinname="Argument 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -61,7 +61,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3765" top="7680" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Lichtmond_Vertriebstrailer_007_{0}.jpg">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Yaga_Kha_20_3000_{0}.jpg">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -97,7 +97,7 @@
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="20" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1965" top="10425" width="7155" height="345">
+   <BOUNDS type="Box" left="1965" top="10425" width="7755" height="450">
    </BOUNDS>
    <BOUNDS type="Node" left="1965" top="10425" width="0" height="0">
    </BOUNDS>
@@ -509,7 +509,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5190" top="3915" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="339">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1650">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -755,7 +755,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Exists (File)" nodename="Exists (File)" componentmode="Hidden" id="73">
-   <BOUNDS type="Node" left="4230" top="11205" width="100" height="100">
+   <BOUNDS type="Node" left="8265" top="11115" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Read" slicecount="1" values="0">
    </PIN>
@@ -763,21 +763,21 @@
    <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="73" dstpinname="Filename">
    </LINK>
    <LINK srcnodeid="73" srcpinname="Exists" dstnodeid="2" dstpinname="Y Input Value">
-   <LINKPOINT x="4200" y="11700">
+   <LINKPOINT x="7563" y="11625">
    </LINKPOINT>
-   <LINKPOINT x="5805" y="11805">
+   <LINKPOINT x="8495" y="11745">
    </LINKPOINT>
-   <LINKPOINT x="7950" y="11835">
+   <LINKPOINT x="9968" y="11790">
    </LINKPOINT>
-   <LINKPOINT x="8055" y="11520">
+   <LINKPOINT x="9400" y="11490">
    </LINKPOINT>
-   <LINKPOINT x="7635" y="4905">
+   <LINKPOINT x="8307" y="4890">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="76" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2175" top="7260" width="2880" height="285">
+   <BOUNDS type="Box" left="2160" top="7260" width="2880" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="2175" top="7260" width="0" height="0">
+   <BOUNDS type="Node" left="2160" top="7260" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="eso_all!!!!!_90000kbps_25f_{0}.jpg">
    </PIN>
@@ -913,7 +913,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2930" top="960" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="20">
+   <PIN pinname="Input String" slicecount="1" values="21">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -992,8 +992,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="76" srcpinname="Output String" dstnodeid="22" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="116" systemname="IOBox (String)">
    <BOUNDS type="Node" left="900" top="11235" width="840" height="270">
    </BOUNDS>
@@ -1093,31 +1091,17 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9300" top="9105" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|Volume Texture|">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Texture">
    </PIN>
    <PIN pinname="Style" slicecount="1" values="List">
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="18" dstpinname="Input String">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="125" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="8055" top="3165" width="2535" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8055" top="3165" width="2535" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="eso_all!!!!!_90000kbps_25f_00339">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE componentmode="Hidden" id="126" nodename="FILETEXTURE (EX9.TEXTURE)" systemname="FileTexture (EX9.Texture)">
-   <BOUNDS height="0" left="1965" top="11505" type="Node" width="0">
+   <BOUNDS height="270" left="1965" top="11505" type="Node" width="5415">
    </BOUNDS>
-   <PIN pinname="Repair" slicecount="1" values="0">
+   <PIN pinname="Repair" slicecount="1" visible="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Reload" slicecount="1" values="0">
    </PIN>
@@ -1132,6 +1116,24 @@
    <PIN pinname="Type" visible="1" pintype="Input">
    </PIN>
    <PIN pinname="Up And Running" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Preload" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Width" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Height" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Depth" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Original Width" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Original Height" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Original Depth" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Original MipMap Count" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" visible="1" pintype="Output">
    </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="126" dstpinname="Filename">
@@ -1151,5 +1153,7 @@
    <LINK srcnodeid="123" srcpinname="Output Enum" dstnodeid="126" dstpinname="Mip Map Count">
    </LINK>
    <LINK srcnodeid="124" srcpinname="Output Enum" dstnodeid="126" dstpinname="Type">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="22" dstpinname="Input">
    </LINK>
    </PATCH>

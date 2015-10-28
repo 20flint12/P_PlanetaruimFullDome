@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15675">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="510" top="0" width="18015" height="15675">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -399,7 +399,7 @@
    <NODE systemname="namesOfFiles" filename="namesOfFiles.v4p" nodename="namesOfFiles.v4p" componentmode="InAWindow" id="106" stayontop="0">
    <BOUNDS type="Node" left="2160" top="3030" width="13725" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15675">
+   <BOUNDS type="Window" left="510" top="0" width="18015" height="15675">
    </BOUNDS>
    <PIN pinname="Output Name1" visible="1">
    </PIN>
@@ -486,6 +486,8 @@
    <PIN pinname="FileName" slicecount="1" visible="1" values="..\..\..\..\..\resources\writer_result\texture\slide1.jpg">
    </PIN>
    <PIN pinname="File Format" slicecount="1" values="JPG">
+   </PIN>
+   <PIN pinname="Success" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="106" srcpinname="Output Name1" dstnodeid="81" dstpinname="FileName">
@@ -807,5 +809,23 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="122" srcpinname="Output String" dstnodeid="106" dstpinname="Slide_tag">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="123" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2310" top="5655" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2310" top="5655" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Success">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Success" dstnodeid="123" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
