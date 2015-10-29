@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="-720" scrolly="1440">
-   <BOUNDS type="Window" left="510" top="0" width="18015" height="15675">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="0" scrolly="5400">
+   <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -509,7 +509,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5190" top="3915" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1650">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1000">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1079,7 +1079,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13230" top="3960" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Automatic">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="|From File|">
    </PIN>
    <PIN pinname="Output Enum" visible="1">
    </PIN>

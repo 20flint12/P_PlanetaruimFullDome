@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="510" top="0" width="18015" height="15675">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\writeTexture.v4p" systemname="writeTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\writeTexture.v4p" locked="0" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -399,7 +399,7 @@
    <NODE systemname="namesOfFiles" filename="namesOfFiles.v4p" nodename="namesOfFiles.v4p" componentmode="InAWindow" id="106" stayontop="0">
    <BOUNDS type="Node" left="2160" top="3030" width="13725" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="510" top="0" width="18015" height="15675">
+   <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    <PIN pinname="Output Name1" visible="1">
    </PIN>
@@ -517,19 +517,19 @@
    </PIN>
    <PIN pinname="Path to directory" visible="1" slicecount="8" values="..\..\..\..\resources\_PHOTO_DOME\17\parts\slide1\,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide2\,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide3\,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide4\,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide5\,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide6\,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide7\,..\..\..\..\resources\_PHOTO_DOME\17\parts\slide8\">
    </PIN>
-   <PIN pinname="Texture2" visible="1">
+   <PIN pinname="Texture2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Texture3" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Texture4" visible="1">
+   <PIN pinname="Texture4" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Texture5" visible="1">
+   <PIN pinname="Texture5" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Texture6" visible="1">
+   <PIN pinname="Texture6" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Texture7" visible="1">
+   <PIN pinname="Texture7" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Texture8" visible="1">
+   <PIN pinname="Texture8" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="FrameName Padding" visible="1" slicecount="1" values="6">
    </PIN>
@@ -777,9 +777,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="121" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2340" top="3660" width="5040" height="255">
+   <BOUNDS type="Box" left="2820" top="3630" width="9525" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2340" top="3660" width="0" height="0">
+   <BOUNDS type="Node" left="2820" top="3630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="file.foo">
    </PIN>

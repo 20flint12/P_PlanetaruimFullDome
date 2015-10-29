@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_my\keyboardControl_counter.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="510" top="0" width="18015" height="15675">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\keyboardControl_counter.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -24,7 +24,7 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="keyboardControl" filename="keyboardControl.v4p" nodename="keyboardControl.v4p" componentmode="Hidden" id="104">
+   <NODE systemname="keyboardControl" filename="keyboardControl.v4p" nodename="keyboardControl.v4p" componentmode="InAWindow" id="104">
    <BOUNDS type="Node" left="2670" top="3810" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="870" top="9630" width="9510" height="6570">
@@ -214,10 +214,10 @@
    </NODE>
    <LINK srcnodeid="104" srcpinname="Output" dstnodeid="129" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="getTextureFromDir" filename="getTextureFromDir.v4p" nodename="getTextureFromDir.v4p" componentmode="InAWindow" id="130" stayontop="0" debug="1">
+   <NODE systemname="getTextureFromDir" filename="getTextureFromDir.v4p" nodename="getTextureFromDir.v4p" componentmode="InAWindow" id="130" stayontop="0" debug="0">
    <BOUNDS type="Node" left="2685" top="5085" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="510" top="0" width="18015" height="15675">
+   <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="104" srcpinname="Output" dstnodeid="130" dstpinname="Get File and render">
