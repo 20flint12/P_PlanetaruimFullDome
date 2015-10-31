@@ -609,9 +609,9 @@
    <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="110" dstpinname="Path to directory">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="112" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2745" top="10845" width="795" height="240">
+   <BOUNDS type="Box" left="2970" top="10665" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2745" top="10845" width="0" height="0">
+   <BOUNDS type="Node" left="2970" top="10665" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="25">
    </PIN>
@@ -711,7 +711,7 @@
    <LINK srcnodeid="110" srcpinname="Output" dstnodeid="118" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="119" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1800" top="9105" width="795" height="240">
+   <BOUNDS type="Box" left="1800" top="9105" width="1140" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="1800" top="9105" width="0" height="0">
    </BOUNDS>
@@ -807,6 +807,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Slide_tag">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="122" srcpinname="Output String" dstnodeid="106" dstpinname="Slide_tag">
    </LINK>
@@ -827,5 +829,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Success" dstnodeid="123" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="122" srcpinname="Output String" dstnodeid="119" dstpinname="Input String">
    </LINK>
    </PATCH>
