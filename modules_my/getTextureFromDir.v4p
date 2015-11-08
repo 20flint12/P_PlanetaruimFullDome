@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="0" scrolly="360">
    <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -51,7 +51,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="eso_all!!!!!_90000kbps_25f_{0}.jpg">
+   <PIN pinname="Input" visible="1" slicecount="1" values="Moon-to-Sun-Kha-20_{0}.jpg">
    </PIN>
    <PIN pinname="Argument 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -145,11 +145,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3885" top="8025" width="1590" height="255">
+   <BOUNDS type="Box" left="3780" top="8055" width="1590" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="3885" top="8025" width="0" height="0">
+   <BOUNDS type="Node" left="3780" top="8055" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="dome_helc_{0}.jpg">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Moon-to-Sun-Kha-20_{0}.jpg">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -509,7 +509,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5190" top="3915" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1000">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -627,11 +627,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="44" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4080" top="8415" width="1935" height="270">
+   <BOUNDS type="Box" left="3840" top="8460" width="3630" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="8415" width="0" height="0">
+   <BOUNDS type="Node" left="3840" top="8460" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="STS135_4K_DM000{0}.jpg">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Air_Ghosts_Kha_20_3000_{0}.jpg">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -825,9 +825,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="83" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Input">
@@ -913,7 +913,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2930" top="960" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="21">
+   <PIN pinname="Input String" slicecount="1" values="17">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1154,8 +1154,6 @@
    </LINK>
    <LINK srcnodeid="124" srcpinname="Output Enum" dstnodeid="126" dstpinname="Type">
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="22" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="127" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6150" top="12420" width="480" height="480">
    </BOUNDS>
@@ -1171,5 +1169,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="126" srcpinname="Up And Running" dstnodeid="127" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Output String" dstnodeid="22" dstpinname="Input">
    </LINK>
    </PATCH>

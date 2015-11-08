@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\namesOfFiles.v4p" systemname="namesOfFiles" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\namesOfFiles.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15675">
+   <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -497,7 +497,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1680" top="2130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="21">
+   <PIN pinname="Input String" slicecount="1" values="17">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
