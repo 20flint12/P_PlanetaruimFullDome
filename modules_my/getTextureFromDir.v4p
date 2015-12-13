@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="0" scrolly="360">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="0" scrolly="3960">
    <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -11,7 +11,7 @@
    </PIN>
    <PIN pinname="Characters after Comma" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Characters before Comma" slicecount="1" values="5">
+   <PIN pinname="Characters before Comma" slicecount="1" visible="1" values="6">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -51,7 +51,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="Moon-to-Sun-Kha-20_{0}.jpg">
+   <PIN pinname="Input" visible="1" slicecount="1" values="{0}.jpg">
    </PIN>
    <PIN pinname="Argument 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -485,6 +485,8 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Maximum">
    </LINK>
@@ -509,7 +511,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5190" top="3915" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -729,11 +731,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="54" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4080" top="8790" width="1920" height="285">
+   <BOUNDS type="Box" left="2400" top="8760" width="1920" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="8790" width="0" height="0">
+   <BOUNDS type="Node" left="2400" top="8760" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="STDEMO_4K_000{0}.jpg">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="pic_{0}.jpg">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -759,19 +761,21 @@
    </BOUNDS>
    <PIN pinname="Read" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Exists" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="73" dstpinname="Filename">
    </LINK>
    <LINK srcnodeid="73" srcpinname="Exists" dstnodeid="2" dstpinname="Y Input Value">
-   <LINKPOINT x="7563" y="11625">
+   <LINKPOINT x="8685" y="11700">
    </LINKPOINT>
-   <LINKPOINT x="8495" y="11745">
+   <LINKPOINT x="9945" y="11610">
    </LINKPOINT>
-   <LINKPOINT x="9968" y="11790">
+   <LINKPOINT x="9705" y="4875">
    </LINKPOINT>
-   <LINKPOINT x="9400" y="11490">
+   <LINKPOINT x="8565" y="4515">
    </LINKPOINT>
-   <LINKPOINT x="8307" y="4890">
+   <LINKPOINT x="7290" y="4965">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="76" systemname="IOBox (String)">
@@ -909,11 +913,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="90" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2930" top="960" width="6090" height="630">
+   <BOUNDS type="Box" left="2935" top="960" width="6180" height="645">
    </BOUNDS>
-   <BOUNDS type="Node" left="2930" top="960" width="0" height="0">
+   <BOUNDS type="Node" left="2935" top="960" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="17">
+   <PIN pinname="Input String" slicecount="1" values="19">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -922,6 +926,8 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Working folder|">
    </PIN>
    </NODE>
    <LINK srcnodeid="90" srcpinname="Output String" dstnodeid="94" dstpinname="Argument 1">
@@ -981,7 +987,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2265" top="8055" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="dome_film2_{0}.png">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="{0}.jpg">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1170,6 +1176,64 @@
    </NODE>
    <LINK srcnodeid="126" srcpinname="Up And Running" dstnodeid="127" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="44" srcpinname="Output String" dstnodeid="22" dstpinname="Input">
+   <LINK srcnodeid="54" srcpinname="Output String" dstnodeid="22" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="128" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3315" top="5925" width="285" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3315" top="5925" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="6">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Characters before Comma">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="130">
+   <BOUNDS type="Node" left="5400" top="6600" width="450" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Overflow" dstnodeid="130" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="131" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5415" top="6930" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5415" top="6930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="130" srcpinname="Output" dstnodeid="131" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="132" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="615" top="7260" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="615" top="7260" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Total">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="132" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

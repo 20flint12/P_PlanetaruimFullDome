@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_absolete.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="7470" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_absolete.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="14385" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
    <BOUNDS height="15840" left="705" top="0" type="Window" width="17775">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -770,6 +770,8 @@
    <PIN pinname="Framerate (FPS)" visible="1">
    </PIN>
    <PIN pinname="Currently Saving" visible="1">
+   </PIN>
+   <PIN pinname="Working folder" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="688" srcpinname="Y Output Value" dstnodeid="707" dstpinname="Save Slides - Update PHP">
@@ -1631,7 +1633,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="818" systemname="IOBox (String)">
    <BOUNDS type="Node" left="3030" top="14250" width="3705" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3030" top="14250" width="2655" height="780">
+   <BOUNDS type="Box" left="3030" top="14250" width="2145" height="780">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|tab+Q - single shoot, tab+P - continues shooting|">
    </PIN>
@@ -1809,7 +1811,7 @@
    </PIN>
    </NODE>
    <NODE systemname="getTextureFromDir" filename="modules_my\getTextureFromDir.v4p" nodename="modules_my\getTextureFromDir.v4p" componentmode="InAWindow" id="826">
-   <BOUNDS type="Node" left="6810" top="14490" width="100" height="100">
+   <BOUNDS type="Node" left="6810" top="15015" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1819,23 +1821,27 @@
    </PIN>
    <PIN pinname="Write texture" visible="1">
    </PIN>
+   <PIN pinname="Working folder" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="826" srcpinname="Output" dstnodeid="816" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="826" srcpinname="Texture Out" dstnodeid="822" dstpinname="Input Node">
-   <LINKPOINT x="6675" y="15030">
+   <LINKPOINT x="6675" y="15485">
    </LINKPOINT>
-   <LINKPOINT x="6225" y="13695">
+   <LINKPOINT x="6225" y="14080">
    </LINKPOINT>
-   <LINKPOINT x="6720" y="12585">
+   <LINKPOINT x="6720" y="12900">
    </LINKPOINT>
-   <LINKPOINT x="7425" y="11520">
+   <LINKPOINT x="7425" y="11800">
    </LINKPOINT>
-   <LINKPOINT x="7395" y="9735">
+   <LINKPOINT x="7395" y="9945">
    </LINKPOINT>
-   <LINKPOINT x="6600" y="10170">
+   <LINKPOINT x="6600" y="10310">
    </LINKPOINT>
-   <LINKPOINT x="6285" y="10335">
+   <LINKPOINT x="6285" y="10405">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="825" srcpinname="Output" dstnodeid="826" dstpinname="Get File and render">
@@ -1909,9 +1915,9 @@
    <LINK srcnodeid="826" srcpinname="Write texture" dstnodeid="688" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="831" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="180" top="25515" width="15660" height="480">
+   <BOUNDS type="Box" left="750" top="25515" width="15600" height="465">
    </BOUNDS>
-   <BOUNDS type="Node" left="180" top="25515" width="0" height="0">
+   <BOUNDS type="Node" left="750" top="25515" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1921,7 +1927,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Size" slicecount="1" values="16">
+   <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
    <LINK srcnodeid="707" srcpinname="Currently Saving" dstnodeid="831" dstpinname="Input String">
@@ -1941,5 +1947,47 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="825" srcpinname="pause" dstnodeid="835" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="836" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5565" top="14520" width="4635" height="450">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5565" top="14520" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="20_eso_all!!!!!_90000kbps">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Working folder|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="13">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="836" srcpinname="Output String" dstnodeid="826" dstpinname="Working folder">
+   </LINK>
+   <LINK srcnodeid="836" srcpinname="Output String" dstnodeid="707" dstpinname="Working folder">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="837" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5445" top="16230" width="1515" height="540">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5445" top="16230" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Total">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="826" srcpinname="Total" dstnodeid="837" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

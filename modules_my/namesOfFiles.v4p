@@ -425,9 +425,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="155" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4695" top="1425" width="1170" height="1710">
+   <BOUNDS type="Box" left="9810" top="1455" width="1170" height="1710">
    </BOUNDS>
-   <BOUNDS type="Node" left="4695" top="1425" width="0" height="0">
+   <BOUNDS type="Node" left="9810" top="1455" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="8" values="parts\slide1\,parts\slide2\,parts\slide3\,parts\slide4\,parts\slide5\,parts\slide6\,parts\slide7\,parts\slide8\">
    </PIN>
@@ -493,11 +493,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="160" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1680" top="2130" width="2910" height="630">
+   <BOUNDS type="Box" left="1680" top="2130" width="7410" height="585">
    </BOUNDS>
    <BOUNDS type="Node" left="1680" top="2130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="17">
+   <PIN pinname="Input String" slicecount="1" values="19">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -506,6 +506,8 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Working folder|">
    </PIN>
    </NODE>
    <LINK srcnodeid="160" srcpinname="Output String" dstnodeid="156" dstpinname="Argument 1">
