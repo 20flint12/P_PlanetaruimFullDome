@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\virtual_scenes\3DPanorama\root_3DPanorama.v4p" systemname="_root" filename="C:\Users\roman_g\Desktop\PI_Hauptkapitel_rg\3_3_Anzeigen\3_3_01_Multiscreen\_root.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\virtual_scenes\3DPanorama\root_3DPanorama.v4p" systemname="_root" filename="C:\Users\roman_g\Desktop\PI_Hauptkapitel_rg\3_3_Anzeigen\3_3_01_Multiscreen\_root.v4p" scrollx="0" scrolly="720">
    <BOUNDS type="Window" left="11730" top="6300" width="11910" height="9570">
    </BOUNDS>
    <NODE systemname="3DPanorama" filename="Subpatches\3DPanorama.v4p" nodename="Subpatches\3DPanorama.v4p" componentmode="Hidden" id="17" stayontop="1">

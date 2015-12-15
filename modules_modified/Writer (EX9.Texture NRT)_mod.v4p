@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" systemname="Writer (EX9.Texture NRT)" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" scrollx="0" scrolly="0" locked="0">
-   <BOUNDS height="10665" left="11085" top="3075" type="Window" width="17715">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" systemname="Writer (EX9.Texture NRT)" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\modules_modified\Writer (EX9.Texture NRT)_mod.v4p" scrollx="0" scrolly="360" locked="0">
+   <BOUNDS height="10665" left="4125" top="4395" type="Window" width="23025">
    </BOUNDS>
    <INFO author="vvvv group" description="Render to disk. This module allows to save your animation to disk frame by frame. Not Realtime though..." tags="render, output">
    </INFO>
@@ -57,7 +57,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="000072">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0000000001">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -91,7 +91,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="9540" top="7155" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="330" left="360" top="9315" type="Box" width="6315">
+   <BOUNDS height="330" left="360" top="9315" type="Box" width="8475">
    </BOUNDS>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Currently Saving|">
    </PIN>
@@ -684,7 +684,7 @@
    </NODE>
    <LINK srcnodeid="52" srcpinname="Output" dstnodeid="51" dstpinname="Input String">
    </LINK>
-   <NODE id="50" nodename="Writer (EX9.Texture)" systemname="Writer (EX9.Texture)" hiddenwhenlocked="1">
+   <NODE id="50" nodename="Writer (EX9.Texture)" systemname="Writer (EX9.Texture)" hiddenwhenlocked="0">
    <BOUNDS height="0" left="14265" top="6690" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="FileName" visible="1" slicecount="1" values="file.foo">
@@ -724,7 +724,7 @@
    </NODE>
    <LINK srcnodeid="49" srcpinname="Output Node" dstnodeid="50" dstpinname="Texture">
    </LINK>
-   <NODE id="47" nodename="Writer (EX9.Texture)" systemname="Writer (EX9.Texture)" hiddenwhenlocked="1">
+   <NODE id="47" nodename="Writer (EX9.Texture)" systemname="Writer (EX9.Texture)" hiddenwhenlocked="0">
    <BOUNDS height="0" left="15945" top="6720" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="FileName" visible="1" slicecount="1" values="file.foo">
@@ -1064,8 +1064,6 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="70" srcpinname="Up Edge" dstnodeid="20" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71" systemname="IOBox (Value Advanced)">
@@ -1222,6 +1220,24 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input String|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="84" srcpinname="Output String" dstnodeid="10" dstpinname="Input 3">
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input 1">
+   <LINKPOINT x="1935" y="1920">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="86" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1485" top="5385" width="645" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1485" top="5385" width="645" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="!!!!!!!!!!!">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="10" dstpinname="Input 3">
    </LINK>
    </PATCH>

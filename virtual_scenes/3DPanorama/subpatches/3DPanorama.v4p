@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\virtual_scenes\3DPanorama\Subpatches\3DPanorama.v4p" filename="C:\Users\roman_g\Desktop\PI_Hauptkapitel_rg\3_3_Anzeigen\3_3_01_Multiscreen\Subpatches\3DPanorama.v4p" systemname="3DPanorama" scrollx="0" scrolly="3525">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\virtual_scenes\3DPanorama\Subpatches\3DPanorama.v4p" filename="C:\Users\roman_g\Desktop\PI_Hauptkapitel_rg\3_3_Anzeigen\3_3_01_Multiscreen\Subpatches\3DPanorama.v4p" systemname="3DPanorama" scrollx="0" scrolly="5685">
    <BOUNDS height="14265" left="8910" top="720" type="Window" width="10950">
    </BOUNDS>
    <NODE componentmode="Hidden" id="32" managers="" nodename="Sphere (EX9.Geometry)" systemname="Sphere (EX9.Geometry)">
