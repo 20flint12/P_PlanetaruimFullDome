@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_absolete.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="14385" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_absolete.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="1260" systemname="_root" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\_root.v4p">
    <BOUNDS height="15840" left="705" top="0" type="Window" width="17775">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -692,10 +692,10 @@
    </LINK>
    <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="173" dstpinname="Show_cutting">
    </LINK>
-   <NODE systemname="TransformsProjectors" filename="modules_my\TransformsProjectors.v4p" nodename="modules_my\TransformsProjectors.v4p" componentmode="Hidden" id="151" stayontop="1">
+   <NODE systemname="TransformsProjectors" filename="modules_my\TransformsProjectors.v4p" nodename="modules_my\TransformsProjectors.v4p" componentmode="InAWindow" id="151" stayontop="1">
    <BOUNDS type="Node" left="2280" top="855" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="12705" top="810" width="17760" height="13950">
+   <BOUNDS type="Window" left="8415" top="2100" width="17760" height="13950">
    </BOUNDS>
    <PIN pinname="Output_translate" visible="1">
    </PIN>
@@ -1159,7 +1159,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="18360" top="6015" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="4.45">
+   <PIN pinname="Y Input Value" slicecount="1" values="4.53">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1170,14 +1170,14 @@
    </NODE>
    <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="725" dstpinname="Z_distance">
    </LINK>
-   <NODE systemname="mash_(interactive)" filename="modules_my\mash_(interactive).v4p" nodename="modules_my\mash_(interactive).v4p" componentmode="Hidden" id="582" managers="">
+   <NODE systemname="mash_(interactive)" filename="modules_my\mash_(interactive).v4p" nodename="modules_my\mash_(interactive).v4p" componentmode="InAWindow" id="582" managers="">
    <BOUNDS type="Node" left="9360" top="8130" width="765" height="270">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Layers" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="7425" top="870" width="21375" height="13950">
+   <BOUNDS type="Window" left="7425" top="615" width="21375" height="13950">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.638">
    </PIN>
@@ -1195,7 +1195,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9360" top="8955" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1205,7 +1205,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
    </PIN>
@@ -1585,7 +1585,7 @@
    </PIN>
    </NODE>
    <NODE systemname="php_modifier" filename="_v2\modules_my\php_modifier.v4p" nodename="_v2\modules_my\php_modifier.v4p" componentmode="InAWindow" id="814">
-   <BOUNDS type="Node" left="7170" top="15630" width="1410" height="270">
+   <BOUNDS type="Node" left="6390" top="15960" width="1410" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
@@ -1615,9 +1615,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="817" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7170" top="16170" width="1095" height="270">
+   <BOUNDS type="Box" left="6390" top="16500" width="1095" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="7170" top="16170" width="0" height="0">
+   <BOUNDS type="Node" left="6390" top="16500" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="0000010186">
    </PIN>
@@ -1626,6 +1626,8 @@
    <PIN pinname="File Mask" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="814" srcpinname="Output String" dstnodeid="817" dstpinname="Input String">
@@ -1707,6 +1709,8 @@
    </PIN>
    <PIN pinname="Slide8 Out" visible="1">
    </PIN>
+   <PIN pinname="Frame counter" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="587" srcpinname="Layer" dstnodeid="820" dstpinname="Layer_DomeTexture" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="10830" y="17633">
@@ -1754,8 +1758,6 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="822" srcpinname="Output Node" dstnodeid="206" dstpinname="Input Node">
-   </LINK>
    <NODE id="824" nodename="FormatValue (String)" systemname="FormatValue (String)">
    <BOUNDS height="270" left="9735" top="17430" type="Node" width="1020">
    </BOUNDS>
@@ -1779,7 +1781,7 @@
    </BOUNDS>
    <BOUNDS height="345" left="9735" top="17835" type="Box" width="1425">
    </BOUNDS>
-   <PIN pinname="Input String" visible="1">
+   <PIN pinname="Input String" visible="1" slicecount="1" values="0000000009">
    </PIN>
    <PIN pinname="Columns" slicecount="1" values="1">
    </PIN>
@@ -1790,8 +1792,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="823" dstpinname="Input String" srcnodeid="824" srcpinname="Output">
-   </LINK>
    <LINK srcnodeid="816" srcpinname="Y Output Value" dstnodeid="824" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="823" srcpinname="Output String" dstnodeid="707" dstpinname="Slide_tag">
@@ -1811,7 +1811,7 @@
    </PIN>
    </NODE>
    <NODE systemname="getTextureFromDir" filename="modules_my\getTextureFromDir.v4p" nodename="modules_my\getTextureFromDir.v4p" componentmode="InAWindow" id="826">
-   <BOUNDS type="Node" left="6810" top="15015" width="100" height="100">
+   <BOUNDS type="Node" left="6780" top="15300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1829,27 +1829,27 @@
    <LINK srcnodeid="826" srcpinname="Output" dstnodeid="816" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="826" srcpinname="Texture Out" dstnodeid="822" dstpinname="Input Node">
-   <LINKPOINT x="6675" y="15485">
+   <LINKPOINT x="6649" y="15734">
    </LINKPOINT>
-   <LINKPOINT x="6225" y="14080">
+   <LINKPOINT x="6203" y="14294">
    </LINKPOINT>
-   <LINKPOINT x="6720" y="12900">
+   <LINKPOINT x="6701" y="13078">
    </LINKPOINT>
-   <LINKPOINT x="7425" y="11800">
+   <LINKPOINT x="7410" y="11942">
    </LINKPOINT>
-   <LINKPOINT x="7395" y="9945">
+   <LINKPOINT x="7384" y="10052">
    </LINKPOINT>
-   <LINKPOINT x="6600" y="10310">
+   <LINKPOINT x="6592" y="10381">
    </LINKPOINT>
-   <LINKPOINT x="6285" y="10405">
+   <LINKPOINT x="6281" y="10441">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="825" srcpinname="Output" dstnodeid="826" dstpinname="Get File and render">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="827" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6945" top="14100" width="285" height="315">
+   <BOUNDS type="Box" left="6795" top="14100" width="285" height="315">
    </BOUNDS>
-   <BOUNDS type="Node" left="6945" top="14100" width="0" height="0">
+   <BOUNDS type="Node" left="6795" top="14100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1858,6 +1858,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="825" srcpinname="Output" dstnodeid="827" dstpinname="Y Input Value">
@@ -1912,8 +1914,6 @@
    </NODE>
    <LINK srcnodeid="830" srcpinname="Y Output Value" dstnodeid="707" dstpinname="Framerate (FPS)">
    </LINK>
-   <LINK srcnodeid="826" srcpinname="Write texture" dstnodeid="688" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="831" systemname="IOBox (String)">
    <BOUNDS type="Box" left="750" top="25515" width="15600" height="465">
    </BOUNDS>
@@ -1953,7 +1953,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5565" top="14520" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="20_eso_all!!!!!_90000kbps">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="22_monsters">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1973,9 +1973,9 @@
    <LINK srcnodeid="836" srcpinname="Output String" dstnodeid="707" dstpinname="Working folder">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="837" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5445" top="16230" width="1515" height="540">
+   <BOUNDS type="Box" left="4335" top="15810" width="1140" height="390">
    </BOUNDS>
-   <BOUNDS type="Node" left="5445" top="16230" width="0" height="0">
+   <BOUNDS type="Node" left="4335" top="15810" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1989,5 +1989,45 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="826" srcpinname="Total" dstnodeid="837" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="827" srcpinname="Y Output Value" dstnodeid="814" dstpinname="Update PHP">
+   </LINK>
+   <LINK srcnodeid="817" srcpinname="Output String" dstnodeid="823" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="838" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7875" top="15660" width="315" height="315">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7875" top="15660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="826" srcpinname="Write texture" dstnodeid="838" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="827" srcpinname="Y Output Value" dstnodeid="688" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="814" srcpinname="Output" dstnodeid="820" dstpinname="Frame counter">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="839" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="10170" top="16815" width="285" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10170" top="16815" width="285" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="!!!">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="811" srcpinname="Texture Out" dstnodeid="206" dstpinname="Input Node">
    </LINK>
    </PATCH>

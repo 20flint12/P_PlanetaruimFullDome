@@ -10,14 +10,15 @@
 9	WIN-O82A9ENVFV2			24-0A-64-10-A5-DF	192.168.1.191	WiFi
 
 
-dlink
-amin planeta2014
+dlink наш
+admin planeta2014
 wifi planeta2014
 
 
-tplink
+tplink зал
 admin d2o0m1e4
 wifi dome2014
 
 fulldome2014@gmail.com
 dome2014
+

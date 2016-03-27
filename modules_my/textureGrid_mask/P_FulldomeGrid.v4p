@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\textureGrid_mask\P_FulldomeGrid.v4p" systemname="P_FulldomeGrid" filename="D:\PROJECTS\VVVV_PROJECTS\Patches_flint1\_working_patches\P_FulldomeGrid.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\textureGrid_mask\P_FulldomeGrid.v4p" systemname="P_FulldomeGrid" filename="D:\PROJECTS\VVVV_PROJECTS\Patches_flint1\_working_patches\P_FulldomeGrid.v4p" scrollx="0" scrolly="-720">
    <BOUNDS type="Window" left="3840" top="1110" width="15915" height="15780">
    </BOUNDS>
    <NODE componentmode="InABox" id="71" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -1285,7 +1285,9 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7260" top="4725" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" values="|0.44111,0.92582,0.46747,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" values="|0.16381,0.34385,0.18259,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
    <PACK Name="addonpack" Version="33.7.0">
@@ -1425,5 +1427,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="226" srcpinname="Output" dstnodeid="223" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="215" srcpinname="Color Output" dstnodeid="109" dstpinname="Background Color">
    </LINK>
    </PATCH>

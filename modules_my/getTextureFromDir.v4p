@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="0" scrolly="3960">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\getTextureFromDir.v4p" systemname="getTextureFromDir" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\getTextureFromDir.v4p" scrollx="0" scrolly="3600">
    <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -511,7 +511,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5190" top="3915" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1222">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\TransformsProjectors.v4p" systemname="TransformsProjectors" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_Projection_HalfSphere\TransformsProjectors.v4p" locked="0" scrollx="0" scrolly="-1440">
-   <BOUNDS type="Window" left="12705" top="810" width="17760" height="13950">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\TransformsProjectors.v4p" systemname="TransformsProjectors" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_Projection_HalfSphere\TransformsProjectors.v4p" locked="0" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="8415" top="2100" width="17760" height="13950">
    </BOUNDS>
    <NODE componentmode="InABox" id="94" nodename="IOBOX (VALUE ADVANCED)" hiddenwhenlocked="1" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="435" top="8865" type="Node" width="0">
@@ -2133,7 +2133,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7965" top="1590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.14">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.11">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
