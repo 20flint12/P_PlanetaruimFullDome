@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\correctSlide.v4p" systemname="correctCam" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_iTable\correctCam.v4p" scrollx="0" scrolly="15">
-   <BOUNDS type="Window" left="420" top="180" width="19305" height="15750">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\correctSlide.v4p" systemname="correctCam" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_iTable\correctCam.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="6405" top="0" width="19380" height="16050">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>

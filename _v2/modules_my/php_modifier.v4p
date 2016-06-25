@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\php_modifier.v4p" systemname="namesOfFiles" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\namesOfFiles.v4p" locked="0" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_my\php_modifier.v4p" systemname="namesOfFiles" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\namesOfFiles.v4p" locked="0" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="165" top="0" width="18420" height="16110">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>

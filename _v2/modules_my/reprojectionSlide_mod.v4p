@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta32.0.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\reprojectionSlide_mod.v4p" systemname="reprojectionSlide_mod" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\reprojectionSlide_mod.v4p">
-   <BOUNDS type="Window" left="10575" top="2355" width="12000" height="8820">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\Projects\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_my\reprojectionSlide_mod.v4p" systemname="reprojectionSlide_mod" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\reprojectionSlide_mod.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="5910" top="3180" width="12000" height="8820">
    </BOUNDS>
    <NODE componentmode="Hidden" id="43" nodename="ProjectedTexture.fx" systemname="ProjectedTexture (EX9.Effect)" filename="..\..\modules_my\ProjectedTexture.fx">
    <BOUNDS height="270" left="2520" top="6690" type="Node" width="1695">
@@ -180,7 +180,7 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Layer" dstnodeid="46" dstpinname="Input Node">
    </LINK>
-   <PACK Name="addonpack" Version="31.9.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <LINK srcnodeid="0" srcpinname="Output Node" dstnodeid="43" dstpinname="Texture" linkstyle="Bezier">
    <LINKPOINT x="705" y="4228">
