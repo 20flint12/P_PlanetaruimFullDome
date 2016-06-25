@@ -52,7 +52,7 @@
    <PIN pinname="Y Input Value" slicecount="1" values="1650">
    </PIN>
    </NODE>
-   <NODE systemname="getTextureFromDir" filename="getTextureFromDir.v4p" nodename="getTextureFromDir.v4p" componentmode="InAWindow" id="130" stayontop="0" debug="0">
+   <NODE systemname="getTextureFromDir" filename="getTextureFromDir.v4p" nodename="getTextureFromDir.v4p" componentmode="Hidden" id="130" stayontop="0" debug="0">
    <BOUNDS type="Node" left="2685" top="5085" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="705" top="0" width="17775" height="15840">

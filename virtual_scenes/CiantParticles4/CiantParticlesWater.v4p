@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\virtual_scenes\CiantParticles4\CiantParticlesWater.v4p" filename="D:\Apu files\Vvvv\Diplomka\CiantParticlesExample\CiantParticlesStrawman.v4p" systemname="CiantParticlesStrawman" scrollx="0" scrolly="0">
-   <BOUNDS height="11820" left="7260" top="3585" type="Window" width="16875">
+   <BOUNDS height="15900" left="705" top="0" type="Window" width="17775">
    </BOUNDS>
    <NODE componentmode="Hidden" id="100" nodename="FileTexture (EX9.Texture)" systemname="FileTexture (EX9.Texture)">
    <BOUNDS height="100" left="11520" top="5055" type="Node" width="100">
@@ -267,6 +267,8 @@
    </PIN>
    <BOUNDS left="12405" top="5880" type="Box">
    </BOUNDS>
+   <PIN pinname="reset" slicecount="1" visible="1" values="1">
+   </PIN>
    </NODE>
    <LINK dstnodeid="269" dstpinname="reset to initial  state" hiddenwhenlocked="1" srcnodeid="281" srcpinname="resetOUT">
    </LINK>
@@ -391,7 +393,7 @@
    </BOUNDS>
    <BOUNDS height="450" left="6510" top="4230" type="Box" width="1350">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,0.15271,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,1.00000,1.00000,0.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -897,7 +899,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7620" top="690" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-4">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.86">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -953,5 +955,27 @@
    </LINKPOINT>
    <LINKPOINT x="14580" y="4343">
    </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="329" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13440" top="225" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13440" top="225" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="reset">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="329" srcpinname="Y Output Value" dstnodeid="281" dstpinname="reset">
    </LINK>
    </PATCH>
