@@ -347,7 +347,7 @@
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="115">
    <BOUNDS type="Node" left="6915" top="6840" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="8" values="D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\31_Drakosha\parts\slide1\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\31_Drakosha\parts\slide2\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\31_Drakosha\parts\slide3\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\31_Drakosha\parts\slide4\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\31_Drakosha\parts\slide5\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\31_Drakosha\parts\slide6\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\31_Drakosha\parts\slide7\,D:\Projects\VVVV_PROJECTS\resources\_PHOTO_DOME\31_Drakosha\parts\slide8\">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="C:\xampp\htdocs\Dome\Foto\">
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -558,6 +558,6 @@
    </NODE>
    <LINK srcnodeid="157" srcpinname="Output String" dstnodeid="165" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="114" srcpinname="Output String" dstnodeid="115" dstpinname="Input 1">
+   <LINK srcnodeid="157" srcpinname="Output String" dstnodeid="115" dstpinname="Input 1">
    </LINK>
    </PATCH>

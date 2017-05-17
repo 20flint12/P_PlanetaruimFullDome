@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_my\inputTexture_VideoStream.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="750" top="0" width="17775" height="15675">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_my\inputTexture_VideoStream.v4p" systemname="inputTexture" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetariumFullDome\modules_my\inputTexture.v4p" locked="0" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="375" top="0" width="17775" height="15810">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)" managers="">
    <BOUNDS type="Box" left="2445" top="2505" width="480" height="480">
@@ -49,11 +49,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="6060" top="1830" width="6870" height="360">
+   <BOUNDS type="Box" left="6060" top="1830" width="10305" height="450">
    </BOUNDS>
    <BOUNDS type="Node" left="6060" top="1830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="C:\Users\Public\transfer\eso_all!!!!!_90000kbps.AVI">
+   <PIN pinname="Input String" slicecount="1" values="|..\..\..\..\..\..\..\!!!_РАзное найденное полнокупольное\!!!!_новейшее\Fulldome waterfall shot by Dome3D on the Freedom360 audio.avi|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.avi">
    </PIN>
@@ -65,11 +65,13 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="6090" top="2520" width="6720" height="315">
+   <BOUNDS type="Box" left="7785" top="3030" width="6720" height="315">
    </BOUNDS>
-   <BOUNDS type="Node" left="6090" top="2520" width="0" height="0">
+   <BOUNDS type="Node" left="7785" top="3030" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="|..\..\..\..\..\resources\1 сезон 5 серия (LIBERTY).avi|">
    </PIN>
