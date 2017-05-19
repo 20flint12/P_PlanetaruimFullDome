@@ -24,7 +24,7 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="ReprojectionSLIDE1" filename="..\..\modules_my\ReprojectionSLIDE1.v4p" nodename="modules_my\ReprojectionSLIDE1.v4p" componentmode="InAWindow" id="10">
+   <NODE systemname="ReprojectionSLIDE1" filename="..\..\modules_my\ReprojectionSLIDE1.v4p" nodename="modules_my\ReprojectionSLIDE1.v4p" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="1470" top="3000" width="3720" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="9840" top="1770" width="11520" height="13260">
@@ -97,7 +97,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,-10,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,-11.01,0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Translate_in">
    </PIN>
@@ -158,12 +158,12 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Rotate_in">
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="24">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="24">
    <BOUNDS type="Node" left="735" top="4155" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="735" top="4155" width="6480" height="5655">
    </BOUNDS>
-   <BOUNDS type="Window" left="19410" top="7635" width="9570" height="8490">
+   <BOUNDS type="Window" left="13140" top="5415" width="9570" height="8490">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -318,4 +318,26 @@
    </NODE>
    <LINK srcnodeid="138" srcpinname="Output Node" dstnodeid="24" dstpinname="Projection">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="139" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3060" top="1575" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3060" top="1575" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,-10,0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Translate_in">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
    </PATCH>
