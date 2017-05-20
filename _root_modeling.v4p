@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_modeling.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="-720" systemname="_root_modeling" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_modeling.v4p">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_modeling.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="-360" systemname="_root_modeling" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_modeling.v4p">
    <BOUNDS height="15810" left="375" top="0" type="Window" width="18645">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -1584,26 +1584,6 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="747">
-   <BOUNDS type="Node" left="1500" top="11790" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="hat_transform">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="746">
-   <BOUNDS type="Node" left="1155" top="11790" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="hat_mesh">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE id="748" systemname="Camera (Transform Softimage Legacy)" filename="%VVVV%\lib\nodes\modules\_legacy\Editing\Camera (Transform Softimage Legacy).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden">
    <BOUNDS type="Node" left="9270" top="3855" width="100" height="100">
    </BOUNDS>
@@ -1635,74 +1615,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="748" srcpinname="Projection" dstnodeid="751" dstpinname="Input Value">
-   </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="752">
-   <BOUNDS type="Node" left="2175" top="11790" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="main_cam_view">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="753">
-   <BOUNDS type="Node" left="2490" top="11790" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="main_cam_projection">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="754" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2940" top="11790" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2940" top="11790" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="TextureOnWall_mode0" filename="_v2\modules_my\TextureOnWall_mode0.v4p" nodename="_v2\modules_my\TextureOnWall_mode0.v4p" componentmode="Hidden" id="745">
-   <BOUNDS type="Node" left="1170" top="12255" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="hat Mesh" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="hat Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Texture_spread" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="10620" top="4650" width="8460" height="11550">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="754" srcpinname="Y Output Value" dstnodeid="745" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="746" srcpinname="Input Value" dstnodeid="745" dstpinname="hat Mesh">
-   </LINK>
-   <LINK srcnodeid="747" srcpinname="Input Value" dstnodeid="745" dstpinname="hat Transform">
-   </LINK>
-   <LINK srcnodeid="752" srcpinname="Input Value" dstnodeid="745" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="753" srcpinname="Input Value" dstnodeid="745" dstpinname="Projection">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="761">
    <BOUNDS type="Node" left="1545" top="12975" width="100" height="100">
@@ -1809,184 +1721,6 @@
    <LINK srcnodeid="764" srcpinname="Height" dstnodeid="762" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="206" srcpinname="Output Node" dstnodeid="764" dstpinname="Texture">
-   </LINK>
-   <NODE systemname="TextureOnWall_mode2" filename="_v2\modules_my\TextureOnWall_mode2.v4p" nodename="_v2\modules_my\TextureOnWall_mode2.v4p" componentmode="Hidden" id="765" stayontop="0">
-   <BOUNDS type="Node" left="1185" top="14805" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="615" top="2565" width="17700" height="13635">
-   </BOUNDS>
-   <PIN pinname="Mesh" visible="1">
-   </PIN>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   <PIN pinname="Enabled - Enabled" visible="1">
-   </PIN>
-   <PIN pinname="Texture_spread" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="770">
-   <BOUNDS type="Node" left="1560" top="14235" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="hat_transform">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="769">
-   <BOUNDS type="Node" left="1215" top="14235" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="hat_mesh">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="768">
-   <BOUNDS type="Node" left="2235" top="14235" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="main_cam_view">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="767">
-   <BOUNDS type="Node" left="2550" top="14235" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="main_cam_projection">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="766" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3000" top="14235" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3000" top="14235" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="769" srcpinname="Input Value" dstnodeid="765" dstpinname="Mesh">
-   </LINK>
-   <LINK srcnodeid="770" srcpinname="Input Value" dstnodeid="765" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="768" srcpinname="Input Value" dstnodeid="765" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="767" srcpinname="Input Value" dstnodeid="765" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="766" srcpinname="Y Output Value" dstnodeid="765" dstpinname="Enabled - Enabled">
-   </LINK>
-   <NODE systemname="TextureOnWall_mode3" filename="_v2\modules_my\TextureOnWall_mode3.v4p" nodename="_v2\modules_my\TextureOnWall_mode3.v4p" componentmode="Hidden" id="771">
-   <BOUNDS type="Node" left="1215" top="16095" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="705" top="0" width="17700" height="16200">
-   </BOUNDS>
-   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enabled_helpers - Enabled" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="776">
-   <BOUNDS type="Node" left="1560" top="15600" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="hat_transform">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="775">
-   <BOUNDS type="Node" left="1215" top="15600" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="hat_mesh">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="774">
-   <BOUNDS type="Node" left="2235" top="15600" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="main_cam_view">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="773">
-   <BOUNDS type="Node" left="2550" top="15600" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="main_cam_projection">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="772" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3000" top="15600" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3000" top="15600" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="775" srcpinname="Input Value" dstnodeid="771" dstpinname="Mesh">
-   </LINK>
-   <LINK srcnodeid="776" srcpinname="Input Value" dstnodeid="771" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="774" srcpinname="Input Value" dstnodeid="771" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="773" srcpinname="Input Value" dstnodeid="771" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="772" srcpinname="Y Output Value" dstnodeid="771" dstpinname="Enabled_helpers - Enabled">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="777" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2910" top="19830" width="1260" height="1275">
@@ -2290,22 +2024,10 @@
    </NODE>
    <LINK srcnodeid="804" srcpinname="Y Output Value" dstnodeid="803" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="206" srcpinname="Output Node" dstnodeid="745" dstpinname="Texture_spread" linkstyle="Bezier">
-   <LINKPOINT x="4935" y="11745">
-   </LINKPOINT>
-   <LINKPOINT x="1905" y="11745">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="206" srcpinname="Output Node" dstnodeid="744" dstpinname="Texture_spread" linkstyle="Bezier">
    <LINKPOINT x="4935" y="12338">
    </LINKPOINT>
    <LINKPOINT x="1275" y="12338">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="206" srcpinname="Output Node" dstnodeid="765" dstpinname="Texture_spread" linkstyle="Bezier">
-   <LINKPOINT x="4920" y="13028">
-   </LINKPOINT>
-   <LINKPOINT x="2520" y="13028">
    </LINKPOINT>
    </LINK>
    <NODE systemname="inputTexture_Slider" filename="_v2\modules_my\inputTexture_Slider.v4p" nodename="_v2\modules_my\inputTexture_Slider.v4p" componentmode="InAWindow" id="808">
