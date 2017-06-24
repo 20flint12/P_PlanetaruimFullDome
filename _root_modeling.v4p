@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_modeling.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="-720" systemname="_root_modeling" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_modeling.v4p">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_modeling.v4p" componentmode="InAWindow" locked="0" scrollx="0" scrolly="0" systemname="_root_modeling" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_root_modeling.v4p">
    <BOUNDS height="15810" left="225" top="-30" type="Window" width="17895">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -473,15 +473,13 @@
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="358" managers="">
    <BOUNDS type="Node" left="16275" top="8655" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Display Channel" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="Projection">
    </PIN>
    </NODE>
-   <LINK srcnodeid="235" srcpinname="Output Node" dstnodeid="358" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="372" managers="">
    <BOUNDS type="Node" left="15435" top="8655" width="100" height="100">
    </BOUNDS>
@@ -515,26 +513,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="235" srcpinname="Output Node" dstnodeid="542" dstpinname="Transform">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="544" systemname="IOBox (Value Advanced)" managers="boygroup">
-   <BOUNDS type="Box" left="16275" top="9450" width="3180" height="960">
-   </BOUNDS>
-   <BOUNDS type="Node" left="16275" top="9450" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="16">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Input Value">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="542" srcpinname="Matrix Out" dstnodeid="544" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="562">
    <BOUNDS type="Node" left="6870" top="5955" width="1320" height="270">
@@ -1298,6 +1276,8 @@
    <PIN pinname="Z_distance" slicecount="1" visible="1" values="4.5">
    </PIN>
    <PIN pinname="Far Plane" slicecount="1" values="13.19" visible="1">
+   </PIN>
+   <PIN pinname="Near Plane" slicecount="1" visible="1" values="-1.58">
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="728">
@@ -2319,7 +2299,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15495" top="5415" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15.68">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.92">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2329,5 +2309,37 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="824" srcpinname="Y Output Value" dstnodeid="725" dstpinname="Far Plane">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="825">
+   <BOUNDS type="Box" left="16260" top="9600" width="3180" height="960">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16260" top="9600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="16">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="542" srcpinname="Matrix Out" dstnodeid="825" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="830">
+   <BOUNDS type="Box" left="14370" top="5325" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14370" top="5325" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1.58">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="830" srcpinname="Y Output Value" dstnodeid="725" dstpinname="Near Plane">
    </LINK>
    </PATCH>
