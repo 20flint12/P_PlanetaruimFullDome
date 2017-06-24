@@ -215,7 +215,7 @@
    <NODE componentmode="InAWindow" id="19" nodename="RENDERER (EX9)" systemname="Renderer (EX9)" stayontop="1">
    <BOUNDS height="0" left="2040" top="7620" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="7410" left="18465" top="165" type="Window" width="10800">
+   <BOUNDS height="7410" left="18450" top="165" type="Window" width="10800">
    </BOUNDS>
    <BOUNDS height="3630" left="2040" top="7620" type="Box" width="5100">
    </BOUNDS>
