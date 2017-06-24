@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
    <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\collectDome.v4p" systemname="collectDome" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_ProjectorView_small_setup_ACER\( slide projector )\modules_my\collectDome.v4p" scrollx="0" scrolly="0" locked="0">
-   <BOUNDS type="Window" left="375" top="0" width="18645" height="15810">
+   <BOUNDS type="Window" left="375" top="0" width="17895" height="15810">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -541,7 +541,7 @@
    </PIN>
    </NODE>
    <NODE id="349" systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" stayontop="0">
-   <BOUNDS type="Window" left="19155" top="7740" width="9645" height="7920">
+   <BOUNDS type="Window" left="18465" top="7740" width="10335" height="7920">
    </BOUNDS>
    <BOUNDS type="Node" left="2145" top="4860" width="100" height="100">
    </BOUNDS>
