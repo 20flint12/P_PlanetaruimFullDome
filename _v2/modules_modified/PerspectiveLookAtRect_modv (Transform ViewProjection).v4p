@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome\_v2\modules_modified\PerspectiveLookAtRect_modv (Transform ViewProjection).v4p" componentmode="InAWindow" systemname="PerspectiveLookAtRect_mod (Transform ViewProjection)" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_test_proj_cam\modules_modified\PerspectiveLookAtRect_mod (Transform ViewProjection).v4p">
-   <BOUNDS height="9840" left="14955" top="3180" type="Window" width="13845">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\_v2\modules_modified\PerspectiveLookAtRect_modv (Transform ViewProjection).v4p" componentmode="InAWindow" systemname="PerspectiveLookAtRect_mod (Transform ViewProjection)" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_test_proj_cam\modules_modified\PerspectiveLookAtRect_mod (Transform ViewProjection).v4p" scrollx="0" scrolly="-720">
+   <BOUNDS height="8640" left="0" top="3405" type="Window" width="13065">
    </BOUNDS>
    <NODE componentmode="InABox" id="46" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5715" top="540" type="Node" width="0">
@@ -704,7 +704,7 @@
    </NODE>
    <INFO author="vvvv group" description="Constructs a camera, that sees exactly the rect from a given position. The camera cone might be distorted heavily, however it is guaranteed that you will look at the specified rect which can placed arbitrarily in the room." tags="helper, camera, shadow, mirror, cone, 3d">
    </INFO>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE id="1" hiddenwhenlocked="1" nodename="AND (Boolean)" systemname="AND (Boolean)">
    <PIN pinname="Input 2" slicecount="1" visible="1" values="1">
