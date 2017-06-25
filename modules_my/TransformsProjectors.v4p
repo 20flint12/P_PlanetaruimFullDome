@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\TransformsProjectors.v4p" systemname="TransformsProjectors" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_Projection_HalfSphere\TransformsProjectors.v4p" locked="0" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_PlanetaruimFullDome_git\modules_my\TransformsProjectors.v4p" systemname="TransformsProjectors" filename="D:\PROJECTS\VVVV_PROJECTS\patches\_working_patches\P_Projection_HalfSphere\TransformsProjectors.v4p" locked="0" scrollx="2880" scrolly="0">
    <BOUNDS type="Window" left="225" top="-30" width="17895" height="15810">
    </BOUNDS>
    <NODE componentmode="InABox" id="94" nodename="IOBOX (VALUE ADVANCED)" hiddenwhenlocked="1" systemname="IOBox (Value Advanced)">
@@ -245,7 +245,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-0.039,0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-0.044,0">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -421,7 +421,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-0.099,-0.033">
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-0.112,0.044">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -875,7 +875,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="-0.037,0">
+   <PIN pinname="Y Input Value" slicecount="2" values="-0.041,0">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -1541,7 +1541,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6765" top="1635" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="3">
+   <PIN pinname="Y Input Value" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1673,7 +1673,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="3.184">
+   <PIN pinname="Y Input Value" slicecount="1" values="3.63">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="2">
    </PIN>
@@ -2077,7 +2077,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8820" top="5070" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.062">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.03">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2807,7 +2807,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="19170" top="2955" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="815">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="800">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
